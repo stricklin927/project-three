@@ -1,0 +1,19 @@
+{
+  "name": "project-three",
+  "version": "1.0.0",
+  "description": "A full stack MERN application",
+  "main": "server.js",
+  "scripts": {
+    "test": "Test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianrshort/project-three.git"
+  },
+  "author": "https://github.com/brianrshort",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brianrshort/project-three/issues"
+  },
+  "homepage": "https://github.com/brianrshort/project-three#readme"
+}
