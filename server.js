@@ -19,9 +19,15 @@ mongoose.connect(mongoURI, { useNewUrlParser: true })
         console.log(err);
     });
 
+// mongoose.connect(
+//     process.env.MONGODB_URI || "mongodb://localhost/googlebooks",
+//     { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }
+// );
+
+
 //Set the port
 const port = process.env.PORT || 3001;
 
 app.listen(port, () => {
-    console.log("Server is up on " + port + " , nice work!")
+    console.log("Server is running on " + port + " , nice work!")
 });
