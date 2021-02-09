@@ -4,7 +4,9 @@
   "description": "A full stack MERN application",
   "main": "server.js",
   "scripts": {
-    "test": "Test"
+    "test": "Test",
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
