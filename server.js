@@ -1,8 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const passport = require('passport');
 const { mongoURI } = require('./config/keys'); 
 
+const users = require('./routes/api/users');
 
 const app = express();
 
@@ -24,6 +26,11 @@ mongoose.connect(mongoURI, { useNewUrlParser: true })
 //     { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }
 // );
 
+app.use(passport.initialize());
+
+require('./config/passport')(passport);
+
+app.use('/api/users', users);
 
 //Set the port
 const port = process.env.PORT || 3001;
