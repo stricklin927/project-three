@@ -7,13 +7,6 @@ import PropTypes from "prop-types";
 //import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
 
-let axiosConfig = {
-  headers: {
-      'Content-Type': 'application/json;charset=UTF-8',
-      "Access-Control-Allow-Origin": true,
-      "Access-Control-Allow-Credentials": true,
-  }
-};
 
 function Register(props) {
     const [ name, setName ] = useState("");
@@ -55,7 +48,7 @@ function Register(props) {
             password2: password2
         }
         console.log(newUser);
-        axios.post("http://localhost:3001/api/users/register", newUser, axiosConfig
+        axios.post("http://localhost:3001/api/users/register", newUser
         // {
         //   headers: {
         //     'Content-Type': 'application/json',
