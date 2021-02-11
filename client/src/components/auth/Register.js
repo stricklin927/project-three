@@ -1,11 +1,34 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import axios from "axios";
+import { Link, withRouter } from 'react-router-dom';
+import PropTypes from "prop-types";
+//import { connect } from 'react-redux';
+//import { useReducer } from "redux";
+//import { registerUser } from "../../actions/authActions";
+import classnames from "classnames";
 
-function Register() {
+let axiosConfig = {
+  headers: {
+      'Content-Type': 'application/json;charset=UTF-8',
+      "Access-Control-Allow-Origin": true,
+      "Access-Control-Allow-Credentials": true,
+  }
+};
+
+function Register(props) {
     const [ name, setName ] = useState("");
     const [ email, setEmail ] = useState("");
     const [ password, setPassword ] = useState("");
     const [ password2, setPassword2 ] = useState("");
+    const [ errors, setErrors ] = useState({});
+
+    
+        if (props.errors) {
+          setErrors({
+            errors: props.errors
+          });
+        }
+      
 
     function changeName(e) {
         setName(e.target.value);
@@ -32,6 +55,18 @@ function Register() {
             password2: password2
         }
         console.log(newUser);
+        axios.post("http://localhost:3001/api/users/register", newUser, axiosConfig
+        // {
+        //   headers: {
+        //     'Content-Type': 'application/json',
+        //     'Accept': "*/*",
+        //     'Access-Control-Allow-Origin': '*',
+        //   },
+        //   body: newUser 
+        // }
+        ).then(res => console.log(res),
+        err => console.log(err));
+        //props.registerUser(newUser, props.history);
     }
 
     return (
@@ -57,20 +92,29 @@ function Register() {
                         <div className="input-field col s12">
                             <input onChange={changeName}
                                 value={name}
-                                // error={errors.name}
+                                error={errors.name}
                                 id="name"
                                 type="text"
-                                />
+                                className={classnames("", {
+                                    invalid: errors.name
+                                  })}
+                            />
+                            <label htmlFor="name">Name</label>
+                            <span className="red-text">{errors.name}</span>
                         </div>
                         <div className="input-field col s12">
                 <input
                   onChange={changeEmail}
                   value={email}
-                  //error={errors.email}
+                  error={errors.email}
                   id="email"
                   type="email"
+                  className={classnames("", {
+                    invalid: errors.email
+                  })}
                 />
                 <label htmlFor="email">Email</label>
+                <span className="red-text">{errors.email}</span>
               </div>
               <div className="input-field col s12">
                 <input
@@ -79,18 +123,26 @@ function Register() {
                   //error={errors.password}
                   id="password"
                   type="password"
+                  className={classnames("", {
+                    invalid: errors.password
+                  })}
                 />
                 <label htmlFor="password">Password</label>
+                <span className="red-text">{errors.password}</span>
               </div>
               <div className="input-field col s12">
                 <input
                   onChange={changePasswordTwo}
                   value={password2}
-                  //error={errors.password2}
+                  error={errors.password2}
                   id="password2"
                   type="password"
+                  className={classnames("", {
+                    invalid: errors.password2
+                  })}
                 />
                 <label htmlFor="password2">Confirm Password</label>
+                <span className="red-text">{errors.password2}</span>
               </div>
               <div className="col s12" style={{ paddingLeft: "11.250px" }}>
                 <button
@@ -112,5 +164,22 @@ function Register() {
         </div>
     )
 }
+
+
+// Register.propTypes = {
+//     registerUser: PropTypes.func.isRequired,
+//     auth: PropTypes.object.isRequired,
+//     errors: PropTypes.object.isRequired
+// };
+
+// const mapStateToProps = state => ({
+//     auth: state.auth,
+//     errors: state.errors
+// })
+
+// export default connect(
+//     mapStateToProps,
+//     { registerUser }
+// )(withRouter(Register));
 
 export default Register;

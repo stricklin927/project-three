@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import axios from 'axios';
 
 function Login() {
     const [ email, setEmail ] = useState("");
@@ -20,6 +21,7 @@ function Login() {
             password: password
         }
         console.log(userData);
+        axios.post("/api/users/login", userData);
     }
 
     return (
