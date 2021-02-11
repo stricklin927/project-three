@@ -49,6 +49,7 @@ function Register(props) {
         }
         console.log(newUser);
         axios.post("http://localhost:3001/api/users/register", newUser
+        //https://landingpageuniversity.herokuapp.com/
         // {
         //   headers: {
         //     'Content-Type': 'application/json',

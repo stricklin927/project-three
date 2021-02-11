@@ -21,8 +21,12 @@ function Login() {
             password: password
         }
         console.log(userData);
-        axios.post("/api/users/login", userData);
-    }
+        axios.post("http://localhost:3001/api/users/login", userData)
+        .then(res => console.log(res),
+        err => console.log(err));
+        //props.registerUser(newUser, props.history);
+    };
+    
 
     return (
         <div className="container">
