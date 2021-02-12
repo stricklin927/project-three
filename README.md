@@ -34,19 +34,20 @@
 
   ## Usage
   The functionality is varied based on the type and role of user.
+  
   * Faculty: User is able to view different employee categories and each employee profile which comprises of the instructor's profile, email and phone number. This is also accessible via a search function. Administrator can add and delete employees via an add & delete function which is hidden from non-administrators using role-based authentication.
 
     ![Faculty Screenshot](/public/assets/images/faculty.png)
 
 
-  * Students: User is able to view the different schools/collages, each major offered in those schools and the corresponding instructor/professor profile that consists of the instructor's email. The user is also able to access the admissions office contact.
+  * Students: User is able to view the different schools/colleges, each major offered in those schools and the corresponding instructor/professor profile that consists of the instructor's email. The user is also able to access the admissions office contact.
 
     ![Students Screenshot](/public/assets/images/faculty.png)
 
 
-  * Alumni: User is able to make a donation. The donation amount is grouped in different tiers which have different badges. There is a donation list which is compiled based on tiers with users with highest donations above.
+  * Alumni: User is able to make a donation. The donation amount is grouped in different tiers which have different badges. There is a donation list which is compiled based on tiers with users with highest donations placed above. A thank you message is rendered to each user who donates.
 
-   ![Alumni Screenshot](/public/assets/images/faculty.png)
+    ![Alumni Screenshot](/public/assets/images/faculty.png)
 
 
   ## Contribution
@@ -66,6 +67,6 @@
 
 * Video link for demonstration : https://drive.google.com/file/d/1g0t43tZGRUeZPT8YCbwyo0cLJ7Vm3ROC/view
 
-* Heroku link (Mirror) : https://aqueous-oasis-84460.herokuapp.com/
+* Heroku link : https://aqueous-oasis-84460.herokuapp.com/
 
 * Info Tech University GitHub repository URL: (https://github.com/brianrshort/project-three)
