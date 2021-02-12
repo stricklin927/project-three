@@ -15,14 +15,24 @@ app.use(cors());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-//Connect to the database
-mongoose.connect(mongoURI, { useNewUrlParser: true })
-    .then(() => {
-        console.log("Connected to MongoDB database! Nice work!")
-    })
-    .catch(err => {
-        console.log(err);
-    });
+//Connect to the 
+mongoose.connect(
+    process.env.mongoURI || "mongodb://localhost/dashboard",
+    { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }
+).then(() => {
+    console.log("Connected to MongoDB database! Nice work!")
+})
+.catch(err => {
+    console.log(err);
+});
+
+// mongoose.connect(mongoURI, { useNewUrlParser: true })
+//     .then(() => {
+//         console.log("Connected to MongoDB database! Nice work!")
+//     })
+//     .catch(err => {
+//         console.log(err);
+//     });
 
 // mongoose.connect(
 //     process.env.MONGODB_URI || "mongodb://localhost/googlebooks",

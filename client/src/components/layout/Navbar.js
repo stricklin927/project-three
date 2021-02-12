@@ -14,8 +14,7 @@ function Navbar() {
               }}
               className="col s5 brand-logo center black-text"
             >
-              <i className="material-icons">code</i>
-              MERN
+              Navbar
             </Link>
           </div>
         </nav>
