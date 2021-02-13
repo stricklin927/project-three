@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
-import axios from "axios";
-import { Link, withRouter } from 'react-router-dom';
-import PropTypes from "prop-types";
-//import { connect } from 'react-redux';
-//import { useReducer } from "redux";
-//import { registerUser } from "../../actions/authActions";
+import { Link } from 'react-router-dom';
 import classnames from "classnames";
 
 
@@ -48,19 +43,7 @@ function Register(props) {
             password2: password2
         }
         console.log(newUser);
-        axios.post("http://localhost:3001/api/users/register", newUser
-        //https://landingpageuniversity.herokuapp.com/
-        // {
-        //   headers: {
-        //     'Content-Type': 'application/json',
-        //     'Accept': "*/*",
-        //     'Access-Control-Allow-Origin': '*',
-        //   },
-        //   body: newUser 
-        // }
-        ).then(res => console.log(res),
-        err => console.log(err));
-        //props.registerUser(newUser, props.history);
+        props.propsSubmit(newUser);
     }
 
     return (
@@ -114,7 +97,6 @@ function Register(props) {
                 <input
                   onChange={changePassword}
                   value={password}
-                  //error={errors.password}
                   id="password"
                   type="password"
                   className={classnames("", {
@@ -158,22 +140,5 @@ function Register(props) {
         </div>
     )
 }
-
-
-// Register.propTypes = {
-//     registerUser: PropTypes.func.isRequired,
-//     auth: PropTypes.object.isRequired,
-//     errors: PropTypes.object.isRequired
-// };
-
-// const mapStateToProps = state => ({
-//     auth: state.auth,
-//     errors: state.errors
-// })
-
-// export default connect(
-//     mapStateToProps,
-//     { registerUser }
-// )(withRouter(Register));
 
 export default Register;
