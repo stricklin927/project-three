@@ -19,7 +19,7 @@ function App() {
     axios.post("/api/users/register", newUser
     ).then(res => {
       console.log(res);
-      window.location.assign("/home")
+      window.location.assign("/login")
     }).catch(err => console.log(err));
 }
 
@@ -29,7 +29,6 @@ function App() {
           <Navbar />
           <Route exact path="/" component={Landing} />
           <Route exact path="/register" component={() => <Register propsSubmit={propsSubmit} />} />
-                                   {/* component={Register} /> */}
           <Route exact path="/login" component={Login} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/alumni" component={Alumni} />
