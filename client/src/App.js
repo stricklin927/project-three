@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
+import axios from 'axios';
 
 import Navbar from "./components/layout/Navbar";
 import Landing from "./components/layout/Landing";
@@ -13,12 +14,22 @@ import Students from "./Pages/Students";
 
 function App() {
 
+  function propsSubmit(newUser) {
+    console.log(newUser);
+    axios.post("/api/users/register", newUser
+    ).then(res => {
+      console.log(res);
+      window.location.assign("/home")
+    }).catch(err => console.log(err));
+}
+
   return (
       <Router>
         <div className="App">
           <Navbar />
           <Route exact path="/" component={Landing} />
-          <Route exact path="/register" component={Register} />
+          <Route exact path="/register" component={() => <Register propsSubmit={propsSubmit} />} />
+                                   {/* component={Register} /> */}
           <Route exact path="/login" component={Login} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/alumni" component={Alumni} />
