@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import axios from 'axios';
 
-function Login() {
+function Login(props) {
     const [ email, setEmail ] = useState("");
     const [ password, setPassword ] = useState("");
 
@@ -21,9 +21,8 @@ function Login() {
             password: password
         }
         console.log(userData);
-        axios.post("http://localhost:3001/api/users/login", userData)
-        .then(res => console.log(res),
-        err => console.log(err));
+        props.propsLogin(userData);
+       
         //props.registerUser(newUser, props.history);
     };
     
