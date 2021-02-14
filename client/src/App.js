@@ -16,7 +16,7 @@ function App() {
 
   function propsSubmit(newUser) {
     console.log(newUser);
-    axios.post("api/users/register", newUser
+    axios.post("/api/users/register", newUser
     ).then(res => {
       console.log(res);
       res.redirect("/login")
@@ -35,7 +35,7 @@ function App() {
           <Navbar />
           <Route exact path="/" component={Landing} />
           <Route exact path="/register" component={() => <Register propsSubmit={propsSubmit} />} />
-          <Route exact path="/login" component={Login} propsLogin={propsLogin} />
+          <Route exact path="/login" component={() => <Login propsLogin={propsLogin} />} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/alumni" component={Alumni} />
           <Route exact path="/facstaff" component={Facstaff} />
