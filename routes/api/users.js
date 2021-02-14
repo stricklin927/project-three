@@ -3,13 +3,14 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const keys = require('../../config/keys');
+const cors = require('cors');
 
 const validateRegisterInput = require('../../validation/register');
 const validateLoginInput = require('../../validation/login');
 
 const User = require('../../models/User');
 
-router.post('/register', (req, res) => {
+router.post('/register', cors(), (req, res) => {
     const { errors, isValid } = validateRegisterInput(req.body);
     if(!isValid) {
         return res.status(400).json(errors);
@@ -29,7 +30,10 @@ router.post('/register', (req, res) => {
             bcrypt.hash(newUser.password, salt, (err, hash) => {
                 if (err) throw err;
                 newUser.password = hash;
-                newUser.save().then(user => res.json(user))
+                newUser.save().then(user => {
+                    res.json(user);
+                    //res.redirect('/login');
+                })
                     .catch(err => console.log(err));
             })
         })
@@ -74,6 +78,8 @@ router.post('/login', (req, res) => {
                 return res.status(400).json({ passwordincorrect: "Password incorrect "});
             }
         })
+        //res.redirect("/home", { user: req.user, token: req.token });
+        res.redirect(302, '/home');
     })
 })
 

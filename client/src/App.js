@@ -16,10 +16,10 @@ function App() {
 
   function propsSubmit(newUser) {
     console.log(newUser);
-    axios.post("/api/users/register", newUser
+    axios.post("https://localhost:3001/api/users/register", newUser
     ).then(res => {
       console.log(res);
-      window.location.assign("/login")
+      res.redirect("/login")
     }).catch(err => console.log(err));
 }
 
