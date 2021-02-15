@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import classnames from "classnames";
 
@@ -144,4 +144,4 @@ function Register(props) {
     )
 }
 
-export default Register;
+export default withRouter(Register);
