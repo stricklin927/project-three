@@ -12,8 +12,11 @@ app.use(cors());
 const users = require('./routes/api/users');
 
 //Set up bodyParser middleware with Express
-app.use(bodyParser.urlencoded({extended: false}));
-app.use(bodyParser.json());
+//app.use(bodyParser.urlencoded({extended: false}));
+//app.use(bodyParser.json());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 
 // app.use(function(req, res, next) {
 //     res.header("Access-Control-Allow-Origin", "http://localhost:3000/"); // update to match the domain you will make the request from
