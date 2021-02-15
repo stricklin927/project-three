@@ -19,7 +19,7 @@ function App() {
     axios.post("/api/users/register", newUser
     ).then(res => {
       console.log(res);
-      res.redirect("/login")
+      window.location.assign("/login")
     }).catch(err => console.log(err));
 }
 
