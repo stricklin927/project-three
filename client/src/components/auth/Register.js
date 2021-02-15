@@ -44,7 +44,6 @@ function Register(props) {
         };
         console.log(newUser);
         props.propsSubmit(newUser);
-        props.history.push('/home');
     }
 
     return (

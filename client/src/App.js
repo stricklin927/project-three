@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import './App.css';
 import axios from 'axios';
 
@@ -14,11 +15,14 @@ import Students from "./Pages/Students";
 
 function App() {
 
+  let history = useHistory();
+
   function propsSubmit(newUser) {
     console.log(newUser);
     axios.post("/api/users/register", newUser
     ).then(res => {
       console.log(res);
+      history.push('/login');
     }).catch(err => console.log(err));
 }
 
@@ -26,6 +30,7 @@ function App() {
     axios.post("/api/users/login", userData)
     .then(res => {
       console.log(res);
+      history.push('/home');
     }).catch(err => console.log(err));
   }
 
