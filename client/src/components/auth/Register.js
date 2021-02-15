@@ -43,7 +43,7 @@ function Register(props) {
             password2: password2
         };
         console.log(newUser);
-        props.propsSubmit(JSON.stringify(newUser));
+        props.propsSubmit(newUser);
     }
 
     return (
