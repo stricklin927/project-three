@@ -24,7 +24,7 @@ function Login(props) {
         }
         console.log(userData);
         props.propsLogin(userData);
-        history.push('/home');
+        //history.push('/home');
         //props.registerUser(newUser, props.history);
     };
     
