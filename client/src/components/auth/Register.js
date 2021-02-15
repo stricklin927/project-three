@@ -41,9 +41,9 @@ function Register(props) {
             email: email,
             password: password,
             password2: password2
-        }
+        };
         console.log(newUser);
-        props.propsSubmit(newUser);
+        props.propsSubmit(JSON.stringify(newUser));
     }
 
     return (
