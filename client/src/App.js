@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { useHistory } from "react-router-dom";
+import { BrowserRouter as Router, Route, useHistory } from "react-router-dom";
 import './App.css';
 import axios from 'axios';
 
@@ -30,7 +29,7 @@ function App() {
     axios.post("/api/users/login", userData)
     .then(res => {
       console.log(res);
-      //history.push('/home');
+      history.push('/home');
     }).catch(err => console.log(err));
   }
 
