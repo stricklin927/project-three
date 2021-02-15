@@ -22,7 +22,7 @@ function App() {
     axios.post("/api/users/register", newUser
     ).then(res => {
       console.log(res);
-      history.push('/login');
+      //history.push('/login');
     }).catch(err => console.log(err));
 }
 
@@ -30,7 +30,7 @@ function App() {
     axios.post("/api/users/login", userData)
     .then(res => {
       console.log(res);
-      history.push('/home');
+      //history.push('/home');
     }).catch(err => console.log(err));
   }
 
