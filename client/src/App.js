@@ -19,7 +19,6 @@ function App() {
     axios.post("/api/users/register", newUser
     ).then(res => {
       console.log(res);
-      window.location.assign("/login")
     }).catch(err => console.log(err));
 }
 
@@ -27,7 +26,6 @@ function App() {
     axios.post("/api/users/login", userData)
     .then(res => {
       console.log(res);
-      window.location.assign('/home');
     }).catch(err => console.log(err));
   }
 
