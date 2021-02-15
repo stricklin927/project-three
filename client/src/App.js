@@ -29,7 +29,11 @@ function App() {
     axios.post("/api/users/login", userData)
     .then(res => {
       console.log(res);
+      if (res.data.success === true) {
       history.push('/home');
+      } else {
+        history.push('/login');
+      }
     }).catch(err => console.log(err));
   }
 
