@@ -3,14 +3,14 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const keys = process.env.secretOrKey || require('../../config/keys');
-const cors = require('cors');
+//const cors = require('cors');
 
 const validateRegisterInput = require('../../validation/register');
 const validateLoginInput = require('../../validation/login');
 
 const User = require('../../models/User');
 
-router.post('/register', cors(), (req, res) => {
+router.post('/register', (req, res) => {
     const { errors, isValid } = validateRegisterInput(req.body);
     if(!isValid) {
         return res.status(400).json(errors);
