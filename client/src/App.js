@@ -25,8 +25,10 @@ function App() {
 
   function propsLogin(userData) {
     axios.post("/api/users/login", userData)
-    .then(res => console.log(res),
-    err => console.log(err));
+    .then(res => {
+      console.log(res);
+      window.location.assign('/home');
+    }).catch(err => console.log(err));
   }
 
   return (

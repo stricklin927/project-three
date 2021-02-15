@@ -11,6 +11,7 @@ const validateLoginInput = require('../../validation/login');
 const User = require('../../models/User');
 
 router.post('/register', (req, res) => {
+    console.log("Request made")
     const { errors, isValid } = validateRegisterInput(req.body);
     if(!isValid) {
         return res.status(400).json(errors);
@@ -79,7 +80,7 @@ router.post('/login', (req, res) => {
             }
         })
         //res.redirect("/home", { user: req.user, token: req.token });
-        res.redirect(302, '/home');
+        //res.redirect(302, '/home');
     })
 })
 
