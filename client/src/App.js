@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { BrowserRouter as Router, Route, useHistory } from "react-router-dom";
 import './App.css';
 import axios from 'axios';
+
+import { userContext } from "./utils/userContext";
 
 import Navbar from "./components/layout/Navbar";
 import Landing from "./components/layout/Landing";
@@ -16,11 +18,14 @@ function App() {
 
   let history = useHistory();
 
+  const { session } = useContext(userContext);
+
   function propsSubmit(newUser) {
     console.log(newUser);
     axios.post("/api/users/register", newUser
     ).then(res => {
       console.log(res);
+      session.setSession(res);
       //history.push('/login');
     }).catch(err => console.log(err));
 }

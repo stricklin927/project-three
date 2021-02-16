@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link, withRouter, useHistory } from "react-router-dom";
+import { userContext } from '../../utils/userContext';
 import axios from 'axios';
 
 function Login(props) {
+    const { session } = useContext(userContext);
+
     const [ email, setEmail ] = useState("");
     const [ password, setPassword ] = useState("");
 
@@ -24,7 +27,11 @@ function Login(props) {
         }
         console.log(userData);
         props.propsLogin(userData);
-        //history.push('/home');
+        if (session.session.status === 200) {
+            history.push('/home');
+        } else {
+            history.push('/login');
+        }
         //props.registerUser(newUser, props.history);
     };
     
