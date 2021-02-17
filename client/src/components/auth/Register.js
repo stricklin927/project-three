@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import classnames from "classnames";
 
@@ -10,8 +10,6 @@ function Register(props) {
     const [ password, setPassword ] = useState("");
     const [ password2, setPassword2 ] = useState("");
     const [ errors, setErrors ] = useState({});
-
-    const history = useHistory();
     
         if (props.errors) {
           setErrors({
@@ -46,7 +44,7 @@ function Register(props) {
         };
         console.log(newUser);
         props.propsSubmit(newUser);
-        history.push('/login');
+        props.history.push('/login');
     }
 
     return (

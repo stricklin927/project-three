@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
-import { Link, withRouter, useHistory } from "react-router-dom";
-//import { userContext } from '../../utils/userContext';
-import axios from 'axios';
+import { Link, withRouter } from "react-router-dom";
 
 function Login(props) {
     const [ email, setEmail ] = useState("");
     const [ password, setPassword ] = useState("");
-
-  // const history = useHistory();
 
     function changeEmail(e) {
         setEmail(e.target.value);
@@ -26,7 +22,6 @@ function Login(props) {
         console.log(userData);
         props.propsLogin(userData);
         props.history.push('/home');
-        //props.registerUser(newUser, props.history);
     };
     
 

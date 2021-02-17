@@ -3,7 +3,6 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const keys = process.env || require('../../config/keys');
-//const cors = require('cors');
 
 const validateRegisterInput = require('../../validation/register');
 const validateLoginInput = require('../../validation/login');
@@ -33,7 +32,6 @@ router.post('/register', (req, res) => {
                 newUser.password = hash;
                 newUser.save().then(user => {
                     res.json(user);
-                    //res.redirect('/login');
                 })
                     .catch(err => console.log(err));
             })
@@ -79,8 +77,6 @@ router.post('/login', (req, res) => {
                 return res.status(400).json({ passwordincorrect: "Password incorrect "});
             }
         })
-        //res.redirect("/home", { user: req.user, token: req.token });
-        //res.redirect(302, '/home');
     })
 })
 

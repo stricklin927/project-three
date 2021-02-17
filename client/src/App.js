@@ -1,9 +1,7 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, useHistory } from "react-router-dom";
 import './App.css';
 import axios from 'axios';
-
-import { userContext } from "./utils/userContext";
 
 import Navbar from "./components/layout/Navbar";
 import Landing from "./components/layout/Landing";
