@@ -23,8 +23,6 @@ function App() {
     axios.post("/api/users/register", newUser
     ).then(res => {
       console.log(res);
-      localStorage.setItem("user", res.config.data);
-      localStorage.setItem("token", res.data.token);
     }).catch(err => console.log(err));
 }
 
@@ -32,11 +30,8 @@ function App() {
     axios.post("/api/users/login", userData)
     .then(res => {
       console.log(res);
-      if (res.data.success === true) {
-      history.push('/home');
-      } else {
-        history.push('/login');
-      }
+      localStorage.setItem("user", res.config.data);
+      localStorage.setItem("token", res.data.token);
     }).catch(err => console.log(err));
   }
 
