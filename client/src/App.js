@@ -32,7 +32,8 @@ function App() {
       console.log(res);
       localStorage.setItem("user", res.config.data);
       localStorage.setItem("token", res.data.token);
-    }).catch(err => console.log(err));
+    }).then(() => history.push('/home'))
+    .catch(err => console.log(err));
   }
 
   return (
