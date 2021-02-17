@@ -1,6 +1,6 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { Link, withRouter, useHistory } from "react-router-dom";
-import { userContext } from '../../utils/userContext';
+//import { userContext } from '../../utils/userContext';
 import axios from 'axios';
 
 function Login(props) {
@@ -25,6 +25,7 @@ function Login(props) {
         }
         console.log(userData);
         props.propsLogin(userData);
+        history.push('/home');
         //props.registerUser(newUser, props.history);
     };
     
