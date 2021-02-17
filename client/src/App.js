@@ -18,15 +18,13 @@ function App() {
 
   let history = useHistory();
 
-  const { session } = useContext(userContext);
-
   function propsSubmit(newUser) {
     console.log(newUser);
     axios.post("/api/users/register", newUser
     ).then(res => {
       console.log(res);
-      session.setSession(res);
-      //history.push('/login');
+      localStorage.setItem("user", res.config.data);
+      localStorage.setItem("token", res.data.token);
     }).catch(err => console.log(err));
 }
 

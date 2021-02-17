@@ -4,8 +4,6 @@ import { userContext } from '../../utils/userContext';
 import axios from 'axios';
 
 function Login(props) {
-    const { session } = useContext(userContext);
-
     const [ email, setEmail ] = useState("");
     const [ password, setPassword ] = useState("");
 
@@ -27,11 +25,6 @@ function Login(props) {
         }
         console.log(userData);
         props.propsLogin(userData);
-        if (session.session.status === 200) {
-            history.push('/home');
-        } else {
-            history.push('/login');
-        }
         //props.registerUser(newUser, props.history);
     };
     
