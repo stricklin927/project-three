@@ -31,7 +31,9 @@ function App() {
     .then(res => {
       console.log(res);
       localStorage.setItem("user", res.config.data);
+      console.log("User set!");
       localStorage.setItem("token", res.data.token);
+      console.log("Token set!");
     }).catch(err => console.log(err));
   }
 
