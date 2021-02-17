@@ -43,7 +43,7 @@ function App() {
           <Navbar />
           <Route exact path="/" component={Landing} />
           <Route exact path="/register" component={() => <Register propsSubmit={propsSubmit} />} />
-          <Route path="/login" component={() => <Login propsLogin={propsLogin} />} />
+          <Route path="/login" component={() => <Login propsLogin={propsLogin} history={history} />} />
           <Route path="/home" component={Home} />
           <Route exact path="/alumni" component={Alumni} />
           <Route exact path="/facstaff" component={Facstaff} />
