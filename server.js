@@ -9,6 +9,7 @@ const app = express();
 app.use(cors());
 
 const users = require('./routes/api/users');
+const facultyDonors = require('./routes/api/facultyDonors');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -32,6 +33,7 @@ app.use(passport.initialize());
 require('./config/passport')(passport);
 
 app.use('/api/users', users);
+app.use('/api/people', facultyDonors);
 
 app.get("*", function(req, res) {
     res.sendFile(path.join(__dirname, "client/build/index.html"));
