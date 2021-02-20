@@ -9,11 +9,11 @@ import '../../App.css'
 
 function NavbarOne() {
   return (
-    <Navbar bg="dark" variant="dark">
-      <Navbar.Brand href="#home">LOGO InfoTech University</Navbar.Brand>
+    <Navbar bg="secondary" variant="dark">
+      <Navbar.Brand href="#home">InfoTech University</Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link href="/home">Home</Nav.Link>
-        <Nav.Link href="/students">Prospective Students</Nav.Link>
+        <Nav.Link href="/students">Students</Nav.Link>
         <Nav.Link href="/facstaff">Faculty</Nav.Link>
         <Nav.Link href="/alumni">Alumni</Nav.Link>
       </Nav>
