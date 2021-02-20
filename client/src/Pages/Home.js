@@ -1,8 +1,8 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 
 function Home() {
-    const history = useHistory();
+    // const history = useHistory();
 
     // if (!localStorage.getItem("token")) {
     //     history.push('/login');
