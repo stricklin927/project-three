@@ -21,6 +21,12 @@ const FacultySchema = new Schema({
     required: "Department is Required"
   },
 
+  Title: {
+    type: String,
+    trim: true,
+    required: "Title is Required"
+  },
+
   userCreated: {
     type: Date,
     default: Date.now

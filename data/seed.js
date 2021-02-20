@@ -9,92 +9,110 @@ const seedOne = [
     {
         firstName: "Becky",
         lastName: "Adjunct",
-        Department: "Chemical Engineering"
+        Department: "Art",
+        Title: "Dean"
     },
      {
          firstName: "Bill",
          lastName: "Baggins",
-         Department: "Architecture"
+         Department: "Art",
+         Title: "Professor"
      },
      {
          firstName: "Greg",
          lastName: "Gandalf",
-         Department: "Game Design"
+         Department: "Business",
+         Title: "Dean"
      },
      {
          firstName: "John",
          lastName: "Snow",
-         Department: "Graphic Design"
+         Department: "Business",
+         Title: "Professor"
      },
      {
          firstName: "Dana",
          lastName: "Scully",
-         Department: "Nursing"
+         Department: "Computer Science",
+         Title: "Dean"
      },
      {
          firstName: "Natasha",
          lastName: "Romanoff",
-         Department: "Molecular & Cell Biology"
+         Department: "Computer Science",
+         Title: "Professor"
      },
      {
          firstName: "Mulder",
          lastName: "Fox",
-         Department: "Physics"
+         Department: "Education",
+         Title: "Dean"
      },
      {
          firstName: "Sarah",
          lastName: "Connor",
-         Department: "Psychology"
+         Department: "Education",
+         Title: "Professor"
      },
      {
          firstName: "Angela",
          lastName: "Ramonda",
-         Department: "Media Communication"
+         Department: "Medicine",
+         Title: "Dean"
      },
      {
          firstName: "Nelson",
          lastName: "Babbage",
-         Department: "Computer Science"
+         Department: "Medicine",
+         Title: "Professor"
      },
      {
          firstName: "Marya",
          lastName: "Jane",
-         Department: "Chemical Biology"
+         Department: "Science",
+         Title: "Dean"
      },
      {
          firstName: "Jackie",
          lastName: "Brown",
-         Department: "Chemistry"
+         Department: "Science",
+         Title: "Professor"
      },
      {
          firstName: "Jane",
          lastName: "Foster",
-         Department: "Business Administration"
+         Department: "Social Science",
+         Title: "Dean"
      }, 
      {
          firstName: "Robin",
          lastName: "Hodd",
-         Department: "Finance"
+         Department: "Social Science",
+         Title: "Professor"
      },
      {
          firstName: "Natalie",
          lastName: "Emmanuel",
-         Department: "Information Technology"
+         Department: "Social Science",
+         Title: "Professor"
     },
     {
          firstName: "Darcy",
          lastName: "Lewis",
-         Department: "Biomedical Engineering"
+         Department: "Social Science",
+         Title: "Professor"
     },
     {
          firstName: "Carl",
          lastName: "Drogo",
-         Department: "Electrical Engineering"
+         Department: "Social Science",
+         Title: "Professor"
     },
     {
          firstName: "Clint",
          lastName: "Barton",
-         Department: "Civil Engineering"
+         Department: "Social Science",
+         Title: "Professor"
     },
 ]
 
