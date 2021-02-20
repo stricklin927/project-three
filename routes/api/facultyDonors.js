@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
+//const Faculty = require('../../models/Faculty');
 const Faculty = require('../../models/Faculty');
 const Donors = require('../../models/Donor');
 const Colleges = require('../../models/College');

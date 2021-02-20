@@ -121,6 +121,8 @@ FacultySchema.methods.lastUpdatedDate = function() {
   return this.lastUpdated;
 };
 
-const Faculty = mongoose.model("Faculty", FacultySchema);
+module.exports = Faculty = mongoose.model('facultys', FacultySchema);
 
-module.exports = Faculty;
+// const Faculty = mongoose.model("Faculty", FacultySchema);
+
+// module.exports = Faculty;
