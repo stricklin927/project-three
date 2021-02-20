@@ -12,10 +12,10 @@ function NavbarOne() {
     <Navbar bg="dark" variant="dark">
       <Navbar.Brand href="#home">LOGO InfoTech University</Navbar.Brand>
       <Nav className="mr-auto">
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#features">Prospective Students</Nav.Link>
-        <Nav.Link href="#pricing">Faculty</Nav.Link>
-        <Nav.Link href="#pricing">Alumni</Nav.Link>
+        <Nav.Link href="/home">Home</Nav.Link>
+        <Nav.Link href="/students">Prospective Students</Nav.Link>
+        <Nav.Link href="/facstaff">Faculty</Nav.Link>
+        <Nav.Link href="/alumni">Alumni</Nav.Link>
       </Nav>
       <Navbar.Collapse className="justify-content-end">
         <Navbar.Text>
