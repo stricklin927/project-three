@@ -4,6 +4,7 @@ import './App.css';
 import axios from 'axios';
 
 import NavbarOne from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
 import Landing from "./components/layout/Landing";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
@@ -46,6 +47,7 @@ function App() {
           <Route exact path="/alumni" component={Alumni} />
           <Route exact path="/facstaff" component={Facstaff} />
           <Route exact path="/students" component={Students} />
+          <Footer />
         </div>
       </Router>
   );
