@@ -14,66 +14,91 @@ const seedOne = [
         "lastName": "Pedagogy",
         "Department": "Chemical Engineering"
     },
-    // {
-    //     "firstName": "Joe",
-    //     "lastName": "Teacher",
-    //     "Department": "Computer Science"
-    // },
-    // {
-    //     "firstName": "Joe",
-    //     "lastName": "Teacher",
-    //     "Department": "Computer Science"
-    // },
-    // {
-    //     "firstName": "Joe",
-    //     "lastName": "Teacher",
-    //     "Department": "Computer Science"
-    // },
-    // {
-    //     "firstName": "Joe",
-    //     "lastName": "Teacher",
-    //     "Department": "Computer Science"
-    // },
-    // {
-    //     "firstName": "Joe",
-    //     "lastName": "Teacher",
-    //     "Department": "Computer Science"
-    // },
-    // {
-    //     "firstName": "Joe",
-    //     "lastName": "Teacher",
-    //     "Department": "Computer Science"
-    // },
-    // {
-    //     "firstName": "Joe",
-    //     "lastName": "Teacher",
-    //     "Department": "Computer Science"
-    // },
-    // {
-    //     "firstName": "Joe",
-    //     "lastName": "Teacher",
-    //     "Department": "Computer Science"
-    // },
-    // {
-    //     "firstName": "Joe",
-    //     "lastName": "Teacher",
-    //     "Department": "Computer Science"
-    // },
-    // {
-    //     "firstName": "Joe",
-    //     "lastName": "Teacher",
-    //     "Department": "Computer Science"
-    // },
-    // {
-    //     "firstName": "Joe",
-    //     "lastName": "Teacher",
-    //     "Department": "Computer Science"
-    // },
-    // {
-    //     "firstName": "Joe",
-    //     "lastName": "Teacher",
-    //     "Department": "Computer Science"
-    // },
+     {
+         "firstName": "Bill",
+         "lastName": "Baggins",
+         "Department": "Architecture"
+     },
+     {
+         "firstName": "Greg",
+         "lastName": "Gandalf",
+         "Department": "Game Design"
+     },
+     {
+         "firstName": "John",
+         "lastName": "Snow",
+         "Department": "Graphic Design"
+     },
+     {
+         "firstName": "Dana",
+         "lastName": "Scully",
+         "Department": "Nursing"
+     },
+     {
+         "firstName": "Natasha",
+         "lastName": "Romanoff",
+         "Department": "Molecular & Cell Biology"
+     },
+     {
+         "firstName": "Mulder",
+         "lastName": "Fox",
+         "Department": "Physics"
+     },
+     {
+         "firstName": "Sarah",
+         "lastName": "Connor",
+         "Department": "Psychology"
+     },
+     {
+         "firstName": "Angela",
+         "lastName": "Ramonda",
+         "Department": "Media Communication"
+     },
+     {
+         "firstName": "Nelson",
+         "lastName": "Babbage",
+         "Department": "Computer Science"
+     },
+     {
+         "firstName": "Marya",
+         "lastName": "Jane",
+         "Department": "Chemical Biology"
+     },
+     {
+         "firstName": "Jackie",
+         "lastName": "Brown",
+         "Department": "Chemistry"
+     },
+     {
+         "firstName": "Jane",
+         "lastName": "Foster",
+         "Department": "Business Administration"
+     }, 
+     {
+         "firstName": "Robin",
+         "lastName": "Hodd",
+         "Department": "Finance"
+     },
+     {
+         "firstName": "Natalie",
+         "lastName": "Emmanuel",
+         "Department": "Information Technology"
+    },
+    {
+         "firstName": "Darcy",
+         "lastName": "Lewis",
+         "Department": "Biomedical Engineering"
+    },
+    {
+         "firstName": "Carl",
+         "lastName": "Drogo",
+         "Department": "Electrical Engineering"
+    },
+    {
+         "firstName": "Clint",
+         "lastName": "Barton",
+         "Department": "Civil Engineering"
+    },
 ]
 
 
@@ -95,66 +120,74 @@ const seedTwo = [
         "name": "Bill Entryways",
         "amount": "50000"
     },
-    // {
-    //     "name": "Elon Musket",
-    //     "amount": "20000"
-    // },
-    // {
-    //     "name": "Elon Musket",
-    //     "amount": "20000"
-    // },
-    // {
-    //     "name": "Elon Musket",
-    //     "amount": "20000"
-    // },
-    // {
-    //     "name": "Elon Musket",
-    //     "amount": "20000"
-    // },
-    // {
-    //     "name": "Elon Musket",
-    //     "amount": "20000"
-    // },
-    // {
-    //     "name": "Elon Musket",
-    //     "amount": "20000"
-    // },
-    // {
-    //     "name": "Elon Musket",
-    //     "amount": "20000"
-    // },
-    // {
-    //     "name": "Elon Musket",
-    //     "amount": "20000"
-    // },
-    // {
-    //     "name": "Elon Musket",
-    //     "amount": "20000"
-    // },
-    // {
-    //     "name": "Elon Musket",
-    //     "amount": "20000"
-    // },
-    // {
-    //     "name": "Elon Musket",
-    //     "amount": "20000"
-    // },
-    // {
-    //     "name": "Elon Musket",
-    //     "amount": "20000"
-    // },
-    // {
-    //     "name": "Elon Musket",
-    //     "amount": "20000"
-    // },
-    // {
-    //     "name": "Elon Musket",
-    //     "amount": "20000"
-    // },
-    // {
-    //     "name": "Elon Musket",
-    //     "amount": "20000"
-    // },
+     {
+         "name": "Elon Musket",
+         "amount": "20000"
+     },
+     {
+         "name": "Rosemary Bell",
+         "amount": "23000"
+     },
+     {
+         "name": "Elmer Jennings",
+         "amount": "2500"
+     },
+     {
+         "name": "Megan Ruth",
+         "amount": "26500"
+     },
+     {
+         "name": "Vincent Barret",
+         "amount": "15000"
+     },
+     {
+         "name": "Abel Tesfaye",
+         "amount": "21000"
+     },
+     {
+         "name": "Ramon Seguro",
+         "amount": "19400"
+     },
+     {
+         "name": "Jaques Webster",
+         "amount": "30500"
+     },
+     {
+         "name": "Jonathan Kirk",
+         "amount": "19500"
+     },
+     {
+         "name": "Amelia Kelly",
+         "amount": "15000"
+     },
+     {
+         "name": "Stephanie Allen",
+         "amount": "22000"
+     },
+     {
+         "name": "Jeffrey Williams",
+         "amount": "16000"
+     },
+     {
+         "name": "Shawn Carter",
+         "amount": "60000"
+     },
+     {
+         "name": "Aubrey Graham",
+         "amount": "55000"
+     },
+     {
+         "name": "Joseph Adenuga",
+         "amount": "42000"
+     },
+     {
+         "name": "Sean Anderson",
+         "amount": "46000"
+     },
+     {
+         "name": "Melissa Jefferson",
+         "amount": "45000"
+     },
 ]
 
 Donor.remove({})
