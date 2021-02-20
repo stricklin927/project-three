@@ -6,7 +6,7 @@ function Facstaff() {
     const [majors, setMajors] = useState([]);
 
     useEffect(() => {
-        axios.get("/api/majors", (res) => {
+        axios.get("/api/people/faculty", (res) => {
             console.log(res);
             setMajors(res);
         })
@@ -20,7 +20,7 @@ function Facstaff() {
             return (
             <div>
             <div>{major.name}</div>
-            <FacMap department={major.name} />
+            {/* <FacMap department={major.name} /> */}
             </div>
             )
         })}

@@ -7,7 +7,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 
 import '../../App.css'
 
-function Function1() {
+function NavbarOne() {
   return (
     <Navbar bg="dark" variant="dark">
       <Navbar.Brand href="#home">LOGO InfoTech University</Navbar.Brand>
@@ -46,4 +46,4 @@ function Function1() {
     );
   } */
 
-export default Function1;
+export default NavbarOne;

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, useHistory } from "react-router-dom";
 import './App.css';
 import axios from 'axios';
 
-import Navbar from "./components/layout/Navbar";
+import NavbarOne from "./components/layout/Navbar";
 import Landing from "./components/layout/Landing";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
@@ -38,7 +38,7 @@ function App() {
   return (
       <Router>
         <div className="App">
-          <Navbar />
+          <NavbarOne />
           <Route exact path="/" component={Landing} />
           <Route exact path="/register" component={() => <Register propsSubmit={propsSubmit} />} />
           <Route path="/login" component={() => <Login propsLogin={propsLogin} history={history} />} />
