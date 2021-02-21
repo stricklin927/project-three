@@ -51,71 +51,79 @@ function Register(props) {
         <div>
             <div>
                 <div>
-                    <Link to="/">
-                        Back to Home
-                    </Link>
-                    
-                    <div>
-                        <h4>
-                            <b>Register</b> below
-                        </h4>
-                        <p>
-                            Already have an account?
-                            <Link to="/login">Log in</Link>
-                        </p>
-                    </div>
-                    
+                  <Link to="/">
+                      Back to Home
+                  </Link>
+                  
+                  <div className="text-center">
+                      <h4 >
+                          <b>Register</b> below!
+                      </h4>
+                      <p>
+                          Already have an account?
+                          <Link to="/login"> Log in</Link>.
+                      </p>
+                  </div>
+                  
+                  <div className="container-fluid bg-secondary mx-auto" style={{ width: "50%", height: " 400px"}}>
                     <form noValidate onSubmit={onSubmit}>
-                        <div>
-                            <input onChange={changeName}
-                                value={name}
-                                error={errors.name}
-                                id="name"
-                                type="text"
-                            />
-                            <label htmlFor="name">Name</label>
-                            <span>{errors.name}</span>
-                        </div>
-                        <div>
-                <input
-                  onChange={changeEmail}
-                  value={email}
-                  error={errors.email}
-                  id="email"
-                  type="email"
-                />
-                <label htmlFor="email">Email</label>
-                <span>{errors.email}</span>
-              </div>
-              <div>
-                <input
-                  onChange={changePassword}
-                  value={password}
-                  id="password"
-                  type="password"
-                />
-                <label htmlFor="password">Password</label>
-                <span>{errors.password}</span>
-              </div>
-              <div>
-                <input
-                  onChange={changePasswordTwo}
-                  value={password2}
-                  error={errors.password2}
-                  id="password2"
-                  type="password"
-                />
-                <label htmlFor="password2">Confirm Password</label>
-                <span>{errors.password2}</span>
-              </div>
-              <div>
-                <button
-                  type="submit"
-                >
-                  Sign up
-                </button>
-              </div>
+                      <div>
+                        <label htmlFor="name" className="pt-2 font-weight-bold">Name</label>
+                        <br></br>
+                        <input className="form-control"
+                          onChange={changeName}
+                          value={name}
+                          error={errors.name}
+                          id="name"
+                          type="text"
+                        />
+                        <span>{errors.name}</span>
+                      </div>
+                      <div>
+                        <label htmlFor="email" className="pt-2 font-weight-bold">Email</label>
+                        <br></br>
+                        <input className="form-control"
+                          onChange={changeEmail}
+                          value={email}
+                          error={errors.email}
+                          id="email"
+                          type="email"
+                        />
+                        <span>{errors.email}</span>
+                      </div>
+                      <div>
+                        <label htmlFor="password" className="pt-2 font-weight-bold">Password</label>
+                        <br></br>
+                        <input className="form-control"
+                          onChange={changePassword}
+                          value={password}
+                          id="password"
+                          type="password"
+                        />
+                        <span>{errors.password}</span>
+                      </div>
+                      <div>
+                        <label htmlFor="password2" className="pt-2 font-weight-bold">Confirm Password</label>
+                        <br></br>
+                        <input className="form-control"
+                          onChange={changePasswordTwo}
+                          value={password2}
+                          error={errors.password2}
+                          id="password2"
+                          type="password"
+                        />
+                        <span>{errors.password2}</span>
+                      </div>
+                      <br></br>
+                      <div>
+                        <button className="btn btn-primary btn-block mb-5"
+                          type="submit"
+                        >
+                          Sign up
+                        </button>
+                      </div>
                     </form>
+                  </div>
                 </div>
             </div>
         </div>
