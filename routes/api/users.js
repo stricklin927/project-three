@@ -54,6 +54,8 @@ router.post('/login', (req, res) => {
             return res.status(404).json({ emailnotfound: "Email not found"})
         }
 
+        localStorage.setItem("name", user.name);
+
         bcrypt.compare(password, user.password).then(isMatch => {
             if (isMatch) {
                 const payload = {
