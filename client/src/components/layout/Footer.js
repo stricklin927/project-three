@@ -8,7 +8,7 @@ function Footer() {
         <footer className="footer bg-dark"
             style={{
                 position: "absolute",
-                bottom: "90px",
+                bottom: "0px",
                 width: "100%",
             }} >
             <Container>
