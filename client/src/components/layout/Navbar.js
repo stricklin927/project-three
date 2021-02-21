@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 /* import Navbar from 'react-bootstrap/Nav';
 import Nav from 'react-bootstrap/Nav'; */
@@ -8,6 +9,18 @@ import { Navbar, Nav } from 'react-bootstrap';
 import '../../App.css'
 
 function NavbarOne() {
+  const [user, setUser] = useState("Visitor");
+
+  useEffect(() => {
+  if (localStorage.getItem("user")) {
+    const userObj = JSON.parse(localStorage.getItem("user"));
+      axios.get(`/api/users/get/${userObj.email}`).then(res => {
+        console.log(res);
+        setUser(res.name);
+      }).catch(err => console.log(err));
+  }
+}, [])
+
   return (
     <Navbar bg="dark" variant="dark">
       <Navbar.Brand href="#home"><img src="/images/ITU4.png" style={{width:"125px", height:"50px"}}></img></Navbar.Brand>
@@ -19,7 +32,7 @@ function NavbarOne() {
       </Nav>
       <Navbar.Collapse className="justify-content-end">
         <Navbar.Text>
-          Signed in as: <a href="#login">Mark Otto</a>
+          Signed in as: <a href="#login">{user}</a>
         </Navbar.Text>
       </Navbar.Collapse>
     </Navbar>
