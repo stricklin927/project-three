@@ -54,8 +54,6 @@ router.post('/login', (req, res) => {
             return res.status(404).json({ emailnotfound: "Email not found"})
         }
 
-        localStorage.setItem("name", user.name);
-
         bcrypt.compare(password, user.password).then(isMatch => {
             if (isMatch) {
                 const payload = {
@@ -80,6 +78,15 @@ router.post('/login', (req, res) => {
             }
         })
     })
+})
+
+
+router.get("/get/:params", (req, res) => {
+    console.log(req.params);
+    User.findOne( { email: req.params.params }).then(data => {
+        console.log(data);
+        res.json(data);
+    }).catch(err => console.log(err));
 })
 
 module.exports = router;
