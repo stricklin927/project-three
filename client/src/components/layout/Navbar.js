@@ -9,8 +9,8 @@ import '../../App.css'
 
 function NavbarOne() {
   return (
-    <Navbar bg="secondary" variant="dark">
-      <Navbar.Brand href="#home">InfoTech University</Navbar.Brand>
+    <Navbar bg="dark" variant="dark">
+      <Navbar.Brand href="#home"><img src="/images/ITU4.png" style={{width:"125px", height:"50px"}}></img></Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link href="/home">Home</Nav.Link>
         <Nav.Link href="/students">Students</Nav.Link>
