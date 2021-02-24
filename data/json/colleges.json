@@ -1,0 +1,77 @@
+[{
+  "_id": {
+    "$oid": "603180dce56358687c096d20"
+  },
+  "name": "Business",
+  "majors": [
+    "Accounting",
+    "Economics",
+    "Finance",
+    "Management"
+  ]
+},{
+  "_id": {
+    "$oid": "603180dce56358687c096d21"
+  },
+  "name": "Science",
+  "majors": [
+    "Biology",
+    "Physics",
+    "Quantitative Risk Analytics",
+    "Zoology"
+  ]
+},{
+  "_id": {
+    "$oid": "603180dce56358687c096d22"
+  },
+  "name": "Computer Science",
+  "majors": [
+    "Computer Science",
+    "Data Science",
+    "Information Science"
+  ]
+},{
+  "_id": {
+    "$oid": "603180dce56358687c096d23"
+  },
+  "name": "Medicine",
+  "majors": [
+    "Global Health",
+    "Nursing",
+    "Veterinary Nursing",
+    "X-Ray Technician"
+  ]
+},{
+  "_id": {
+    "$oid": "603180dce56358687c096d24"
+  },
+  "name": "Social Science",
+  "majors": [
+    "History",
+    "Urban Planning",
+    "Youth Development"
+  ]
+},{
+  "_id": {
+    "$oid": "603180dce56358687c096d25"
+  },
+  "name": "Arts",
+  "majors": [
+    "Journalism",
+    "Linguistics",
+    "Online Teaching",
+    "Rhetoric and Writing",
+    "Literasy",
+    "Spanish",
+    "Theater",
+    "Women's and Gender Studies"
+  ]
+},{
+  "_id": {
+    "$oid": "603180dce56358687c096d26"
+  },
+  "name": "Education",
+  "majors": [
+    "K-12 Education"
+  ]
+}]

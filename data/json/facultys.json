@@ -1,0 +1,127 @@
+[{
+  "_id": {
+    "$oid": "6031805e09ef546514895631"
+  },
+  "firstName": "Becky",
+  "lastName": "Adjunct",
+  "Department": "Chemical Engineering"
+},{
+  "_id": {
+    "$oid": "6031805e09ef546514895632"
+  },
+  "firstName": "Bill",
+  "lastName": "Baggins",
+  "Department": "Architecture"
+},{
+  "_id": {
+    "$oid": "6031805e09ef546514895633"
+  },
+  "firstName": "Greg",
+  "lastName": "Gandalf",
+  "Department": "Game Design"
+},{
+  "_id": {
+    "$oid": "6031805e09ef546514895634"
+  },
+  "firstName": "John",
+  "lastName": "Snow",
+  "Department": "Graphic Design"
+},{
+  "_id": {
+    "$oid": "6031805e09ef546514895635"
+  },
+  "firstName": "Dana",
+  "lastName": "Scully",
+  "Department": "Nursing"
+},{
+  "_id": {
+    "$oid": "6031805e09ef546514895636"
+  },
+  "firstName": "Natasha",
+  "lastName": "Romanoff",
+  "Department": "Molecular & Cell Biology"
+},{
+  "_id": {
+    "$oid": "6031805e09ef546514895637"
+  },
+  "firstName": "Mulder",
+  "lastName": "Fox",
+  "Department": "Physics"
+},{
+  "_id": {
+    "$oid": "6031805e09ef546514895638"
+  },
+  "firstName": "Sarah",
+  "lastName": "Connor",
+  "Department": "Psychology"
+},{
+  "_id": {
+    "$oid": "6031805e09ef546514895639"
+  },
+  "firstName": "Angela",
+  "lastName": "Ramonda",
+  "Department": "Media Communication"
+},{
+  "_id": {
+    "$oid": "6031805e09ef54651489563a"
+  },
+  "firstName": "Nelson",
+  "lastName": "Babbage",
+  "Department": "Computer Science"
+},{
+  "_id": {
+    "$oid": "6031805e09ef54651489563b"
+  },
+  "firstName": "Marya",
+  "lastName": "Jane",
+  "Department": "Chemical Biology"
+},{
+  "_id": {
+    "$oid": "6031805e09ef54651489563c"
+  },
+  "firstName": "Jackie",
+  "lastName": "Brown",
+  "Department": "Chemistry"
+},{
+  "_id": {
+    "$oid": "6031805e09ef54651489563d"
+  },
+  "firstName": "Jane",
+  "lastName": "Foster",
+  "Department": "Business Administration"
+},{
+  "_id": {
+    "$oid": "6031805e09ef54651489563e"
+  },
+  "firstName": "Robin",
+  "lastName": "Hodd",
+  "Department": "Finance"
+},{
+  "_id": {
+    "$oid": "6031805e09ef54651489563f"
+  },
+  "firstName": "Natalie",
+  "lastName": "Emmanuel",
+  "Department": "Information Technology"
+},{
+  "_id": {
+    "$oid": "6031805e09ef546514895640"
+  },
+  "firstName": "Darcy",
+  "lastName": "Lewis",
+  "Department": "Biomedical Engineering"
+},{
+  "_id": {
+    "$oid": "6031805e09ef546514895641"
+  },
+  "firstName": "Carl",
+  "lastName": "Drogo",
+  "Department": "Electrical Engineering"
+},{
+  "_id": {
+    "$oid": "6031805e09ef546514895642"
+  },
+  "firstName": "Clint",
+  "lastName": "Barton",
+  "Department": "Civil Engineering"
+}]
