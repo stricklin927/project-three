@@ -18,7 +18,7 @@ function Facstaff() {
         {professors.map(prof => {
             return (
             <div>
-            <div>{prof.fullName}</div>
+            <div>{prof.firstName} {prof.lastName}</div>
             <div>{prof.Title}</div>
             <div>{prof.Department}</div>
             </div>
