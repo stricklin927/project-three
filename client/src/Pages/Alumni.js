@@ -7,12 +7,12 @@ function Alumni() {
     const [ amount, setAmount ] = useState(0);
     const [ newDonor, setNewDonor ] = useState({});
 
-    // useEffect(() => {
-    //     axios.get('/api/people/donors').then(res => {
-    //         console.log(res);
-    //         setDonors(res);
-    //     })
-    // }, [donors]);
+    useEffect(() => {
+        axios.get('/api/people/donors').then(res => {
+            console.log(res);
+            setDonors(res);
+        })
+    }, [donors]);
 
     function changeName(e) {
         setName(e.target.value);
@@ -22,7 +22,8 @@ function Alumni() {
         setAmount(e.target.value);
     }
 
-    function onSubmit() {
+    function onSubmit(e) {
+      e.preventDefault();
         setNewDonor({
             name: name,
             amount: amount
@@ -36,14 +37,14 @@ function Alumni() {
     return(
         <div>
         <h1>Alumni Page</h1>
-        {/* {donors.map(giver => {
+        {donors.map(giver => {
             return (
                 <div>
                     <p>{giver.name}</p>
                     <p>{giver.amount}</p>
                 </div>
             )
-        })} */}
+        })}
         <form noValidate onSubmit={onSubmit}>
               <div>
                 <input
