@@ -1,6 +1,6 @@
 [{
   "_id": {
-    "$oid": "603180dce56358687c096d20"
+    "$oid": "60365de2abcb0d22600277f6"
   },
   "name": "Business",
   "majors": [
@@ -8,10 +8,22 @@
     "Economics",
     "Finance",
     "Management"
+  ],
+  "faculty": [
+    {
+      "fullName": "John Snow",
+      "Department": "Business",
+      "Title": "Professor"
+    },
+    {
+      "fullName": "Greg Gandalf",
+      "Department": "Business",
+      "Title": "Dean"
+    }
   ]
 },{
   "_id": {
-    "$oid": "603180dce56358687c096d21"
+    "$oid": "60365de2abcb0d22600277f7"
   },
   "name": "Science",
   "majors": [
@@ -19,20 +31,44 @@
     "Physics",
     "Quantitative Risk Analytics",
     "Zoology"
+  ],
+  "faculty": [
+    {
+      "fullName": "Jackie Brown",
+      "Department": "Science",
+      "Title": "Professor"
+    },
+    {
+      "fullName": "Marya Jane",
+      "Department": "Science",
+      "Title": "Dean"
+    }
   ]
 },{
   "_id": {
-    "$oid": "603180dce56358687c096d22"
+    "$oid": "60365de2abcb0d22600277f8"
   },
   "name": "Computer Science",
   "majors": [
     "Computer Science",
     "Data Science",
     "Information Science"
+  ],
+  "faculty": [
+    {
+      "fullName": "Dana Scully",
+      "Department": "Computer Science",
+      "Title": "Dean"
+    },
+    {
+      "fullName": "Natasha Romanoff",
+      "Department": "Computer Science",
+      "Title": "Professor"
+    }
   ]
 },{
   "_id": {
-    "$oid": "603180dce56358687c096d23"
+    "$oid": "60365de2abcb0d22600277f9"
   },
   "name": "Medicine",
   "majors": [
@@ -40,20 +76,59 @@
     "Nursing",
     "Veterinary Nursing",
     "X-Ray Technician"
+  ],
+  "faculty": [
+    {
+      "fullName": "Angela Ramonda",
+      "Department": "Medicine",
+      "Title": "Dean"
+    },
+    {
+      "fullName": "Babbage Nelson",
+      "Department": "Medicine",
+      "Title": "Professor"
+    }
   ]
 },{
   "_id": {
-    "$oid": "603180dce56358687c096d24"
+    "$oid": "60365de2abcb0d22600277fa"
   },
   "name": "Social Science",
   "majors": [
     "History",
     "Urban Planning",
     "Youth Development"
+  ],
+  "faculty": [
+    {
+      "fullName": "Jane Foster",
+      "Department": "Social Science",
+      "Title": "Dean"
+    },
+    {
+      "fullName": "Natalie Emmanuel",
+      "Department": "Art",
+      "Title": "Professor"
+    },
+    {
+      "fullName": "Darcy Lewis",
+      "Department": "Social Science",
+      "Title": "Professor"
+    },
+    {
+      "fullName": "Carl Drogo",
+      "Department": "Social Science",
+      "Title": "Professor"
+    },
+    {
+      "fullName": "Clint Barton",
+      "Department": "Social Science",
+      "Title": "Professor"
+    }
   ]
 },{
   "_id": {
-    "$oid": "603180dce56358687c096d25"
+    "$oid": "60365de2abcb0d22600277fb"
   },
   "name": "Arts",
   "majors": [
@@ -65,13 +140,37 @@
     "Spanish",
     "Theater",
     "Women's and Gender Studies"
+  ],
+  "faculty": [
+    {
+      "fullName": "Becky Adjunct",
+      "Department": "Arts",
+      "Title": "Dean"
+    },
+    {
+      "fullName": "Bill Baggins",
+      "Department": "Arts",
+      "Title": "Professor"
+    }
   ]
 },{
   "_id": {
-    "$oid": "603180dce56358687c096d26"
+    "$oid": "60365de2abcb0d22600277fc"
   },
   "name": "Education",
   "majors": [
     "K-12 Education"
+  ],
+  "faculty": [
+    {
+      "fullName": "Fox Mulder",
+      "Department": "Education",
+      "Title": "Dean"
+    },
+    {
+      "fullName": "Sarah Connor",
+      "Department": "Education",
+      "Title": "Professor"
+    }
   ]
 }]

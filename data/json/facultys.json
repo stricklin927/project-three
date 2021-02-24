@@ -1,127 +1,145 @@
 [{
   "_id": {
-    "$oid": "6031805e09ef546514895631"
+    "$oid": "6035b83e51b4ab5650955482"
   },
   "firstName": "Becky",
   "lastName": "Adjunct",
-  "Department": "Chemical Engineering"
+  "Department": "Art",
+  "Title": "Dean"
 },{
   "_id": {
-    "$oid": "6031805e09ef546514895632"
+    "$oid": "6035b83e51b4ab5650955483"
   },
   "firstName": "Bill",
   "lastName": "Baggins",
-  "Department": "Architecture"
+  "Department": "Art",
+  "Title": "Professor"
 },{
   "_id": {
-    "$oid": "6031805e09ef546514895633"
+    "$oid": "6035b83e51b4ab5650955484"
   },
   "firstName": "Greg",
   "lastName": "Gandalf",
-  "Department": "Game Design"
+  "Department": "Business",
+  "Title": "Dean"
 },{
   "_id": {
-    "$oid": "6031805e09ef546514895634"
+    "$oid": "6035b83e51b4ab5650955485"
   },
   "firstName": "John",
   "lastName": "Snow",
-  "Department": "Graphic Design"
+  "Department": "Business",
+  "Title": "Professor"
 },{
   "_id": {
-    "$oid": "6031805e09ef546514895635"
+    "$oid": "6035b83e51b4ab5650955486"
   },
   "firstName": "Dana",
   "lastName": "Scully",
-  "Department": "Nursing"
+  "Department": "Computer Science",
+  "Title": "Dean"
 },{
   "_id": {
-    "$oid": "6031805e09ef546514895636"
+    "$oid": "6035b83e51b4ab5650955487"
   },
   "firstName": "Natasha",
   "lastName": "Romanoff",
-  "Department": "Molecular & Cell Biology"
+  "Department": "Computer Science",
+  "Title": "Professor"
 },{
   "_id": {
-    "$oid": "6031805e09ef546514895637"
+    "$oid": "6035b83e51b4ab5650955488"
   },
   "firstName": "Mulder",
   "lastName": "Fox",
-  "Department": "Physics"
+  "Department": "Education",
+  "Title": "Dean"
 },{
   "_id": {
-    "$oid": "6031805e09ef546514895638"
+    "$oid": "6035b83e51b4ab5650955489"
   },
   "firstName": "Sarah",
   "lastName": "Connor",
-  "Department": "Psychology"
+  "Department": "Education",
+  "Title": "Professor"
 },{
   "_id": {
-    "$oid": "6031805e09ef546514895639"
+    "$oid": "6035b83e51b4ab565095548a"
   },
   "firstName": "Angela",
   "lastName": "Ramonda",
-  "Department": "Media Communication"
+  "Department": "Medicine",
+  "Title": "Dean"
 },{
   "_id": {
-    "$oid": "6031805e09ef54651489563a"
+    "$oid": "6035b83e51b4ab565095548b"
   },
   "firstName": "Nelson",
   "lastName": "Babbage",
-  "Department": "Computer Science"
+  "Department": "Medicine",
+  "Title": "Professor"
 },{
   "_id": {
-    "$oid": "6031805e09ef54651489563b"
+    "$oid": "6035b83e51b4ab565095548c"
   },
   "firstName": "Marya",
   "lastName": "Jane",
-  "Department": "Chemical Biology"
+  "Department": "Science",
+  "Title": "Dean"
 },{
   "_id": {
-    "$oid": "6031805e09ef54651489563c"
+    "$oid": "6035b83e51b4ab565095548d"
   },
   "firstName": "Jackie",
   "lastName": "Brown",
-  "Department": "Chemistry"
+  "Department": "Science",
+  "Title": "Professor"
 },{
   "_id": {
-    "$oid": "6031805e09ef54651489563d"
+    "$oid": "6035b83e51b4ab565095548e"
   },
   "firstName": "Jane",
   "lastName": "Foster",
-  "Department": "Business Administration"
+  "Department": "Social Science",
+  "Title": "Dean"
 },{
   "_id": {
-    "$oid": "6031805e09ef54651489563e"
+    "$oid": "6035b83e51b4ab565095548f"
   },
   "firstName": "Robin",
   "lastName": "Hodd",
-  "Department": "Finance"
+  "Department": "Social Science",
+  "Title": "Professor"
 },{
   "_id": {
-    "$oid": "6031805e09ef54651489563f"
+    "$oid": "6035b83e51b4ab5650955490"
   },
   "firstName": "Natalie",
   "lastName": "Emmanuel",
-  "Department": "Information Technology"
+  "Department": "Social Science",
+  "Title": "Professor"
 },{
   "_id": {
-    "$oid": "6031805e09ef546514895640"
+    "$oid": "6035b83e51b4ab5650955491"
   },
   "firstName": "Darcy",
   "lastName": "Lewis",
-  "Department": "Biomedical Engineering"
+  "Department": "Social Science",
+  "Title": "Professor"
 },{
   "_id": {
-    "$oid": "6031805e09ef546514895641"
+    "$oid": "6035b83e51b4ab5650955492"
   },
   "firstName": "Carl",
   "lastName": "Drogo",
-  "Department": "Electrical Engineering"
+  "Department": "Social Science",
+  "Title": "Professor"
 },{
   "_id": {
-    "$oid": "6031805e09ef546514895642"
+    "$oid": "6035b83e51b4ab5650955493"
   },
   "firstName": "Clint",
   "lastName": "Barton",
-  "Department": "Civil Engineering"
+  "Department": "Social Science",
+  "Title": "Professor"
 }]

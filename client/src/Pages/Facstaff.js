@@ -1,26 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import FacMap from '../components/FacMap';
+//import FacMap from '../components/FacMap';
 
 function Facstaff() {
-    const [majors, setMajors] = useState([]);
+    const [professors, setProfessors] = useState([]);
 
     useEffect(() => {
-        axios.get("/api/people/faculty", (res) => {
+        axios.get("/api/people/faculty").then(res => {
             console.log(res);
-            setMajors(res);
+            setProfessors(res.data);
         })
-    }, []);
-
+    });
 
     return(
         <div>
         <h1>Faculty and Staff Page</h1>
-        {majors.map(major => {
+        {professors.map(prof => {
             return (
             <div>
-            <div>{major.name}</div>
-            {/* <FacMap department={major.name} /> */}
+            <div>{prof.firstName} {prof.lastName}</div>
+            <div>{prof.Title}</div>
+            <div>{prof.Department}</div>
             </div>
             )
         })}
