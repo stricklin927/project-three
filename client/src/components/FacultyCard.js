@@ -14,7 +14,7 @@ function FacultyCard(props) {
     return (
             <div>
             {professors.map(prof => {
-                return prof.Department === props.coll ?
+                return prof.Department === props.coll.name ?
                 <div>    
                     <p>{prof.fullName}</p>
                     <p>{prof.title}</p>
