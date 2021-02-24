@@ -10,7 +10,7 @@ function Alumni() {
     useEffect(() => {
         axios.get('/api/people/donors').then(res => {
             console.log(res);
-            setDonors(res);
+            setDonors(res.data);
         })
     }, [donors]);
 
