@@ -16,10 +16,10 @@ function Facstaff() {
         console.log("Alpha clicked")
         const sortedProfs = [...professors].sort(function (a, b) {
               if (a.lastName > b.lastName) {
-                  return -1;
+                  return 1;
               }
               if (b.lastName > a.lastName) {
-                  return 1;
+                  return -1;
               }
               return 0;
           })
@@ -31,10 +31,10 @@ function Facstaff() {
         console.log("Reverse clicked")
         const sortedProfs = [...professors].sort(function (a, b) {
               if (a.lastName > b.lastName) {
-                  return 1;
+                  return -1;
               }
               if (b.lastName > a.lastName) {
-                  return -1;
+                  return 1;
               }
               return 0;
           })
@@ -46,10 +46,10 @@ function Facstaff() {
         console.log("byTitle clicked")
         const sortedProfs = [...professors].sort(function (a, b) {
               if (a.Title > b.Title) {
-                  return -1;
+                  return 1;
               }
               if (b.Title > a.Title) {
-                  return 1;
+                  return -1;
               }
               return 0;
           })
@@ -61,10 +61,10 @@ function Facstaff() {
         console.log("byDepartment clicked")
         const sortedProfs = [...professors].sort(function (a, b) {
               if (a.Department > b.Department) {
-                  return -1;
+                  return 1;
               }
               if (b.Department > a.Department) {
-                  return 1;
+                  return -1;
               }
               return 0;
           })
