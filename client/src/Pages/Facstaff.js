@@ -14,16 +14,101 @@ function Facstaff() {
 
     return(
         <div>
-        <h1>Faculty and Staff Page</h1>
-        {professors.map(prof => {
-            return (
             <div>
-            <div>{prof.firstName} {prof.lastName}</div>
-            <div>{prof.Title}</div>
-            <div>{prof.Department}</div>
+                <span className="material-icons ml-5">house |</span> <a href="./Pages/Facstaff.js" style={{fontSize: "23px"}}> Faculty</a>
+                <h1 className="ml-5 font-weight-bold">Faculty and Staff </h1>
             </div>
-            )
-        })}
+
+            <div >
+                <img src="./images/faculty.gif" className="d-block w-100" alt="..." style={{ height: "600"}}></img>
+                <div className="text-center d-none d-md-block pt-3 px-4" style={{border: "1px", backgroundColor: "white", color: "black", width: "500px", height: "200px", right: "100px", position: "absolute", bottom: "150px" }}>
+                    <h5 className="font-weight-bold"> Meet Our Faculty! </h5>
+                    <p> Dreams take time, effort, and hard work to bring into fruition. 
+                        For this very reason, our faculty is dedicated to guiding our students to reaching their full potential. 
+                        Going the extra mile for our students is just one part of our norm at ITU. 
+                        Let's meet those who strive hard to make it all happen! </p>
+                </div>
+            </div>
+            <br></br>
+            <br></br>
+            <br></br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="./images/ladyprof.jpg" style={{ width: "600px" }}></img>
+                    </div>
+                    <div class="col-sm pl-5">
+                        <h2 className="h2 text-center pt-5"> Soaring High at ITU </h2>
+                        <p> 
+                            Every single member of our faculty has a personal hand and intiative in ensuring the success 
+                            of our students. Recognizing the efforts and achievements of our employees is just one of the
+                            many ways that we lift up our heroes.
+                        </p>    
+                        <p>
+                            The <b>Soaring Achievement Award</b> offers an opportunity for us 
+                            to spotlight those who help bring great contributions and successes to ITU.
+                        </p>
+            
+                    </div>
+                </div>
+                <br></br> 
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="./images/leadbanner.png" style={{width: "1200px"}}></img>
+                    </div>
+                </div>
+                <br></br> 
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="./images/dean.jpg" style={{width: "850px"}}></img>
+                        <div className="text-center d-none d-md-block pt-3 px-4" style={{border: "1px ", backgroundColor: "white", color: "black", width: "420px", height: "180px", right: "80px", position: "absolute", bottom: "40px", opacity: "0.8" }}>
+                            <h5 className="font-weight-bold"> Words From Our Dean! </h5>
+                            <p> "The academic excellence of ITU is, in the end, all about people. 
+                                My aim is to promote a culture based in purpose and contributing to the common good, 
+                                the power of learning, the value of play, and the importance of well-being." </p>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <h5>ITU Departments</h5>
+                        <ul>
+                            <li>Art</li>
+                            <li>Business</li>
+                            <li>Computer Science</li>
+                            <li>Education</li>
+                            <li>Medicine</li>
+                            <li>Science</li>
+                        </ul>
+                    </div>
+                </div>
+                <br></br>
+                <div class="row"> 
+                    <img src="./images/spotlight1.gif" style={{ width: "1200px" }}></img>
+                </div>
+                <br></br>
+                <div class="row mx-5">
+                    <div class="col-sm">
+                        <img src="./images/prof1-1.jpg" style={{width: "250px"}}></img>
+                    </div>
+                    <div class="col-sm">
+                        <img src="./images/prof2-1.jpg" style={{width: "250px"}}></img>
+                    </div>
+                    <div class="col-sm">
+                        <img src="./images/prof3-1.jpg" style={{width: "250px"}}></img>
+                    </div>
+                </div>  
+            </div>
+            <br></br>
+        
+            {professors.map(prof => {
+                return (
+                <div>
+                    <div>{prof.firstName} {prof.lastName}</div>
+                    <div>{prof.Title}</div>
+                    <div>{prof.Department}</div>
+                    
+                </div>
+                )
+            })}
         </div>
     )
 }
