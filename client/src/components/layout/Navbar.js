@@ -13,11 +13,11 @@ function NavbarOne() {
 
   useEffect(() => {
   if (localStorage.getItem("user")) {
-    console.log("User is here!");
+    //console.log("User is here!");
     const userObj = JSON.parse(localStorage.getItem("user"));
       axios.get(`/api/users/get/${userObj.email}`).then(res => {
-        console.log("Request made!")
-        console.log(res);
+        //console.log("Request made!")
+        //console.log(res);
         setUser(res.data.name);
       }).catch(err => console.log(err));
   }
