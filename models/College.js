@@ -7,7 +7,20 @@ const CollegeSchema = new Schema({
     type: String,
     required: true
   },
-  majors: [String]
+  majors: [String],
+  faculty: [
+    {
+      fullName: {
+        type: String
+      },
+      Department: {
+        type: String
+      },
+      Title: {
+        type: String
+      }
+    }
+  ]
 });
 
 
