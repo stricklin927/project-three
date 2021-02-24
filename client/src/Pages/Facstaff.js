@@ -6,12 +6,11 @@ function Facstaff() {
     const [professors, setProfessors] = useState([]);
 
     useEffect(() => {
-        axios.get("/api/people/faculty", (res) => {
+        axios.get("/api/people/faculty").then(res => {
             console.log(res);
             setProfessors(res.data);
         })
     });
-
 
     return(
         <div>
