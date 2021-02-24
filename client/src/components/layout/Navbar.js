@@ -21,7 +21,7 @@ function NavbarOne() {
         setUser(res.data.name);
       }).catch(err => console.log(err));
   }
-}, [user])
+}, [])
 
   return (
     <Navbar bg="dark" variant="dark">

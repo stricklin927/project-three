@@ -1,5 +1,28 @@
 footer {
-    background-color: rgb(9, 9, 71);
-    color: white;
-    font: Roboto;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #00274c;
+    color: #FFFFFF;
+}
+
+.connect {
+    color: #2F65A7;
+}
+
+h5{
+    font-weight: 700;
+}
+
+h6 {
+    color: #989C97;
+    font-weight: 600;
+}
+
+p {
+    color: #989C97;
+}
+
+.copyright, .eo {
+    font-weight: 200;
 }
