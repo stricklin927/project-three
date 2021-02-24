@@ -5,48 +5,37 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 function Footer() {
     return (
-        <footer className="footer bg-dark"
-            style={{
-                position: "absolute",
-                bottom: "0px",
-                width: "100%",
-            }} >
+        <footer className="footer bg-dark">
             <Container>
-                <Row>
-                    <h4 className="text-light pt-3 pb-2 ml-4">Connect with Us!</h4>
+                <Row className="justify-content-lg-center">
+                    <h2>Connect with Us!</h2>
                 </Row>
+                <br></br>
                 <Row>
-                    <Col><img src="/images/ITU4.png" className="pt-3 mr-5" style={{width:"250px", height:"108px"}}></img></Col>
+                    <Col>
+                        <img src="/images/ITU4.png" className="pt-3 mr-5" style={{width:"250px", height:"108px"}}></img>
+                    </Col>
                     <Col className="text-light border-right">
                         <h5 className="font-weight-bold">More</h5>
-                        <ul>
-                            <li>About ITU</li>
-                            <li>Prospective Students</li>
-                            <li>Find Faculty and Staff</li>
-                            <li>Give</li>
-                            <li>Spotlight</li>
-                        </ul>
+                        <h6>About ITU</h6>
+                        <h6>Prospective Students</h6>
+                        <h6>Find Faculty and Staff</h6>
+                        <h6>Give</h6>
+                        <h6>Spotlight</h6>
                     </Col>
                     <Col className="text-light border-right">
                         <h5 className="font-weight-bold">Student Resources</h5>
-                        <ul>
-                            <li>Majors</li>
-                            <li>Departments</li>
-                            <li>Meet the Staff</li>
-                        </ul>
+                        <h6>Majors</h6>
+                        <h6>Departments</h6>
+                        <h6>Meet the Staff</h6>
                     </Col>
                     <Col className="text-light">
-                        <h5 className="font-weight-bold">Contact Us</h5>
-                        <ul>
-                            <li>Phone Number</li>
-                                <p>(555)123-4567</p>
-                            <li>Address</li>
-                                <p>1223 Tech Way,
-                                <br></br>
-                                Detroit, MI 45678
-                                </p>
-                                
-                        </ul>
+                        <h5 className="font-weight-bold">Phone</h5>
+                        <p>(555)123-4567</p>
+                        <h5 className="font-weight-bold">Address</h5>
+                        <p>1223 Tech Way
+                            <br></br>
+                            Detroit, MI 45678</p>
                     </Col>
                 </Row>  
             </Container>
