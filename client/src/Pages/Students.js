@@ -8,7 +8,7 @@ function Students() {
 
     useEffect(() => {
         axios.get('/api/people/colleges').then(res => {
-            console.log(res);
+            //console.log(res);
             setColleges(res.data);
         })
     })
