@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import MajorsMap from "../components/MajorsMap";
+import FacultyCard from "../components/FacultyCard";
 
 function Students() {
     const [colleges, setColleges] = useState([]);
@@ -18,7 +19,8 @@ function Students() {
         {colleges.map(coll => {
             return (
             <div>
-            <p>{coll.name}</p>
+            <h2>{coll.name}</h2>
+            <FacultyCard coll={coll} />
             <MajorsMap coll={coll} />
             </div>
             )
