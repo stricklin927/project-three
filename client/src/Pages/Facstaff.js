@@ -10,7 +10,7 @@ function Facstaff() {
             console.log(res);
             setProfessors(res.data);
         })
-    });
+    }, []);
 
     const alpha = () => {
         console.log("Alpha clicked")
