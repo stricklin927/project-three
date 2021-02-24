@@ -23,7 +23,7 @@ function Facstaff() {
               }
               return 0;
           })
-        //console.log(sortedEmps);
+        console.log(sortedProfs);
         setProfessors(sortedProfs);
       }
 
@@ -38,7 +38,7 @@ function Facstaff() {
               }
               return 0;
           })
-        //console.log(sortedEmps);
+        console.log(sortedProfs);
         setProfessors(sortedProfs);
       }
 
@@ -53,7 +53,7 @@ function Facstaff() {
               }
               return 0;
           })
-        //console.log(sortedEmps);
+        console.log(sortedProfs);
         setProfessors(sortedProfs);
       }
 
@@ -68,7 +68,7 @@ function Facstaff() {
               }
               return 0;
           })
-        //console.log(sortedEmps);
+        console.log(sortedProfs);
         setProfessors(sortedProfs);
       }
 
