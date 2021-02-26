@@ -18,6 +18,18 @@ const CollegeSchema = new Schema({
       },
       Title: {
         type: String
+      },
+      Email: {
+        type: String
+      },
+      OfficeNumber: {
+        type: String
+      },
+      PhoneNumber: {
+        type: String
+      },
+      Image: {
+        type: String
       }
     }
   ]
