@@ -5,11 +5,16 @@ function FacMap(props) {
         <div>
             {props.coll.faculty.map(prof => {
                 return (<div>
-                        <img src={prof.Image} />
-                        <h4>{prof.Title} {prof.fullName}</h4>
-                        <p>Office: {prof.OfficeNumber}</p>
-                        <p>Phone: {prof.PhoneNumber}</p>
-                        <p>Email: {prof.Email}</p>
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                    <th scope="row"><img src={prof.Image} /></th>
+                                    <td>{prof.Title} {prof.fullName}</td>
+                                    <td>{prof.OfficeNumber} <br></br> {prof.PhoneNumber}</td>
+                                    <td>{prof.Email} </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>)
             })}
         </div>
