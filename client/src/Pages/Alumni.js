@@ -12,7 +12,7 @@ function Alumni() {
             console.log(res);
             setDonors(res.data);
         })
-    }, [donors]);
+    }, [newDonor]);
 
     function changeName(e) {
         setName(e.target.value);
