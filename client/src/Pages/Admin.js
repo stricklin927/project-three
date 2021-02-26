@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { userHistory } from 'react-router-dom';
 import axios from "axios";
 
 function Admin(props) {
     const [user, setUser] = useState({});
+    const history = userHistory();
   
     useEffect(() => {
     if (localStorage.getItem("user")) {
@@ -11,7 +13,7 @@ function Admin(props) {
         axios.get(`/api/users/get/${userObj.email}`).then(res => {
           console.log(res);
           if (res.data.role === "Customer") {
-              props.history.push('/home');
+              history.push('/home');
           } else if (res.data.role === "Admin") {
           setUser(res.data);
           }
