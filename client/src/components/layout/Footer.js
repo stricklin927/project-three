@@ -8,12 +8,12 @@ function Footer() {
     return (
         <footer>
             <Container>
-                <Row className="justify-content-lg-center">
+                <Row className="justify-content-center">
                     <h2 className="connect">Connect with Us!</h2>
                 </Row>
                 <br></br>
                 <br></br>
-                <Row className="justify-content-lg-center">
+                <Row className="justify-content-center">
                     <Col className="col-sm-4">
                         <img src="/images/ITU4.png" className="pt-3 mr-5" style={{width:"250px", height:"108px"}}></img>
                     </Col>
@@ -44,7 +44,7 @@ function Footer() {
             <hr></hr>
             <br></br>
             <Container>
-                <Row className="justify-content-lg-center">
+                <Row className="justify-content-center">
                     <p className="eo">
                         InfoTech University is committed to a policy of nondiscrimination and equal opportunity for all persons regardless of race, gender, color, religion, creed, national origin or ancestry, age, marital status, disability or veteran status.
                     </p>
