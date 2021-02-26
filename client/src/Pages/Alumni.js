@@ -1,5 +1,9 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { Jumbotron } from 'react-bootstrap';
+import '../alumni.css';
+
+
 
 function Alumni() {
     const [ donors, setDonors ] = useState([]);
@@ -48,6 +52,12 @@ function Alumni() {
 
     return(
         <div>
+          <div className="jumbotron jumbotron-fluid">
+            <div className="container">
+              <h1 className="display-4"></h1>
+              <p className="lead"></p>
+            </div>
+          </div>
         <h1>Alumni Page</h1>
         {donors.map(giver => {
             return (
