@@ -15,10 +15,7 @@ function Footer() {
                 </Row>
                 <Row className="justify-content-center">
                     <h2 className="connect">
-                         <i className="fab fa-facebook-square"></i>  
-                         <i className="fab fa-twitter-square"></i>   
-                         <i className="fab fa-instagram-square"></i>  
-                         <i className="fab fa-linkedin"></i>
+                        <a href="https://www.facebook.com/"><i className="fab fa-facebook-square"></i></a> <a href="https://www.twitter.com/"><i className="fab fa-twitter-square"></i></a> <a href="https://www.instagram.com/"><i className="fab fa-instagram-square"></i></a> <a href="https://www.linkedin.com/"><i className="fab fa-linkedin"></i></a>
                     </h2>
                 </Row>
                 <br></br>
