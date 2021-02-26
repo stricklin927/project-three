@@ -33,7 +33,7 @@ function Alumni() {
             name: name,
             amount: amount
         });
-        console.log("New Donor: " + newDonor);
+        console.log(newDonor);
         axios.post('/api/people/donors', newDonor).then(res => {
             console.log(res);
         }).catch(err => console.log(err));
