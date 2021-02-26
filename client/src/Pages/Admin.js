@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { userHistory } from 'react-router-dom';
+import { withRouter, useHistory } from 'react-router-dom';
 import axios from "axios";
 
 function Admin(props) {
     const [user, setUser] = useState({});
-    const history = userHistory();
+    const history = useHistory();
   
     useEffect(() => {
     if (localStorage.getItem("user")) {
@@ -30,4 +30,4 @@ function Admin(props) {
 }
 
 
-export default Admin; 
+export default withRouter(Admin); 
