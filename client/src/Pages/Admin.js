@@ -10,7 +10,11 @@ function Admin(props) {
       const userObj = JSON.parse(localStorage.getItem("user"));
         axios.get(`/api/users/get/${userObj.email}`).then(res => {
           console.log(res);
+          if (res.data.role === "Customer") {
+              props.history.push('/home');
+          } else if (res.data.role === "Admin") {
           setUser(res.data);
+          }
         }).catch(err => console.log(err));
     }
   }, [])
