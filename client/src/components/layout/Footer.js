@@ -2,6 +2,8 @@ import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../../Footer.css';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
 
 function Footer() {
@@ -9,7 +11,12 @@ function Footer() {
         <footer>
             <Container>
                 <Row className="justify-content-center">
-                    <h2 className="connect">Connect with Us!</h2>
+                    <h2 className="connect">Connect with Us</h2>
+                </Row>
+                <Row className="justify-content-center">
+                    <h2 className="connect">
+                        <a href="https://www.facebook.com/"><i className="fab fa-facebook-square"></i></a> <a href="https://www.twitter.com/"><i className="fab fa-twitter-square"></i></a> <a href="https://www.instagram.com/"><i className="fab fa-instagram-square"></i></a> <a href="https://www.linkedin.com/"><i className="fab fa-linkedin"></i></a>
+                    </h2>
                 </Row>
                 <br></br>
                 <br></br>

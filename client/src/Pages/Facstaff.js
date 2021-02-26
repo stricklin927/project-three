@@ -81,11 +81,6 @@ function Facstaff() {
 
       return(
         <div>
-            <div>
-                <span className="material-icons ml-5">house |</span> <a href="./Pages/Facstaff.js" style={{fontSize: "23px"}}> Faculty</a>
-                <h1 className="ml-5 font-weight-bold">Faculty and Staff </h1>
-            </div>
-
             <div >
                 <img src="./images/faculty.gif" className="d-block w-100" alt="..." style={{ height: "600"}}></img>
                 <div className="text-center d-none d-md-block pt-3 px-4" style={{border: "1px", backgroundColor: "white", color: "black", width: "500px", height: "200px", right: "100px", position: "absolute", bottom: "150px" }}>
