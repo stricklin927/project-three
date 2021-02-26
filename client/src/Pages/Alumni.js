@@ -5,10 +5,10 @@ function Alumni() {
     const [ donors, setDonors ] = useState([]);
     const [ name, setName ] = useState("");
     const [ amount, setAmount ] = useState(0);
-    const [ newDonor, setNewDonor ] = useState({
-      name: "",
-      amount: 0
-    });
+    // const [ newDonor, setNewDonor ] = useState({
+    //   name: "",
+    //   amount: 0
+    // });
 
     useEffect(() => {
         axios.get('/api/people/donors').then(res => {
@@ -32,10 +32,14 @@ function Alumni() {
       console.log(e);
       console.log("Name: " + name);
       console.log("Amount: " + amount);
-      setNewDonor({
-            name: name,
-            amount: amount
-        });
+      // setNewDonor({
+      //       name: name,
+      //       amount: amount
+      //   });
+      const newDonor = {
+        name: name,
+        amount: amount
+      };
         console.log(newDonor);
         axios.post('/api/people/donors', newDonor).then(res => {
             console.log(res);
