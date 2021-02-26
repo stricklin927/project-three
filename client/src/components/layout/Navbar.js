@@ -20,17 +20,18 @@ function NavbarOne() {
 }, [])
 
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar bg="dark" variant="dark" expand="md">
       <Navbar.Brand href="#home"><img src="/images/ITU4.png" style={{width:"230px", height:"90px"}}></img></Navbar.Brand>
-      <Nav className="mr-auto">
-        <Nav.Link href="/home">Home</Nav.Link>
-        <Nav.Link href="/students">Students</Nav.Link>
-        <Nav.Link href="/facstaff">Faculty</Nav.Link>
-        <Nav.Link href="/alumni">Alumni</Nav.Link>
-      </Nav>
-      <Navbar.Collapse className="justify-content-end">
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link href="/home">Home</Nav.Link>
+          <Nav.Link href="/students">Students</Nav.Link>
+          <Nav.Link href="/facstaff">Faculty</Nav.Link>
+          <Nav.Link href="/alumni">Alumni</Nav.Link>
+        </Nav>
         <Navbar.Text>
-          Signed in as: <a href="/login">{user}</a>
+            Signed in as: <a href="/login">{user}</a>
         </Navbar.Text>
       </Navbar.Collapse>
     </Navbar>
