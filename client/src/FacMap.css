@@ -1,4 +1,6 @@
-th,
+th{
+    width: 50px;
+}
 td {
 width: 100px;
 overflow: hidden;
