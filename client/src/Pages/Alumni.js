@@ -15,7 +15,7 @@ function Alumni() {
             console.log(res);
             setDonors(res.data);
         })
-    }, [newDonor]);
+    }, []);
 
     function changeName(e) {
         const newName = e.target.value;
