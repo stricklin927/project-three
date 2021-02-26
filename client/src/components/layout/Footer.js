@@ -26,11 +26,11 @@ function Footer() {
                     </Col>
                     <Col className="col-sm-3 border-right">
                         <h5>More</h5>
-                        <h6>About ITU</h6>
+                        <h6><Link to="/Home">About ITU</Link></h6>
                         <h6><Link to="/Students">Prospective Students</Link></h6>
                         <h6><Link to="/Facstaff">Find Faculty and Staff</Link></h6>
                         <h6><Link to="/Alumni">Give</Link></h6>
-                        <h6>Spotlight</h6>
+                        <h6><Link to="/Home">Spotlight</Link></h6>
                     </Col>
                     <Col className="col-sm-3 border-right">
                         <h5>Student Resources</h5>
