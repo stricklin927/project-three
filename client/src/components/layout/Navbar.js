@@ -27,7 +27,7 @@ function NavbarOne() {
 
   return (
     <Navbar bg="dark" variant="dark">
-      <Navbar.Brand href="#home"><img src="/images/ITU4.png" style={{width:"125px", height:"50px"}}></img></Navbar.Brand>
+      <Navbar.Brand href="#home"><img src="/images/ITU4.png" style={{width:"230px", height:"90px"}}></img></Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link href="/home">Home</Nav.Link>
         <Nav.Link href="/students">Students</Nav.Link>
