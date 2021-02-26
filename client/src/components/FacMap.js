@@ -7,10 +7,10 @@ function FacMap(props) {
         <div>
             {props.coll.faculty.map(prof => {
                 return (
-                        <Table striped borderless hover>
+                        <Table striped bordered hover>
                             <tbody>
                                 <tr>
-                                <th scope="row"><img src={prof.Image} /></th>
+                                <th scope="row" width="50"><img src={prof.Image} /></th>
                                 <td>{prof.Title} {prof.fullName}</td>
                                 <td>{prof.OfficeNumber}, <br></br> {prof.PhoneNumber}</td>
                                 <td>{prof.Email} </td>
