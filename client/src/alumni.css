@@ -1,4 +1,4 @@
 .jumbotron {
-    background-image: url("../public/images/campus1.jpg");
+    background-image: url("/public/images/campus1.jpg");
     background-size: cover;
   }
