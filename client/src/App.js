@@ -12,6 +12,7 @@ import Home from "./Pages/Home";
 import Alumni from "./Pages/Alumni";
 import Facstaff from "./Pages/Facstaff";
 import Students from "./Pages/Students";
+import Admin from "./Pages/Admin";
 
 function App() {
 
@@ -47,6 +48,7 @@ function App() {
           <Route exact path="/alumni" component={Alumni} />
           <Route exact path="/facstaff" component={Facstaff} />
           <Route exact path="/students" component={Students} />
+          <Route exact path="/admin" component={() => <Admin history={history} />} />
           <Footer />
         </div>
       </Router>
