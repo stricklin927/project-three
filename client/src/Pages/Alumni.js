@@ -38,7 +38,7 @@ function Alumni() {
       //   });
       const newDonor = {
         name: name,
-        amount: amount
+        amount: parseInt(amount)
       };
         console.log(newDonor);
         axios.post('/api/people/donors', newDonor).then(res => {
