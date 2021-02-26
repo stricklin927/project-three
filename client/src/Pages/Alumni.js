@@ -5,7 +5,10 @@ function Alumni() {
     const [ donors, setDonors ] = useState([]);
     const [ name, setName ] = useState("");
     const [ amount, setAmount ] = useState(0);
-    const [ newDonor, setNewDonor ] = useState({});
+    const [ newDonor, setNewDonor ] = useState({
+      name: "",
+      amount: 0
+    });
 
     useEffect(() => {
         axios.get('/api/people/donors').then(res => {
