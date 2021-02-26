@@ -1,6 +1,8 @@
 th{
     width: 50px;
+    white-space: normal;
 }
+
 td {
 width: 100px;
 overflow: hidden;
