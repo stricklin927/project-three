@@ -1,4 +1,6 @@
 .jumbotron {
     background-image: url("../src/images/campus1.jpg");
     background-size: cover;
+    background-position: center;
+    height: 360px;
   }

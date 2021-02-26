@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Jumbotron } from 'react-bootstrap';
+import { Jumbotron, Container, Form } from 'react-bootstrap';
 import '../alumni.css';
 
 
@@ -51,13 +51,40 @@ function Alumni() {
     }
 
     return(
+    <div>
+      <div className="jumbotron jumbotron-fluid"></div>
+      <div className="container">
         <div>
-          <div className="jumbotron jumbotron-fluid">
-            <div className="container">
-              <h1 className="display-4"></h1>
-              <p className="lead"></p>
-            </div>
-          </div>
+          <h1 className="difference">Make a DIFFERENCE by GIVING to ITU</h1>
+          <h2>Support InfoTech Students</h2>
+          <p>
+          Gifts to the ITU Fund provide undergraduate scholarships and financial aid for ITU students who need our help. 
+          Gifts will help support students who are challenged with accessing basic necessities such as housing, food, medical 
+          care or required technology resources required to ensure reliable connectivity for remote education.
+          </p>
+        </div>
+
+        <div>
+          <h4>You can make a difference for ITU students. Your generosity can change a life!</h4>
+        </div>
+
+        <div>
+          <h2>Make a Gift by Mail:</h2>
+          <p>*Please make all checks payable to InfoTech University Fund and mail to:</p>
+          <p>
+            1223 Tech Way
+            <br></br>
+            Detroit, MI 45678
+          </p>
+        </div>
+
+        <div>
+          <h2>Make a Gift Online:</h2>
+          <p> ADD FORM </p>
+        </div>
+      </div>
+
+          
         <h1>Alumni Page</h1>
         {donors.map(giver => {
             return (
@@ -96,7 +123,7 @@ function Alumni() {
                 </button>
               </div>
         </form>
-        </div>
+    </div>
     )
 }
 
