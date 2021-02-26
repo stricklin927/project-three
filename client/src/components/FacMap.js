@@ -5,7 +5,7 @@ function FacMap(props) {
         <div>
             {props.coll.faculty.map(prof => {
                 return (<div>
-                        <h3>{prof.Title} {prof.fullName}</h3>
+                        <h4>{prof.Title} {prof.fullName}</h4>
                         <p>Office: {prof.OfficeNumber}</p>
                         <p>Phone: {prof.PhoneNumber}</p>
                         <p>Email: {prof.Email}</p>
