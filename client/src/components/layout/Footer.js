@@ -22,7 +22,7 @@ function Footer() {
                 <br></br>
                 <Row className="justify-content-center">
                     <Col className="col-sm-4">
-                        <img src="/images/ITU4.png" className="pt-3 mr-5" style={{width:"250px", height:"108px"}}></img>
+                        <Link to="/Home"><img src="/images/ITU4.png" className="pt-3 mr-5" style={{width:"250px", height:"108px"}}></img></Link>
                     </Col>
                     <Col className="col-sm-3 border-right">
                         <h5>More</h5>
