@@ -14,10 +14,10 @@ function Footer() {
                 <br></br>
                 <br></br>
                 <Row className="justify-content-lg-center">
-                    <Col className="col-4">
+                    <Col className="col-sm-4">
                         <img src="/images/ITU4.png" className="pt-3 mr-5" style={{width:"250px", height:"108px"}}></img>
                     </Col>
-                    <Col className="col-3 border-right">
+                    <Col className="col-sm-3 border-right">
                         <h5>More</h5>
                         <h6>About ITU</h6>
                         <h6><Link to="/Students">Prospective Students</Link></h6>
@@ -25,13 +25,13 @@ function Footer() {
                         <h6><Link to="/Alumni">Give</Link></h6>
                         <h6>Spotlight</h6>
                     </Col>
-                    <Col className="col-3 border-right">
+                    <Col className="col-sm-3 border-right">
                         <h5>Student Resources</h5>
                         <h6><Link to="/Students">Majors</Link></h6>
                         <h6><Link to="/Students">Departments</Link></h6>
                         <h6><Link to="/Facstaff">Meet the Staff</Link></h6>
                     </Col>
-                    <Col className="col-2">
+                    <Col className="col-sm-2">
                         <h5>Phone</h5>
                         <p>(555)123-4567</p>
                         <h5>Address</h5>
