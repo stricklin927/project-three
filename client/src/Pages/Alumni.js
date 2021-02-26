@@ -15,20 +15,25 @@ function Alumni() {
     }, [newDonor]);
 
     function changeName(e) {
-        setName(e.target.value);
+        const newName = e.target.value;
+        setName(newName);
     }
 
     function changeAmount(e) {
-        setAmount(e.target.value);
+        const newAmount = e.target.value;
+        setAmount(newAmount);
     }
 
     function onSubmit(e) {
       e.preventDefault();
-        setNewDonor({
+      console.log(e);
+      console.log("Name: " + name);
+      console.log("Amount: " + amount);
+      setNewDonor({
             name: name,
             amount: amount
         });
-        console.log(newDonor);
+        console.log("New Donor: " + newDonor);
         axios.post('/api/people/donors', newDonor).then(res => {
             console.log(res);
         }).catch(err => console.log(err));
