@@ -21,7 +21,7 @@ function NavbarOne() {
 
   return (
     <Navbar bg="dark" variant="dark" expand="md">
-      <Navbar.Brand href="#home"><img src="/images/ITU4.png" style={{width:"230px", height:"90px"}}></img></Navbar.Brand>
+      <Navbar.Brand><Link to="/Home"><img src="/images/ITU4.png" style={{width:"230px", height:"90px"}}></img></Link></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
