@@ -123,13 +123,13 @@ function Alumni() {
                   </Form.Group>
 
                   <Form.Group as={Row} controlId="formHorizontalEmail">
-                    <Col sm={2}>
-                      <Form.Control column sm={2} as="select">
+                    <Col sm={3}>
+                      <Form.Control as="select">
                         <option>In Memory of</option>
                         <option>In Honor of</option>
                       </Form.Control>
                     </Col>
-                    <Col sm={10}>
+                    <Col>
                       <Form.Control type="text" />
                     </Col>
                   </Form.Group>
