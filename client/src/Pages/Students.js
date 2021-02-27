@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import MajorsMap from "../components/MajorsMap";
 import FacultyCard from "../components/FacultyCard";
+import '../students.css';
+
 
 function Students() {
     const [colleges, setColleges] = useState([]);
