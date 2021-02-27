@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Jumbotron, Container, Form, Row, Column, Col, Button, Card } from 'react-bootstrap';
+import { Jumbotron, Container, Form, Row, Column, Col, Button, Card, List, ListGroup, ListGroupItem } from 'react-bootstrap';
 import '../alumni.css';
 import logo from '../images/ITU4.png';
 
@@ -127,26 +127,29 @@ function Alumni() {
                 </Form>
             </div>
           </Col>
+
           <Col lg={3}>
             <Card className="text-center" style={{ width: '18rem' }}>
               <Card.Img variant="top" src={logo} />
               <Card.Body>
-              <a href="#donateNow"><Button variant="primary">GIVE NOW</Button></a>
-                
+                <a href="#donateNow"><Button variant="primary">GIVE NOW</Button></a>
               </Card.Body>
             </Card>
 
-          {donors.map(giver => {
-              return (
 
-              <div>
-                <p>{giver.name}</p>
-                <p>{giver.amount}</p>
-              </div>
-
-
-            )
-        })}
+            <ListGroup>
+              <ListGroup.Item>
+                  {donors.map(giver => {
+                      return (
+                      <div>
+                        <p>{giver.name}
+                        <br></br>
+                        {giver.amount}</p>
+                      </div>
+                    )
+                })}
+              </ListGroup.Item>
+            </ListGroup>
           </Col>
         </Row>
       </Container>
