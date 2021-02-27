@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import MajorsMap from "../components/MajorsMap";
 import FacultyCard from "../components/FacultyCard";
+import { Container } from 'react-bootstrap';
 import '../students.css';
 
 
