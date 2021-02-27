@@ -183,15 +183,15 @@ function Facstaff() {
     )
 }
 
-<div >
-<div className="text-center d-none d-md-block pt-3 px-4" style={{border: "1px", backgroundColor: "white", color: "black", width: "500px", height: "200px", right: "100px", position: "absolute", bottom: "150px" }}>
-    <h5 className="font-weight-bold">Meet Our Faculty</h5>
-    <p> Dreams take time, effort, and hard work to bring into fruition. 
-        For this very reason, our faculty is dedicated to guiding our students to reaching their full potential. 
-        Going the extra mile for our students is just one part of our norm at ITU. 
-        Let's meet those who strive hard to make it all happen! </p>
-</div>
-</div>
+//<div >
+//<div className="text-center d-none d-md-block pt-3 px-4" style={{border: "1px", backgroundColor: "white", color: "black", width: "500px", height: "200px", right: "100px", position: "absolute", bottom: "150px" }}>
+//    <h5 className="font-weight-bold">Meet Our Faculty</h5>
+//    <p> Dreams take time, effort, and hard work to bring into fruition. 
+//        For this very reason, our faculty is dedicated to guiding our students to reaching their full potential. 
+//        Going the extra mile for our students is just one part of our norm at ITU. 
+//        Let's meet those who strive hard to make it all happen! </p>
+//</div>
+//</div>
 
 
 export default Facstaff;

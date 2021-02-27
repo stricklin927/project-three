@@ -17,34 +17,34 @@ function Students() {
     })
 
     return(
-        <div>
-            <Jumbotron fluid className="jStudents"></Jumbotron>
-            <Container>
-                <h1>Majors & Colleges</h1>
-                <p>
-                    ITU offers more than 100 undergraduate programs meaning more options and more possibilities when you graduate.
-                </p>
+    <div>
+        <Jumbotron fluid className="jStudents"></Jumbotron>
+        <Container>
+            <h1>Majors & Colleges</h1>
+            <p>
+                ITU offers more than 100 undergraduate programs meaning more options and more possibilities when you graduate.
+            </p>
 
-                <h2>Choosing a Major</h2>
-                <p>
-                    Whether you are undecided on what your major will be or know exactly which major suits you best, our advisors are here to help.
-                    Students will work directly with their advisors to learn which specific requirements apply to their major so that they stay on track.
-                    Students are also provided with many opportunities and resources to explore their major options.
-                </p>
+            <h2>Choosing a Major</h2>
+            <p>
+                Whether you are undecided on what your major will be or know exactly which major suits you best, our advisors are here to help.
+                Students will work directly with their advisors to learn which specific requirements apply to their major so that they stay on track.
+                Students are also provided with many opportunities and resources to explore their major options.
+            </p>
 
-                <h2>Beyond the Classroom</h2>
-                <p>
-                    ITU advocates for collaboration and interdisciplinary research initiatives that involve faculty and students.
-                    Many students further their knowledge through one of our internship programs offered in partnership with well-known companies.
-                    Our world id becoming increasingly interconnected, we offer various study abroad programs to help students gain international experience.
+            <h2>Beyond the Classroom</h2>
+            <p>
+                ITU advocates for collaboration and interdisciplinary research initiatives that involve faculty and students.
+                Many students further their knowledge through one of our internship programs offered in partnership with well-known companies.
+                Our world id becoming increasingly interconnected, we offer various study abroad programs to help students gain international experience.
 
-                </p>
+            </p>
 
-            </Container>
+        </Container>
             
 
 
-            <div className="text-center">
+        <div className="text-center">
             <h2>Explore Majors:</h2>
             <ButtonGroup>
                 <Button variant="outline-secondary">A</Button>
@@ -84,8 +84,8 @@ function Students() {
                 </div>
                 )
             })}
-            </div>
         </div>
+    </div>
     )
 }
 
