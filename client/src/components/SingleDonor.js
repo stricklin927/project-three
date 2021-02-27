@@ -35,8 +35,8 @@ function SingleDonor() {
         console.log(newDonor);
         axios.put(`/api/people/donors/${id}`, newDonor).then(res => {
             console.log(res);
-            history.push('/admin/donors');
         }).catch(err => console.log(err));
+        history.push('/admin/donors');
     }
 
     return (
