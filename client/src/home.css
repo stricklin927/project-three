@@ -47,13 +47,15 @@
   text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.73);
   font-size: 45px;
   font-weight: 700;
-  
+  text-align: center;
 }
 
 .h3HomeSpotlight {
   color: white;
+  text-align: center;
 }
 
 .pHomeSpotlight {
   color: white;
+  text-align: justify;
 }

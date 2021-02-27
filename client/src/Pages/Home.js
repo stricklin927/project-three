@@ -75,7 +75,7 @@ function Home() {
         <div className="spotlightDiv" id="spotlight">
             <Container>
                 <Row>
-                    <Col>
+                    <Col lg={6}>
                         <div className="imgSpotlight"></div>
                     </Col>
                     <Col>
