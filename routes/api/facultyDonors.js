@@ -7,6 +7,11 @@ const Faculty = require('../../models/Faculty');
 const Donors = require('../../models/Donor');
 const Colleges = require('../../models/College');
 
+
+///////////////////////////////////////////////////
+// Faculty API
+//////////////////////////////////////////////////
+
 router.get('/faculty', (req, res) => {
     Faculty.find({}).then(data => {
         console.log(data);
@@ -20,6 +25,10 @@ router.post('/faculty', (req, res) => {
             console.log(res);
         }).catch(err => console.log(err));
 })
+
+//////////////////////////////////////////////
+// Donors API
+//////////////////////////////////////////////
 
 router.get('/donors', (req, res) => {
     Donors.find({}).then(data => {
@@ -35,6 +44,25 @@ router.post('/donors', (req, res) => {
         }).catch(err => console.log(err));
     })
 
+router.get('/donors/:id', (req, res) => {
+    Donors.find({ _id: ObjectId(req.params.id) }).then(data => {
+        console.log(data);
+        res.json(data);
+    }).catch(err => console.log(err));
+})
+
+router.put('/donors/:id', (req, res) => {
+    Donors.findByIdAndUpdate( req.params.id, req.body, function (err) {
+        if(err) console.log(err);
+        console.log("Successful update!");
+      });
+      
+    //   ).then(data => {
+    //     console.log(data);
+    //     res.json(data);
+    // }).catch(err => console.log(err));
+})
+
 router.delete('/donors/:id', (req, res) => {
     Donors.deleteOne({ _id: ObjectId(req.params.id) }, function (err) {
         if(err) console.log(err);
@@ -42,11 +70,9 @@ router.delete('/donors/:id', (req, res) => {
       });
     })
     
-
-
-    //         console.log(res);
-    //     }).catch(err => console.log(err));
-    // })
+/////////////////////////////////////////////////////
+// Colleges API
+////////////////////////////////////////////////////
 
 router.get('/colleges', (req, res) => {
         Colleges.find({}).then(data => {
