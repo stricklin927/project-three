@@ -39,7 +39,16 @@ function AdminDonors(props) {
           console.log(e.target);
           const id = e.target.value;
           console.log(id);
-          axios.delete(`/api/people/donors/:${id}`).then(res => console.log(res)).catch(err => console.log(err));
+          const url = `/api/people/donors/${id}`;
+          console.log(url);
+          axios.delete(url).then(res => console.log(res)).catch(err => console.log(err));
+      }
+
+      const onUpdate = e => {
+          e.preventDefault();
+          const val = e.target.value;
+          console.log(val);
+          history.push(`/admin/donors/${val}`);
       }
 
     return (
@@ -49,9 +58,9 @@ function AdminDonors(props) {
                 <div class="card">
                 <div class="card-body">
                   <p><strong>{donor.name}</strong>: <em>{donor.amount}</em></p>
-                  <div className="btn-group" role="group" aria-label="Basic example">
+                  <div className="btn-group" role="group" aria-label="Update and Delete Buttons">
                     <button type="button" onClick={onDelete} value={donor._id} className="btn btn-secondary">Delete</button>
-                    <button type="button" className="btn btn-secondary">Update</button>
+                    <button type="button" value={donor._id} onClick={onUpdate} className="btn btn-secondary">Update</button>
                   </div>
                 </div>
               </div>
