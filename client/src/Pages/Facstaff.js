@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import FacMap from '../components/FacMap';
+import '../facstaff.css';
+
 
 function Facstaff() {
     const [colleges, setColleges] = useState([]);
