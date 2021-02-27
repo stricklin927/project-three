@@ -1,7 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Jumbotron, Container, Form, Row, Column, Col, Button } from 'react-bootstrap';
+import { Jumbotron, Container, Form, Row, Column, Col, Button, Card } from 'react-bootstrap';
 import '../alumni.css';
+import logo from '../images/ITU4.png';
 
 
 
@@ -82,7 +83,7 @@ function Alumni() {
               </p>
             </div>
 
-            <div>
+            <div id="donateNow">
               <h2>Make a Gift Online:</h2>
                 <Form>
                   <Form.Group as={Row} controlId="formHorizontalEmail">
@@ -127,13 +128,23 @@ function Alumni() {
             </div>
           </Col>
           <Col lg={3}>
-            <h1>Alumni Page</h1>
+            <Card className="text-center" style={{ width: '18rem' }}>
+              <Card.Img variant="top" src={logo} />
+              <Card.Body>
+              <Button variant="primary">GIVE NOW</Button>
+                
+              </Card.Body>
+            </Card>
+
           {donors.map(giver => {
               return (
+
               <div>
                 <p>{giver.name}</p>
                 <p>{giver.amount}</p>
               </div>
+
+
             )
         })}
           </Col>
