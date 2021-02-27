@@ -81,18 +81,16 @@ function Home() {
 {/* SPACING */}
 <br/><br/>
 
-        <div>
+        <div className="spotlightDiv" id="spotlight">
             <Container>
                 <Row>
                     <Col>
                         <div className="imgSpotlight"></div>
                     </Col>
                     <Col>
-                        <h2 className="h2Home">Spotlight</h2>
-                        <h3 className="h3Home">Honoring Black History at ITU</h3>
-                        <p className="pHome">
-                            Paragraph about why ITU is the best university and why prospective students should come here.
-                            <br></br>
+                        <h2 className="h2HomeSpotlight">Spotlight</h2>
+                        <h3 className="h3HomeSpotlight">Honoring Black History at ITU</h3>
+                        <p className="pHomeSpotlight">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper odio nec lacus facilisis, 
                             non vulputate lacus convallis. Aliquam sagittis mi ligula, et viverra justo lobortis nec. 
                             Duis elementum tincidunt magna, mattis ornare odio placerat ac. Sed vitae lectus nec ex fermentum 
