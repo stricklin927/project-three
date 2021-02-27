@@ -131,7 +131,7 @@ function Alumni() {
             <Card className="text-center" style={{ width: '18rem' }}>
               <Card.Img variant="top" src={logo} />
               <Card.Body>
-              <Button variant="primary">GIVE NOW</Button>
+              <a href="#donateNow"><Button variant="primary">GIVE NOW</Button></a>
                 
               </Card.Body>
             </Card>
