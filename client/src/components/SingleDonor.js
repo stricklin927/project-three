@@ -9,7 +9,7 @@ function SingleDonor() {
     const { id } = useParams();
 
     useEffect(() => {
-        axios.get(`/api/people/donors/:id`).then(res => {
+        axios.get(`/api/people/donors/${id}`).then(res => {
             setDonor(res.data);
         }).catch(err => console.log(err))
     }, [])
@@ -32,7 +32,7 @@ function SingleDonor() {
         amount: parseInt(amount)
       };
         console.log(newDonor);
-        axios.put(`/api/people/donors/:${id}`, newDonor).then(res => {
+        axios.put(`/api/people/donors/${id}`, newDonor).then(res => {
             console.log(res);
         }).catch(err => console.log(err));
     }
