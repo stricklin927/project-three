@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import FacMap from '../components/FacMap';
+import { Jumbotron } from 'react-bootstrap';
 import '../facstaff.css';
 
 
@@ -83,6 +84,8 @@ function Facstaff() {
 
       return(
         <div>
+            <Jumbotron fluid className="jFacstaff"></Jumbotron>
+
             <div >
                 <img src="./images/faculty.gif" className="d-block w-100" alt="..." style={{ height: "600"}}></img>
                 <div className="text-center d-none d-md-block pt-3 px-4" style={{border: "1px", backgroundColor: "white", color: "black", width: "500px", height: "200px", right: "100px", position: "absolute", bottom: "150px" }}>
