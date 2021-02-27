@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import axios from 'axios';
 
 function SingleDonor() {
@@ -7,6 +7,7 @@ function SingleDonor() {
     const [ name, setName ] = useState("");
     const [ amount, setAmount ] = useState(0);
     const { id } = useParams();
+    const history = useHistory();
 
     useEffect(() => {
         axios.get(`/api/people/donors/${id}`).then(res => {
@@ -34,6 +35,7 @@ function SingleDonor() {
         console.log(newDonor);
         axios.put(`/api/people/donors/${id}`, newDonor).then(res => {
             console.log(res);
+            history.push('/admin/donors');
         }).catch(err => console.log(err));
     }
 
