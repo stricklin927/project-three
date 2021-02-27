@@ -10,6 +10,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 function Footer() {
     return (
         <footer>
+            <br></br>
             <Container>
                 <Row className="justify-content-center">
                     <h2 className="connect">Connect with Us</h2>
