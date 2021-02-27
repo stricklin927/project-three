@@ -42,14 +42,15 @@ function SingleDonor() {
     return (
         <div className="m-5">
             <form noValidate onSubmit={onSubmit}>
-            <p>ID: {id}</p>
-            <p>Name: {donor.name}</p>
+            <h3>ID: {id}</h3>
+            <label for="name">Name: {donor.name}</label>
             <input onChange={changeName}
                 value={name}                     
                 id="name"
                 type="text"
                 placeholder={donor.name} />
-            <p>Amount: {donor.amount}</p>
+                <br />
+            <label for="amount">Amount: {donor.amount}</label>
             <input onChange={changeAmount}
                 value={amount}
                 id="amount"
