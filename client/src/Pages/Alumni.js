@@ -86,18 +86,32 @@ function Alumni() {
 
             <div id="donateNow">
               <h2>Make a Gift Online:</h2>
-                <Form>
+                <Form noValidate onSubmit={onSubmit}>
                   <Form.Group as={Row} controlId="formHorizontalEmail">
                     <Form.Label column sm={2}>Name</Form.Label>
                     <Col sm={10}>
-                      <Form.Control type="text" placeholder="First and Last Name" />
+                      <Form.Control 
+                        onChange={changeName}
+                        value={name}
+                        //   error={errors.email}                      
+                        id="name"
+                        type="text"
+                        placeholder="First and Last Name"
+                        />
                     </Col>
                   </Form.Group>
 
                   <Form.Group as={Row} controlId="formHorizontalPassword">
-                    <Form.Label column sm={2}>AMOUNT</Form.Label>
+                    <Form.Label column sm={2}>Amount</Form.Label>
                     <Col sm={10}>
-                      <Form.Control type="password" placeholder="Password" />
+                      <Form.Control 
+                        onChange={changeAmount}
+                        value={amount}
+                        //   error={errors.email}
+                        id="amount"
+                        type="number"
+                        placeholder="$150"
+                      />
                     </Col>
                   </Form.Group>
 
@@ -143,7 +157,7 @@ function Alumni() {
                     return (
                     <ListGroup.Item>
                       <Row>
-                        <Col sm={2}>
+                        <Col xs={2}>
                           <i class="fas fa-user"></i>
                         </Col>
                         <Col>
@@ -159,39 +173,6 @@ function Alumni() {
           </Col>
         </Row>
       </Container>
-
-          
-
-
-        <form noValidate onSubmit={onSubmit}>
-              <div>
-                <input
-                  onChange={changeName}
-                  value={name}
-                //   error={errors.email}
-                  id="name"
-                  type="text"
-                />
-                <label htmlFor="name">Name</label>
-              </div>
-              <div>
-                <input
-                  onChange={changeAmount}
-                  value={amount}
-                //   error={errors.email}
-                  id="amount"
-                  type="number"
-                />
-                <label htmlFor="name">Amount</label>
-              </div>
-              <div>
-                <button
-                  type="submit"
-                >
-                  Give now!
-                </button>
-              </div>
-        </form>
     </div>
     )
 }
