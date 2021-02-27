@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { withRouter, useHistory } from 'react-router-dom';
+import { Link, withRouter, useHistory } from 'react-router-dom';
 import axios from "axios";
 
 function Admin(props) {
@@ -11,7 +11,7 @@ function Admin(props) {
       //console.log("User is here!");
       const userObj = JSON.parse(localStorage.getItem("user"));
         axios.get(`/api/users/get/${userObj.email}`).then(res => {
-          console.log(res);
+          //console.log(res);
           if (res.data.role === "Customer") {
               history.push('/home');
           } else if (res.data.role === "Admin") {
@@ -26,7 +26,10 @@ function Admin(props) {
   return (
       <div>
         <h1>Admin Pages</h1>
-        <p>Hello {user.name}! You are a {user.role}. Your email is {user.email} and your password is {user.password}.</p>
+        <p>Hello {user.name}! You role is {user.role}. Your email is {user.email}. Welcome!</p>
+        {/* <button type="button" className="btn btn-primary btn-block"><Link to="/admin/faculty">Faculty Admin</Link></button> */}
+        <button type="button" className="btn btn-primary btn-block"><Link to="/admin/donors">Donors Admin</Link></button>
+        {/* <button type="button" className="btn btn-primary btn-block"><Link to="/admin/majors">Majors Admin</Link></button>        */}
       </div>
   )
 }
