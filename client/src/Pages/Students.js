@@ -13,13 +13,57 @@ import intern from '../images/internship.jpg';
 
 function Students() {
     const [colleges, setColleges] = useState([]);
+    const [ displayMajors, setDisplayMajors ] = useState([]);
+    const [ majors, setMajors ] = useState([
+       "Accounting", 
+       "Economics",
+       "Finance",
+       "Management",
+       "Biology",
+       "Physics",
+       "Quantitative Risk Analytics",
+       "Zoology",
+       "Data Science",
+       "Information Science",
+        "Global Health",
+        "Nursing",
+        "Veterinary Nursing",
+        "X-Ray Technician",
+        "History",
+        "Urban Planning",
+        "Youth Development",
+        "Journalism",
+        "Linguistics",
+        "Rhetoric and Writing",
+        "Spanish",
+        "Theater",
+        "Women's and Gender Studies",
+        "K-12 Education",
+        "Online Teaching"
+    ])
 
     useEffect(() => {
         axios.get('/api/people/colleges').then(res => {
             //console.log(res);
             setColleges(res.data);
-        })
+        }).catch(err => console.log(err))
     })
+
+    const onClick = (e) => {
+        //console.log(e.target.value);
+        console.log(majors);
+        // const alphaMap = majors.map(maj => {
+        //     return maj[0];
+        // });
+        // console.log(alphaMap);
+        const newMajors = majors.filter(maj => {
+            if (e.target.value === maj[0]) {
+                return maj;
+            }
+        })
+        setDisplayMajors(newMajors);
+        console.log(displayMajors);
+    }
 
     return(
     <div>
@@ -73,33 +117,39 @@ function Students() {
         <div className="text-center">
             <h2 className="h2Stu">Explore Majors:</h2>
             <ButtonGroup>
-                <Button variant="outline-secondary">A</Button>
-                <Button variant="outline-secondary">B</Button>
-                <Button variant="outline-secondary">C</Button>
-                <Button variant="outline-secondary">D</Button>
-                <Button variant="outline-secondary">E</Button>
-                <Button variant="outline-secondary">F</Button>
-                <Button variant="outline-secondary">G</Button>
-                <Button variant="outline-secondary">H</Button>
-                <Button variant="outline-secondary">I</Button>
-                <Button variant="outline-secondary">J</Button>
-                <Button variant="outline-secondary">K</Button>
-                <Button variant="outline-secondary">L</Button>
-                <Button variant="outline-secondary">M</Button>
-                <Button variant="outline-secondary">N</Button>
-                <Button variant="outline-secondary">O</Button>
-                <Button variant="outline-secondary">P</Button>
-                <Button variant="outline-secondary">Q</Button>
-                <Button variant="outline-secondary">R</Button>
-                <Button variant="outline-secondary">S</Button>
-                <Button variant="outline-secondary">T</Button>
-                <Button variant="outline-secondary">U</Button>
-                <Button variant="outline-secondary">V</Button>
-                <Button variant="outline-secondary">W</Button>
-                <Button variant="outline-secondary">X</Button>
-                <Button variant="outline-secondary">Y</Button>
-                <Button variant="outline-secondary">Z</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="A">A</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="B">B</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="C">C</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="D">D</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="E">E</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="F">F</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="G">G</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="H">H</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="I">I</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="J">J</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="K">K</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="L">L</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="M">M</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="N">N</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="P">O</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="P">P</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="Q">Q</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="R">R</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="S">S</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="T">T</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="U">U</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="V">V</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="W">W</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="X">X</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="Y">Y</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="Z">Z</Button>
             </ButtonGroup>
+
+            {displayMajors.map(maj => {
+                return (
+                        <p>{maj}</p>
+                )
+            })}
 
             {colleges.map(coll => {
                 return (
