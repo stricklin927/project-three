@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react';
 import { Jumbotron, Container, Form, Row, Column, Col, Button, Card, List, ListGroup, ListGroupItem } from 'react-bootstrap';
 import '../alumni.css';
 import logo from '../images/ITU4.png';
-
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
 
 function Alumni() {
@@ -136,14 +137,21 @@ function Alumni() {
               </Card.Body>
             </Card>
 
-            <h2 className="text-center">Donors</h2>
+            <h2 className="text-center">DONORS</h2>
             <ListGroup>
                 {donors.map(giver => {
                     return (
                     <ListGroup.Item>
-                      {giver.name}
-                      <br></br>
-                      {giver.amount}
+                      <Row>
+                        <Col>
+                          <i class="fas fa-user"></i>
+                        </Col>
+                        <Col>
+                          {giver.name}
+                          <br></br>
+                          {giver.amount}
+                      </Col>
+                      </Row>
                     </ListGroup.Item>
                   )
               })}
