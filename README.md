@@ -5,7 +5,7 @@
  ## Description
   A University webpage designed for three users that upon registering and logging in gain access to different features. The users are prospective students, faculty staff and alumni.
 
-[Click here](https://proj3ct3.herokuapp.com/) to see a live demo of this project.
+[Click here](https://landingpageuniversity.herokuapp.com/Home) to see a live demo of this project.
   
   ## Table of Contents
   1. [Technologies](#technologies)
@@ -51,11 +51,11 @@
 
 
   ## Contribution
-  - [Alexandra Stricklin](https://github.com/stricklin927) ()
-  - [Brian Short](https://github.com/brianrshort) ()
-  - [Imari Pickens](https://github.com/Picke1id) ()
-  - [James Masaviru](https://github.com/jmasaviru) ()
-  - [Tynesia Davis](https://github.com/Sivad13) ()
+  - [Alexandra Stricklin](https://github.com/stricklin927)
+  - [Brian Short](https://github.com/brianrshort)
+  - [Imari Pickens](https://github.com/Picke1id)
+  - [James Masaviru](https://github.com/jmasaviru)
+  - [Tynesia Davis](https://github.com/Sivad13)
   
    ## License
   *  ![License badge](https://img.shields.io/badge/License-MIT-green)
@@ -65,8 +65,8 @@
 
 ## Links
 
-* Video link for demonstration : https://drive.google.com/file/d/1g0t43tZGRUeZPT8YCbwyo0cLJ7Vm3ROC/view
+* Video link for demonstration :
 
-* Heroku link : https://aqueous-oasis-84460.herokuapp.com/
+* Heroku link : https://landingpageuniversity.herokuapp.com/Home
 
 * Info Tech University GitHub repository URL: (https://github.com/brianrshort/project-three)

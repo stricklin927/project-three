@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import FacultyCard from './FacultyCard';
+import { Container } from 'react-bootstrap';
+import '../students.css';
+
 
 function MajorsMap(props) {
     return (

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { Navbar, Nav } from 'react-bootstrap';
+import logo from '../../images/ITU4.png';
 import '../../navbar.css';
 
 function NavbarOne() {
@@ -21,7 +22,7 @@ function NavbarOne() {
 
   return (
     <Navbar bg="dark" variant="dark" expand="md">
-      <Navbar.Brand><Link to="/Home"><img src="/images/ITU4.png" style={{width:"230px", height:"90px"}}></img></Link></Navbar.Brand>
+      <Navbar.Brand><Link to="/Home"><img src={logo} style={{width:"230px", height:"90px"}}></img></Link></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">

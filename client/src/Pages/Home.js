@@ -1,9 +1,12 @@
 import React from 'react';
+import { Jumbotron, Container, Carousel } from 'react-bootstrap';
+import '../home.css';
+
+
 // import { useHistory } from 'react-router-dom';
 
 function Home() {
     // const history = useHistory();
-
     // if (!localStorage.getItem("token")) {
     //     history.push('/login');
     // } else {
@@ -12,7 +15,25 @@ function Home() {
 
 
     return(
-        <h1>Welcome to Infotech University!</h1>
+    <div>
+        <Jumbotron fluid className="jHome"></Jumbotron>
+        <Container>
+            <h1>Why ITU? The possibilities and opportunities for a bright future are endless.</h1>
+        </Container>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
     )
 }
 
