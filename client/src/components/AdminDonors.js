@@ -12,7 +12,7 @@ function AdminDonors(props) {
 
     useEffect(() => {
         axios.get('/api/people/donors').then(res => {
-            console.log(res);
+            //console.log(res);
             setDonors(res.data);
         })
     }, []);
@@ -36,11 +36,11 @@ function AdminDonors(props) {
 
       const onDelete = e => {
           e.preventDefault();
-          console.log(e.target);
+          //console.log(e.target);
           const id = e.target.value;
-          console.log(id);
+          //console.log(id);
           const url = `/api/people/donors/${id}`;
-          console.log(url);
+          //console.log(url);
           axios.delete(url).then(res => console.log(res)).catch(err => console.log(err));
       }
 
