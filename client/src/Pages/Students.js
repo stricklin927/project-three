@@ -2,8 +2,13 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import MajorsMap from "../components/MajorsMap";
 import FacultyCard from "../components/FacultyCard";
-import { Jumbotron, Container, Button, ButtonGroup } from 'react-bootstrap';
+import { Jumbotron, Container, Button, ButtonGroup, Row, Col, Card  } from 'react-bootstrap';
 import '../students.css';
+import lab from '../images/lab.jpg';
+import abroad from '../images/abroad.jpg';
+import intern from '../images/internship.jpg';
+
+
 
 
 function Students() {
@@ -37,8 +42,38 @@ function Students() {
                 ITU advocates for collaboration and interdisciplinary research initiatives that involve faculty and students.
                 Many students further their knowledge through one of our internship programs offered in partnership with well-known companies.
                 Our world id becoming increasingly interconnected, we offer various study abroad programs to help students gain international experience.
-
             </p>
+
+            <Row>
+                <Col>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Header className="text-center">Research</Card.Header>
+                        <Card.Img variant="top" src={lab} />
+                    </Card>
+                </Col>
+
+                <Col>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Header className="text-center">Study Abroad</Card.Header>
+                        <Card.Img variant="top" src={abroad} />
+                    </Card>
+                </Col>
+
+                <Col>
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Header className="text-center">Intern</Card.Header>
+                        <Card.Img variant="top" src={intern} />
+                    </Card>
+                </Col>
+            </Row>
+
+
+
+
+
+
+
+
 
         </Container>
             
