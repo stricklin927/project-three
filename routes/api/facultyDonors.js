@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const ObjectId = require('mongoose').Types.ObjectId;
 
 //const Faculty = require('../../models/Faculty');
 const Faculty = require('../../models/Faculty');
@@ -33,6 +34,19 @@ router.post('/donors', (req, res) => {
             console.log(res);
         }).catch(err => console.log(err));
     })
+
+router.delete('/donors/:id', (req, res) => {
+    Donors.deleteOne({ _id: ObjectId(req.params.id) }, function (err) {
+        if(err) console.log(err);
+        console.log("Successful deletion");
+      });
+    })
+    
+
+
+    //         console.log(res);
+    //     }).catch(err => console.log(err));
+    // })
 
 router.get('/colleges', (req, res) => {
         Colleges.find({}).then(data => {
