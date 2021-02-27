@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { Jumbotron, Container, Form } from 'react-bootstrap';
+import { Jumbotron, Container, Form, Row, Column, Col, Button } from 'react-bootstrap';
 import '../alumni.css';
 
 
@@ -53,47 +53,96 @@ function Alumni() {
     return(
     <div>
       <div className="jumbotron jumbotron-fluid"></div>
-      <div className="container">
-        <div>
-          <h1 className="difference">Make a DIFFERENCE by GIVING to ITU</h1>
-          <h2>Support InfoTech Students</h2>
-          <p>
-          Gifts to the ITU Fund provide undergraduate scholarships and financial aid for ITU students who need our help. 
-          Gifts will help support students who are challenged with accessing basic necessities such as housing, food, medical 
-          care or required technology resources required to ensure reliable connectivity for remote education.
-          </p>
-        </div>
+      <Container>
+        <Row className="justify-content-center">
+          <Col lg={9}>
+            <div>
+              <h1 className="difference">Make a DIFFERENCE by GIVING to ITU</h1>
+              <h2>Support InfoTech Students</h2>
+              <p>
+              Gifts to the ITU Fund provide undergraduate scholarships and financial aid for ITU students who need our help. 
+              Gifts will help support students who are challenged with accessing basic necessities such as housing, food, medical 
+              care or required technology resources required to ensure reliable connectivity for remote education.
+              </p>
+            </div>
 
-        <div>
-          <h4>You can make a difference for ITU students. Your generosity can change a life!</h4>
-        </div>
+            <div>
+              <h4>You can make a difference for ITU students. Your generosity can change a life!</h4>
+            </div>
 
-        <div>
-          <h2>Make a Gift by Mail:</h2>
-          <p>*Please make all checks payable to InfoTech University Fund and mail to:</p>
-          <p>
-            1223 Tech Way
-            <br></br>
-            Detroit, MI 45678
-          </p>
-        </div>
+            <div>
+              <h2>Make a Gift by Mail:</h2>
+              <p>*Please make all checks payable to InfoTech University Fund and mail to:</p>
+              <p>
+                InfoTech University Foundation
+                <br></br>
+                1223 Tech Way
+                <br></br>
+                Detroit, MI 45678
+              </p>
+            </div>
 
-        <div>
-          <h2>Make a Gift Online:</h2>
-          <p> ADD FORM </p>
-        </div>
-      </div>
+            <div>
+              <h2>Make a Gift Online:</h2>
+                <Form>
+                  <Form.Group as={Row} controlId="formHorizontalEmail">
+                    <Form.Label column sm={2}>Name</Form.Label>
+                    <Col sm={10}>
+                      <Form.Control type="text" placeholder="First and Last Name" />
+                    </Col>
+                  </Form.Group>
 
-          
-        <h1>Alumni Page</h1>
-        {donors.map(giver => {
-            return (
-                <div>
-                    <p>{giver.name}</p>
-                    <p>{giver.amount}</p>
-                </div>
+                  <Form.Group as={Row} controlId="formHorizontalPassword">
+                    <Form.Label column sm={2}>AMOUNT</Form.Label>
+                    <Col sm={10}>
+                      <Form.Control type="password" placeholder="Password" />
+                    </Col>
+                  </Form.Group>
+
+                  <Form.Group as={Row} controlId="formHorizontalCheck">
+                    <Col sm={{ span: 10, offset: 2 }}>
+                      <Form.Check label="Make the amount above a monthly recurring gift." />
+                      <Form.Check label="Establish this gift “In Memory” or “In Honor” of an individual(s)." />
+                    </Col>
+                  </Form.Group>
+
+                  <Form.Group as={Row} controlId="formHorizontalEmail">
+                    <Col sm={2}>
+                      <Form.Control column sm={2} as="select">
+                        <option>In Memory of</option>
+                        <option>In Honor of</option>
+                      </Form.Control>
+                    </Col>
+                    <Col sm={10}>
+                      <Form.Control type="text" />
+                    </Col>
+                  </Form.Group>
+
+                  <Form.Group as={Row}>
+                    <Col sm={{ span: 10, offset: 2 }}>
+                      <Button type="submit">Submit</Button>
+                    </Col>
+                  </Form.Group>
+                </Form>
+            </div>
+          </Col>
+          <Col lg={3}>
+            <h1>Alumni Page</h1>
+          {donors.map(giver => {
+              return (
+              <div>
+                <p>{giver.name}</p>
+                <p>{giver.amount}</p>
+              </div>
             )
         })}
+          </Col>
+        </Row>
+      </Container>
+
+          
+
+
         <form noValidate onSubmit={onSubmit}>
               <div>
                 <input
