@@ -43,31 +43,33 @@ function Home() {
         {/* Card Columns */}
         {/* Fix the card spacing. figure out why there's so much extrra space */}
         {/* NEED TO CONVERT TAGS TO REACT/BOOTSTRAP TAGS & ADD IN IMPORT PATH*/}
-        <div class="card-columns">
-            <div class="card" style={{width: "301px"}} >
-            <img class="card-img-top" src="./images/holistic.jpg" alt="Card image" style={{height:"275px"}}></img>
-            <div class="card-body text-center" />
-            <h4 class="card-title">Holistic Campus Environment</h4>
-            <p class="card-text "></p>
-            <a href="#card1" class="btn btn-primary">Read More</a>
-            </div>
+        <Container>
+            <div class="card-columns">
+                <div class="card" style={{width: "301px"}} >
+                <img class="card-img-top" src="./images/holistic.jpg" alt="Card image" style={{height:"275px"}}></img>
+                <div class="card-body text-center" />
+                <h4 class="card-title">Holistic Campus Environment</h4>
+                <p class="card-text "></p>
+                <a href="#card1" class="btn btn-primary">Read More</a>
+                </div>
 
-            <div class="card" style={{width: "301px"}} >
-            <img class="card-img-top" src="./images/collab.jpg" alt="Card image" style={{height:"275px"}}></img>
-            <div class="card-body text-center" />
-            <h4 class="card-title" style={{}}>Collaborative Learning</h4>
-            <p class="card-text "></p>
-            <a href="#card2" class="btn btn-primary">Read More</a>
-            </div>
+                <div class="card" style={{width: "301px"}} >
+                <img class="card-img-top" src="./images/collab.jpg" alt="Card image" style={{height:"275px"}}></img>
+                <div class="card-body text-center" />
+                <h4 class="card-title" style={{}}>Collaborative Learning</h4>
+                <p class="card-text "></p>
+                <a href="#card2" class="btn btn-primary">Read More</a>
+                </div>
 
-            <div class="card" style={{width: "301px"}} >
-            <img class="card-img-top" src="./fac_inst.jpg" alt="Card image" style={{height:"275px"}}></img>
-            <div class="card-body text-center" />
-            <h4 class="card-title">Small Classroom Instruction</h4>
-            <p class="card-text "></p>
-            <a href="#card3" class="btn btn-primary">Read More</a>
+                <div class="card" style={{width: "301px"}} >
+                <img class="card-img-top" src="./fac_inst.jpg" alt="Card image" style={{height:"275px"}}></img>
+                <div class="card-body text-center" />
+                <h4 class="card-title">Small Classroom Instruction</h4>
+                <p class="card-text "></p>
+                <a href="#card3" class="btn btn-primary">Read More</a>
+                </div>
             </div>
-        </div>
+        </Container>
         {/* End of Card Columns */}
 
         <br/><br/>
