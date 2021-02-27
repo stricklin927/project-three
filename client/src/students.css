@@ -4,3 +4,23 @@
     background-position: center;
     height: 360px;
   }
+
+.h1Stu {
+  color: #00274c;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.h2Stu {
+  color: #3b84dc;
+}
+
+.h4Stu {
+  color: #797d78;
+  font-size: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pStu {
+  color: black;
+}

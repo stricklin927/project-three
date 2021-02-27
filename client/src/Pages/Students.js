@@ -25,25 +25,25 @@ function Students() {
     <div>
         <Jumbotron fluid className="jStudents"></Jumbotron>
         <Container>
-            <h1>Majors & Colleges</h1>
-            <p>
+            <h1 className="h1Stu">Majors & Colleges</h1>
+            <h4 className="h4Stu">
                 ITU offers more than 100 undergraduate programs meaning more options and more possibilities when you graduate.
-            </p>
+            </h4>
+            <br></br>
 
-            <h2>Choosing a Major</h2>
-            <p>
+            <h2 className="h2Stu">Choosing a Major</h2>
+            <p className="pStu">
                 Whether you are undecided on what your major will be or know exactly which major suits you best, our advisors are here to help.
                 Students will work directly with their advisors to learn which specific requirements apply to their major so that they stay on track.
                 Students are also provided with many opportunities and resources to explore their major options.
             </p>
 
-            <h2>Beyond the Classroom</h2>
-            <p>
+            <h2 className="h2Stu">Beyond the Classroom</h2>
+            <p className="pStu">
                 ITU advocates for collaboration and interdisciplinary research initiatives that involve faculty and students.
                 Many students further their knowledge through one of our internship programs offered in partnership with well-known companies.
                 Our world id becoming increasingly interconnected, we offer various study abroad programs to help students gain international experience.
             </p>
-
             <Row>
                 <Col>
                     <Card style={{ width: '18rem' }}>
@@ -66,21 +66,12 @@ function Students() {
                     </Card>
                 </Col>
             </Row>
-
-
-
-
-
-
-
-
-
+            <br></br>
         </Container>
             
-
-
+        <br></br>
         <div className="text-center">
-            <h2>Explore Majors:</h2>
+            <h2 className="h2Stu">Explore Majors:</h2>
             <ButtonGroup>
                 <Button variant="outline-secondary">A</Button>
                 <Button variant="outline-secondary">B</Button>
