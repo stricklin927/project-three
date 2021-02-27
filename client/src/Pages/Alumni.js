@@ -136,19 +136,17 @@ function Alumni() {
               </Card.Body>
             </Card>
 
-
+            <h2 className="text-center">Donors</h2>
             <ListGroup>
-              <ListGroup.Item>
-                  {donors.map(giver => {
-                      return (
-                      <div>
-                        <p>{giver.name}
-                        <br></br>
-                        {giver.amount}</p>
-                      </div>
-                    )
-                })}
-              </ListGroup.Item>
+                {donors.map(giver => {
+                    return (
+                    <ListGroup.Item>
+                      {giver.name}
+                      <br></br>
+                      {giver.amount}
+                    </ListGroup.Item>
+                  )
+              })}
             </ListGroup>
           </Col>
         </Row>
