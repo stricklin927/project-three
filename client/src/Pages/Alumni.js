@@ -149,7 +149,7 @@ function Alumni() {
                         <Col>
                           {giver.name}
                           <br></br>
-                          {giver.amount}
+                          ${giver.amount}
                       </Col>
                       </Row>
                     </ListGroup.Item>
