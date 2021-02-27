@@ -18,6 +18,8 @@ function Admin(props) {
           setUser(res.data);
           }
         }).catch(err => console.log(err));
+    } else if (!localStorage.getItem("user")) {
+      history.push('/home');
     }
   }, [])
 
