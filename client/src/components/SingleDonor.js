@@ -50,7 +50,7 @@ function SingleDonor() {
                 type="text"
                 placeholder={donor.name} />
                 <br />
-            <label for="amount">Amount: {donor.amount}</label>
+            <label className="mt-3" for="amount">Amount: {donor.amount}</label>
             <input onChange={changeAmount}
                 value={amount}
                 id="amount"
