@@ -25,16 +25,16 @@ function SingleDonor() {
 
     const onSubmit = (e) => {
       e.preventDefault();
-      console.log(e);
-      console.log("Name: " + name);
-      console.log("Amount: " + amount);
+      //console.log(e);
+      //console.log("Name: " + name);
+      //console.log("Amount: " + amount);
       const newDonor = {
         name: name,
         amount: parseInt(amount)
       };
-        console.log(newDonor);
+        //console.log(newDonor);
         axios.put(`/api/people/donors/${id}`, newDonor).then(res => {
-            console.log(res);
+            //console.log(res);
         }).catch(err => console.log(err));
         history.push('/admin/donors');
     }
