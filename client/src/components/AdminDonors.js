@@ -39,7 +39,7 @@ function AdminDonors(props) {
           console.log(e.target);
           const id = e.target.value;
           console.log(id);
-          //axios.delete(`/api/people/donors/:${id}`).then(res => console.log(res)).catch(err => console.log(err));
+          axios.delete(`/api/people/donors/:${id}`).then(res => console.log(res)).catch(err => console.log(err));
       }
 
     return (
