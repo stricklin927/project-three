@@ -45,7 +45,7 @@ router.post('/donors', (req, res) => {
     })
 
 router.get('/donors/:id', (req, res) => {
-    Donors.find({ _id: ObjectId(req.params.id) }).then(data => {
+    Donors.findById(req.params.id).then(data => {
         console.log(data);
         res.json(data);
     }).catch(err => console.log(err));
