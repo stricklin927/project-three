@@ -54,7 +54,7 @@ function Alumni() {
 
     return(
     <div>
-      <div className="jumbotron jumbotron-fluid"></div>
+      <Jumbotron fluid className="jAlumni"></Jumbotron>
       <Container>
         <Row className="justify-content-center">
           <Col lg={9}>
