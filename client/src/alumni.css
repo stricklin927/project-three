@@ -4,3 +4,37 @@
     background-position: center;
     height: 360px;
   }
+
+.h1Alum {
+  color: #00274c;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.h2Alum {
+  color: #3b84dc;
+}
+
+.h4Alum {
+  color: #797d78;
+  font-size: 20px;
+  font-style: italic;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pAlum {
+  color: black;
+}
+
+.dAlum{
+  color: #797d78;
+  font-weight: 600;
+}
+
+.iAlum {
+  color: #3b84dc;
+}
+
+.cardAlum {
+  box-shadow: 10px 10px 5px grey;
+}

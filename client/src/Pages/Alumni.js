@@ -59,23 +59,23 @@ function Alumni() {
         <Row className="justify-content-center">
           <Col lg={9}>
             <div>
-              <h1 className="difference">Make a DIFFERENCE by GIVING to ITU</h1>
-              <h2>Support InfoTech Students</h2>
-              <p>
+              <h1 className="h1Alum"><i>Make a</i> <b>DIFFERENCE</b> <i>by</i> <b>GIVING</b> <i>to ITU</i></h1>
+              <h4 className="h4Alum">You can make a difference for ITU students. Your generosity can change a life!</h4>
+              <br></br>
+              <h2 className="h2Alum">Support InfoTech Students</h2>
+              <p className="pAlum">
               Gifts to the ITU Fund provide undergraduate scholarships and financial aid for ITU students who need our help. 
               Gifts will help support students who are challenged with accessing basic necessities such as housing, food, medical 
               care or required technology resources required to ensure reliable connectivity for remote education.
               </p>
             </div>
 
-            <div>
-              <h4>You can make a difference for ITU students. Your generosity can change a life!</h4>
-            </div>
+            <br></br>
 
             <div>
-              <h2>Make a Gift by Mail:</h2>
-              <p>*Please make all checks payable to InfoTech University Fund and mail to:</p>
-              <p>
+              <h2 className="h2Alum">Make a Gift by Mail:</h2>
+              <p><i>*Please make all checks payable to InfoTech University Fund and mail to:</i></p>
+              <p className="pAlum">
                 InfoTech University Foundation
                 <br></br>
                 1223 Tech Way
@@ -84,8 +84,10 @@ function Alumni() {
               </p>
             </div>
 
+            <br></br>
+
             <div id="donateNow">
-              <h2>Make a Gift Online:</h2>
+              <h2 className="h2Alum">Make a Gift Online:</h2>
                 <Form noValidate onSubmit={onSubmit}>
                   <Form.Group as={Row} controlId="formHorizontalEmail">
                     <Form.Label column sm={2}>Name</Form.Label>
@@ -135,7 +137,7 @@ function Alumni() {
                   </Form.Group>
 
                   <Form.Group as={Row}>
-                    <Col sm={{ span: 10, offset: 2 }}>
+                    <Col sm={3}>
                       <Button type="submit">Submit</Button>
                     </Col>
                   </Form.Group>
@@ -144,21 +146,23 @@ function Alumni() {
           </Col>
 
           <Col lg={3}>
-            <Card className="text-center" style={{ width: '18rem' }}>
+            <Card className="cardAlum text-center" style={{ width: '18rem' }}>
               <Card.Img variant="top" src={logo} />
               <Card.Body>
                 <a href="#donateNow"><Button variant="primary">GIVE NOW</Button></a>
               </Card.Body>
             </Card>
 
-            <h2 className="text-center">DONORS</h2>
+            <br></br>
+
+            <h2 className="dAlum text-center">DONORS</h2>
             <ListGroup>
                 {donors.map(giver => {
                     return (
                     <ListGroup.Item>
                       <Row>
                         <Col xs={2}>
-                          <i class="fas fa-user"></i>
+                          <span className="iAlum"><i class="fas fa-user"></i></span>
                         </Col>
                         <Col>
                           {giver.name}
