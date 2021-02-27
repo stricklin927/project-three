@@ -3,4 +3,28 @@
     background-size: cover;
     background-position: center;
     height: 360px;
-  }
+}
+
+.h1Home {
+  color: #00274c;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.h2Home {
+  color: #3b84dc;
+}
+
+.h3Home {
+  color: #797d78;
+}
+
+.h4Home {
+  color: #797d78;
+  font-size: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pHome {
+  color: black;
+}

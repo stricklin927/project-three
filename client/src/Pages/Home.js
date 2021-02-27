@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron, Container, Carousel } from 'react-bootstrap';
+import { Jumbotron, Container, Carousel, Row, Col } from 'react-bootstrap';
 import '../home.css';
 
 
@@ -18,7 +18,8 @@ function Home() {
     <div>
         <Jumbotron fluid className="jHome"></Jumbotron>
         <Container>
-            <h1>Why ITU? The possibilities and opportunities for a bright future are endless.</h1>
+            <h1 className="h1Home"><b>WHY ITU?</b></h1>
+            <h4 className="h4Home"><i>The</i> <b>possibilities</b> <i>and</i> <b>opportunities</b> <i>for a bright future are endless.</i></h4>
             <a class="btn btn-primary" href="#learnmore" role="button" style={{background: "#00B2A9"}}>Learn More</a>
         </Container>
 
@@ -62,7 +63,7 @@ function Home() {
 
 {/* Why ITU? */}
 <h2 id="learnmore">Why ITU?</h2>
-<p>Pug taxidermy listicle mustache twee health goth neutra pabst. Austin tousled truffaut
+<p className="pHome">Pug taxidermy listicle mustache twee health goth neutra pabst. Austin tousled truffaut
 butcher jianbing food truck.Taiyaki thundercats cornhole single-origin coffee chia kale chips 
 affogato pour-over cloud bread irony man bun. Etsy adaptogen typewriter, locavore polaroid raw 
 denim synth narwhal bicycle rights bespoke lyft. Farm-to-table stumptown paleo vexillologist
@@ -75,7 +76,7 @@ PBR&B kale chips seitan.</p>
 <br />
 {/* Card 1 */}
 <h2 id="card1">Holistic Campus Environment</h2>
-<p>Green juice jean shorts trust fund pop-up, flexitarian waistcoat YOLO ugh drinking vinegar
+<p className="pHome">Green juice jean shorts trust fund pop-up, flexitarian waistcoat YOLO ugh drinking vinegar
 normcore tumblr. Next level shabby chic freegan readymade hoodie enamel pin. Squid pour-over
 letterpress, put a bird on it truffaut yuccie meditation chartreuse.</p>
 
@@ -86,7 +87,7 @@ letterpress, put a bird on it truffaut yuccie meditation chartreuse.</p>
 <br />
 {/* Card 2 */}
 <h2 id="card2">Collaborative Learning</h2>
-<p>Truffaut lyft vice heirloom +1 gentrify. Bushwick hammock tilde readymade, organic knausgaard
+<p className="pHome">Truffaut lyft vice heirloom +1 gentrify. Bushwick hammock tilde readymade, organic knausgaard
 aesthetic sustainable woke portland deep v. Skateboard yr chartreuse, subway tile hot chicken pinterest
 whatever put a bird on it. You probably haven't heard of them synth tousled ramps, pinterest tumeric
 mlkshk salvia. Lyft pok pok artisan put a bird on it vice. Health goth PBR&B humblebrag chillwave.</p>
@@ -98,7 +99,7 @@ mlkshk salvia. Lyft pok pok artisan put a bird on it vice. Health goth PBR&B hum
 <br />
 {/* Card 3 */}
 <h2 id="card3">Small Classroom Instruction</h2>
-<p>Quinoa snackwave small batch, before they sold out microdosing intelligentsia shaman readymade
+<p className="pHome">Quinoa snackwave small batch, before they sold out microdosing intelligentsia shaman readymade
 sustainable. Tofu 3 wolf moon fam gastropub, raw denim gentrify edison bulb lo-fi butcher YOLO normcore
 next level. Irony 90's tilde man bun tumeric, humblebrag thundercats 8-bit typewriter plaid polaroid four loko.</p>
 <br/><br/>
