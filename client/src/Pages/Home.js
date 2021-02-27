@@ -23,6 +23,24 @@ function Home() {
             <a class="btn btn-primary" href="#learnmore" role="button" style={{background: "#00B2A9"}}>Learn More</a>
         </Container>
 
+        <br></br>
+
+        <Container>
+            <h2 className="h2Home" id="aboutITU">About ITU</h2>
+            <p className="pHome">
+                Paragraph about why ITU is the best university and why prospective students should come here.
+                <br></br>
+                Pug taxidermy listicle mustache twee health goth neutra pabst. Austin tousled truffaut
+                butcher jianbing food truck.Taiyaki thundercats cornhole single-origin coffee chia kale chips 
+                affogato pour-over cloud bread irony man bun. Etsy adaptogen typewriter, locavore polaroid raw 
+                denim synth narwhal bicycle rights bespoke lyft. Farm-to-table stumptown paleo vexillologist
+                PBRB kale chips seitan.
+            </p>
+        </Container>
+
+        <br></br>
+
+
 
         {/* SPACING */}
         <br/><br/><br/><br/><br/><br/><br/>
@@ -59,15 +77,6 @@ function Home() {
 </div>
  {/* SPACING */}
  <br/><br/><br/><br/><br/><br/><br/>
-
-
-{/* Why ITU? */}
-<h2 id="learnmore">Why ITU?</h2>
-<p className="pHome">Pug taxidermy listicle mustache twee health goth neutra pabst. Austin tousled truffaut
-butcher jianbing food truck.Taiyaki thundercats cornhole single-origin coffee chia kale chips 
-affogato pour-over cloud bread irony man bun. Etsy adaptogen typewriter, locavore polaroid raw 
-denim synth narwhal bicycle rights bespoke lyft. Farm-to-table stumptown paleo vexillologist
-PBR&B kale chips seitan.</p>
 
 {/* SPACING */}
 <br/><br/>
