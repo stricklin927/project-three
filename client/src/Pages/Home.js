@@ -81,6 +81,37 @@ function Home() {
 {/* SPACING */}
 <br/><br/>
 
+        <div>
+            <Container>
+                <Row>
+                    <Col>
+                        <div className="imgSpotlight"></div>
+                    </Col>
+                    <Col>
+                        <h2 className="h2Home">Spotlight</h2>
+                        <h3 className="h3Home">Honoring Black History at ITU</h3>
+                        <p className="pHome">
+                            Paragraph about why ITU is the best university and why prospective students should come here.
+                            <br></br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper odio nec lacus facilisis, 
+                            non vulputate lacus convallis. Aliquam sagittis mi ligula, et viverra justo lobortis nec. 
+                            Duis elementum tincidunt magna, mattis ornare odio placerat ac. Sed vitae lectus nec ex fermentum 
+                            ornare ut sit amet nibh. Nam non nulla eu ligula pharetra maximus. Sed nisl massa, viverra id volutpat 
+                            ut, pellentesque et tellus. Nunc a justo ex. Etiam sollicitudin placerat consectetur. 
+                            Donec vehicula id augue ac aliquam. Curabitur malesuada felis eu gravida gravida. Morbi viverra metus et 
+                            enim sollicitudin, ut posuere magna posuere. Praesent eu convallis enim. Ut auctor nibh arcu, eu vehicula 
+                            tortor venenatis ut.
+                        </p>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+
+
+
+
+
+
 <hr class="rounded" style={{background:"#00B2A9"}}></hr>
 <br />
 {/* Card 1 */}
