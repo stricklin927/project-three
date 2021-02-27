@@ -23,6 +23,7 @@ function Students() {
        "Physics",
        "Quantitative Risk Analytics",
        "Zoology",
+       "Computer Science",
        "Data Science",
        "Information Science",
         "Global Health",
