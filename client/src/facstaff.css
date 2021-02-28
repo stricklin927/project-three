@@ -1,6 +1,138 @@
-.jFacstaff {
-    background-image: url("../src/images/faculty.gif");
-    background-size: cover;
-    background-position: center;
-    height: 360px;
+#carousel {
+  height: auto;
+  width: auto;
+}
+
+#firstSlide {
+
+  background-image: url("../src/images/faculty2.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 680px;
+    
   }
+
+#firstSlideText,
+#thirdSlideText {
+  color: white;
+  border-style: 1px;
+  background-color:grey;
+  max-width: 100%;
+  left: 100px;
+  right: 100px;
+  opacity: 0.8;
+  bottom: 50px;
+
+}
+
+#text {
+  color: white;
+}
+
+#secondSlide {
+  background-image: url("../src/images/theatreprof.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 680px;
+  
+}
+
+#secondSlideText {
+  color: white;
+  border-style: 1px;
+  background-color:grey;
+  max-width: 100%;
+  left: 100px;
+  right: 100px;
+  opacity: 0.5;
+  bottom: 50px;
+}
+
+#thirdSlide {
+  background-image: url("../src/images/profhelp.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 680px;
+}
+
+#soaringHigh {
+  background-image: url("../src/images/ladyprof.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 400px;
+}
+
+#soaringHighText {
+  
+}
+
+#leadBanner {
+  background-image: url("../src/images/leadBanner1.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 1100px;
+  height: 200px;
+  
+}
+
+#dean {
+  background-image: url("../src/images/dean.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 520px;
+}
+
+#deanText { 
+  color: black; 
+  max-width: 100%; 
+  height: 140px;
+  position: absolute; 
+  top: 350px;
+  right: 0px;
+  left: 0px;
+  margin: auto;
+  border-style: 1px;
+  background-color: white;
+  opacity: 0.8;
+}
+
+#spotlight {
+  background-image: url("../src/images/spotlight1.gif");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 110px;
+}
+
+#prof1 {
+  background-image: url("../src/images/prof1-1.jpg");
+  background-size: 90% auto;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 580px;
+  
+}
+
+#prof2 {
+  background-image: url("../src/images/prof2-1.jpg");
+  background-size: 90% auto;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 580px;
+}
+
+#prof3 {
+  background-image: url("../src/images/prof3-1.jpg");
+  background-size: 90% auto;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 580px;
+}
+
+#spotlightProf {
+  right: 150px;
+}
