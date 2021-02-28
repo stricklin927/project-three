@@ -15,6 +15,7 @@ function SingleFaculty() {
 
     useEffect(() => {
         axios.get(`/api/people/faculty/${id}`).then(res => {
+            console.log(res.data);
             setProf(res.data);
         }).catch(err => console.log(err))
     }, [])
