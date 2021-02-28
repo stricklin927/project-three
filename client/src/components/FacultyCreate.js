@@ -123,7 +123,7 @@ function FacultyCreate() {
                     type="text"
                     placeholder="prof@itu.edu" />
             </div>
-            <button className="mt-3 btn btn-danger" type="submit">Add New Faculty</button>
+            <button className="my-3 btn btn-danger" type="submit">Add New Faculty</button>
         </form>
         </div>
     )
