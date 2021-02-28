@@ -26,6 +26,27 @@ router.post('/faculty', (req, res) => {
         }).catch(err => console.log(err));
 })
 
+router.put('/faculty/:id', (req, res) => {
+    Faculty.findByIdAndUpdate( req.params.id, req.body, function (err) {
+        if(err) console.log(err);
+        console.log("Successful update!");
+      });
+})
+
+router.delete('/faculty/:id', (req, res) => {
+    Faculty.deleteOne({ _id: ObjectId(req.params.id) }, function (err) {
+        if(err) console.log(err);
+        console.log("Successful deletion");
+      });
+    })
+
+router.get('/faculty/:id', (req, res) => {
+    Faculty.findById(req.params.id).then(data => {
+        console.log(data);
+        res.json(data);
+    }).catch(err => console.log(err));
+})
+
 //////////////////////////////////////////////
 // Donors API
 //////////////////////////////////////////////
@@ -56,11 +77,6 @@ router.put('/donors/:id', (req, res) => {
         if(err) console.log(err);
         console.log("Successful update!");
       });
-      
-    //   ).then(data => {
-    //     console.log(data);
-    //     res.json(data);
-    // }).catch(err => console.log(err));
 })
 
 router.delete('/donors/:id', (req, res) => {
@@ -80,5 +96,33 @@ router.get('/colleges', (req, res) => {
             res.json(data);
         }).catch(err => console.log(err));
     })
+
+router.post('/colleges', (req, res) => {
+    Faculty.create(req.body)
+        .then(res => {
+            console.log(res);
+        }).catch(err => console.log(err));
+})
+
+router.put('/colleges/:id', (req, res) => {
+    Faculty.findByIdAndUpdate( req.params.id, req.body, function (err) {
+        if(err) console.log(err);
+        console.log("Successful update!");
+        });
+})
+
+router.delete('/colleges/:id', (req, res) => {
+    Faculty.deleteOne({ _id: ObjectId(req.params.id) }, function (err) {
+        if(err) console.log(err);
+        console.log("Successful deletion");
+        });
+    })
+
+router.get('/colleges/:id', (req, res) => {
+    Faculty.findById(req.params.id).then(data => {
+        console.log(data);
+        res.json(data);
+    }).catch(err => console.log(err));
+})
 
 module.exports = router;

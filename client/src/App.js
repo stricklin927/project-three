@@ -15,6 +15,8 @@ import Students from "./Pages/Students";
 import Admin from "./Pages/Admin";
 import AdminDonors from "./components/AdminDonors";
 import SingleDonor from './components/SingleDonor';
+import AdminFaculty from './components/AdminFaculty';
+import SingleFaculty from './components/SingleFaculty';
 
 function App() {
 
@@ -52,7 +54,9 @@ function App() {
           <Route exact path="/students" component={Students} />
           <Route exact path="/admin" component={() => <Admin history={history} />} />
           <Route exact path="/admin/donors" component={() => <AdminDonors history={history} />} />
+          <Route exact path="/admin/faculty" component={AdminFaculty} />
           <Route path='/admin/donors/:id' component={SingleDonor} />
+          <Route path='/admin/faculty/:id' component={SingleFaculty} />
           <Footer />
         </div>
       </Router>

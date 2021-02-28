@@ -29,6 +29,19 @@
   color: black;
 }
 
+/* COVID SECTION */
+.covidDiv {
+  background-color: #ececec;
+}
+
+.imgCovid {
+  background-image: url("../src/images/covid.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 380px;
+  margin: 10px;
+}
+
 /* SPOTLIGHT SECTION: Black History Month */
 .spotlightDiv {
   background-color: #000942;

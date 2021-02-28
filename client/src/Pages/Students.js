@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import MajorsMap from "../components/MajorsMap";
 import FacultyCard from "../components/FacultyCard";
-import { Jumbotron, Container, Button, ButtonGroup, Row, Col, Card  } from 'react-bootstrap';
+import { Jumbotron, Container, Button, ButtonGroup, Row, Col, Card, CardDeck  } from 'react-bootstrap';
 import '../students.css';
 import lab from '../images/lab.jpg';
 import abroad from '../images/abroad.jpg';
@@ -70,10 +70,11 @@ function Students() {
     <div>
         <Jumbotron fluid className="jStudents"></Jumbotron>
         <Container>
-            <h1 className="h1Stu">Majors & Colleges</h1>
+            <h1 className="h1Stu">Majors, Colleges, & Beyond</h1>
             <h4 className="h4Stu">
                 ITU offers more than 100 undergraduate programs meaning more options and more possibilities when you graduate.
             </h4>
+
             <br></br>
 
             <h2 className="h2Stu">Choosing a Major</h2>
@@ -83,35 +84,41 @@ function Students() {
                 Students are also provided with many opportunities and resources to explore their major options.
             </p>
 
-            <h2 className="h2Stu">Beyond the Classroom</h2>
-            <p className="pStu">
-                ITU advocates for collaboration and interdisciplinary research initiatives that involve faculty and students.
-                Many students further their knowledge through one of our internship programs offered in partnership with well-known companies.
-                Our world id becoming increasingly interconnected, we offer various study abroad programs to help students gain international experience.
-            </p>
-            <Row>
-                <Col>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Header className="text-center">Research</Card.Header>
-                        <Card.Img variant="top" src={lab} />
-                    </Card>
-                </Col>
-
-                <Col>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Header className="text-center">Study Abroad</Card.Header>
-                        <Card.Img variant="top" src={abroad} />
-                    </Card>
-                </Col>
-
-                <Col>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Header className="text-center">Intern</Card.Header>
-                        <Card.Img variant="top" src={intern} />
-                    </Card>
-                </Col>
-            </Row>
             <br></br>
+
+            <h2 className="h2Stu">Beyond the Classroom</h2>                
+            <CardDeck>
+                <Card border="light" style={{ width: '25rem' }}>
+                <Card.Img variant="top" src={abroad} />
+                    <Card.Body>
+                        <Card.Title className="CTStu">Study Abroad</Card.Title>
+                        <Card.Text className="CTXStu">
+                            Many students further their knowledge through one of our internship programs offered in partnership with well-known companies.
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+
+                <Card border="light" style={{ width: '25rem' }}>
+                    <Card.Img variant="top" src={lab} />
+                    <Card.Body>
+                        <Card.Title className="CTStu">Research</Card.Title>
+                        <Card.Text className="CTXStu">
+                            InfoTech University advocates for collaboration and interdisciplinary research initiatives that involve faculty and students.
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+
+                <Card border="light" style={{ width: '25rem' }}>
+                <Card.Img variant="top" src={intern} />
+                <Card.Body>
+                        <Card.Title className="CTStu">Intern</Card.Title>
+                        <Card.Text className="CTXStu">
+                        Our world id becoming increasingly interconnected, we offer various study abroad programs to help students gain international experience.
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+            </CardDeck>
+            
         </Container>
             
         <br></br>
