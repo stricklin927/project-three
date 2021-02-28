@@ -8,6 +8,9 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import 'react-perfect-scrollbar/dist/css/styles.css';
 import PerfectScrollbar from 'react-perfect-scrollbar'
 
+
+const ps = new PerfectScrollbar('#container');
+
 function Alumni() {
     const [ donors, setDonors ] = useState([]);
     const [ name, setName ] = useState("");
@@ -157,26 +160,28 @@ function Alumni() {
             <br></br>
 
             <h2 className="dAlum text-center">DONORS</h2>
-            <ListGroup>
-              <PerfectScrollbar>
-                {donors.map(giver => {
-                      return (
-                      <ListGroup.Item>
-                        <Row>
-                          <Col xs={2}>
-                            <span className="iAlum"><i class="fas fa-user"></i></span>
-                          </Col>
-                          <Col>
-                            {giver.name}
-                            <br></br>
-                            ${giver.amount}
-                          </Col>
-                        </Row>
-                      </ListGroup.Item>
-                    )
-                })}
-              </PerfectScrollbar>
-            </ListGroup>
+            <Container className="containerDonor">
+              <ListGroup>
+                <PerfectScrollbar>
+                  {donors.map(giver => {
+                        return (
+                        <ListGroup.Item>
+                          <Row>
+                            <Col xs={2}>
+                              <span className="iAlum"><i class="fas fa-user"></i></span>
+                            </Col>
+                            <Col>
+                              {giver.name}
+                              <br></br>
+                              ${giver.amount}
+                            </Col>
+                          </Row>
+                        </ListGroup.Item>
+                      )
+                  })}
+                </PerfectScrollbar>
+              </ListGroup>
+            </Container>
           </Col>
         </Row>
       </Container>
