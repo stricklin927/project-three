@@ -2,4 +2,16 @@ tbody>tr>:nth-child(2){
     color:black;
     width: 400px;
     text-align: center;
-   }
+}
+
+tbody>tr>:nth-child(3){
+    color:black;
+    width: 700px;
+    text-align: center;
+}
+
+tbody>tr>:nth-child(3){
+    color:black;
+    width: 700px;
+    text-align: center;
+}
