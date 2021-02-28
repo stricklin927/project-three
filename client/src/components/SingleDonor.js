@@ -42,7 +42,9 @@ function SingleDonor() {
     return (
         <div className="m-5">
             <form noValidate onSubmit={onSubmit}>
-            <h3 className="mb-3">Update form for record ID: {id}</h3>
+            <h3 className="mb-3">UPDATE FORM</h3>
+            <hr />
+            <h4 className="mb-4">Update record ID: <span className="badge badge-warning">{id}</span></h4>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">Current name: {donor.name}</span>
@@ -82,7 +84,7 @@ function SingleDonor() {
                 placeholder={donor.amount}
                 />
                 <br /> */}
-            <button className="mt-3" type="submit">Update</button>
+            <button className="mt-3 btn btn-danger" type="submit">Update</button>
             </form>
         </div>
     )
