@@ -58,7 +58,7 @@ function App() {
           <Route exact path="/admin/faculty" component={AdminFaculty} />
           <Route path='/admin/donors/:id' component={SingleDonor} />
           <Route path='/admin/faculty/:id' component={SingleFaculty} />
-          <Route exact path ='/admin/faculty/create' component={FacultyCreate} />
+          <Route exact path ='/admin/new-faculty/create' component={FacultyCreate} />
           <Footer />
         </div>
       </Router>
