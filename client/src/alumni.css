@@ -39,8 +39,8 @@
   box-shadow: 10px 10px 5px grey;
 }
 
-.containerDonor {
+.SBDonors {
   position: relative;
-  width: 600px;
+  width: 350px;
   height: 400px;
 }

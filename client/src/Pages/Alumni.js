@@ -160,9 +160,9 @@ function Alumni() {
             <br></br>
 
             <h2 className="dAlum text-center">DONORS</h2>
-            <Container className="containerDonor">
-              <ListGroup>
-                <PerfectScrollbar>
+            <Container className="SBDonors">
+              <PerfectScrollbar>
+                <ListGroup>
                   {donors.map(giver => {
                         return (
                         <ListGroup.Item>
@@ -179,8 +179,8 @@ function Alumni() {
                         </ListGroup.Item>
                       )
                   })}
-                </PerfectScrollbar>
-              </ListGroup>
+                </ListGroup>
+              </PerfectScrollbar>
             </Container>
           </Col>
         </Row>
