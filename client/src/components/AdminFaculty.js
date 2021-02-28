@@ -41,7 +41,7 @@ function AdminFaculty(props) {
           //console.log(id);
           const url = `/api/people/faculty/${id}`;
           //console.log(url);
-          axios.delete(url).then(res => console.log(res)).catch(err => console.log(err));
+          axios.delete(url).then(res => console.log(res)).then(() => history.push('/admin/faculty')).catch(err => console.log(err))
       }
 
       const onUpdate = e => {
