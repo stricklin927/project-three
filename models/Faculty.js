@@ -2,40 +2,67 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const FacultySchema = new Schema({
-  firstName: {
-    type: String,
-    trim: true,
-    required: "First Name is Required"
-  },
-
-  lastName: {
-    type: String,
-    trim: true,
-    required: "Last Name is Required"
-  },
+const FacultySchema = new Schema(
+    {
+    fullName: {
+      type: String
+    },
+    Department: {
+      type: String
+    },
+    Title: {
+      type: String
+    },
+    Email: {
+      type: String
+    },
+    OfficeNumber: {
+      type: String
+    },
+    PhoneNumber: {
+      type: String
+    },
+    Image: {
+      type: String
+    }
+  })
   
-  Department: {
-    type: String,
-    trim: true,
-    required: "Department is Required"
-  },
+  
+  
+  
+//   firstName: {
+//     type: String,
+//     trim: true,
+//     required: "First Name is Required"
+//   },
 
-  Title: {
-    type: String,
-    trim: true,
-    required: "Title is Required"
-  },
+//   lastName: {
+//     type: String,
+//     trim: true,
+//     required: "Last Name is Required"
+//   },
+  
+//   Department: {
+//     type: String,
+//     trim: true,
+//     required: "Department is Required"
+//   },
 
-  userCreated: {
-    type: Date,
-    default: Date.now
-  },
+//   Title: {
+//     type: String,
+//     trim: true,
+//     required: "Title is Required"
+//   },
 
-  lastUpdated: Date,
+//   userCreated: {
+//     type: Date,
+//     default: Date.now
+//   },
 
-  fullName: String
-});
+//   lastUpdated: Date,
+
+//   fullName: String
+// });
 
 // const FacultySchema = new Schema({
 //   firstName: {
@@ -115,11 +142,11 @@ const FacultySchema = new Schema({
 //   fullName: String
 // });
 
-FacultySchema.methods.setFullName = function() {
-  this.fullName = `${this.firstName} ${this.lastName}`;
+// FacultySchema.methods.setFullName = function() {
+//   this.fullName = `${this.firstName} ${this.lastName}`;
 
-  return this.fullName;
-};
+//   return this.fullName;
+// };
 
 FacultySchema.methods.lastUpdatedDate = function() {
   this.lastUpdated = Date.now();
