@@ -82,7 +82,7 @@ function SingleFaculty() {
                     className="form-control"                   
                     id="name"
                     type="text"
-                    placeholder={prof.name} />
+                    placeholder={prof.fullName} />
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -93,7 +93,7 @@ function SingleFaculty() {
                     className="form-control"                   
                     id="title"
                     type="text"
-                    placeholder={prof.title} />
+                    placeholder={prof.Title} />
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
