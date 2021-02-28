@@ -12,9 +12,6 @@ tbody>tr>:nth-child(3){
 
 tbody>tr>:nth-child(4){
     color:black;
+    width: 700px;
     text-align: center;
 }
-
-tr:nth-child(even) {
-    background-color: white;
- }
