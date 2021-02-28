@@ -17,6 +17,7 @@ import AdminDonors from "./components/AdminDonors";
 import SingleDonor from './components/SingleDonor';
 import AdminFaculty from './components/AdminFaculty';
 import SingleFaculty from './components/SingleFaculty';
+import FacultyCreate from './components/FacultyCreate';
 
 function App() {
 
@@ -57,6 +58,7 @@ function App() {
           <Route exact path="/admin/faculty" component={AdminFaculty} />
           <Route path='/admin/donors/:id' component={SingleDonor} />
           <Route path='/admin/faculty/:id' component={SingleFaculty} />
+          <Route exact path ='/admin/faculty/create' component={FacultyCreate} />
           <Footer />
         </div>
       </Router>
