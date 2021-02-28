@@ -1,10 +1,25 @@
-th{
-    width: 50px;
-    white-space: normal;
-    padding-right: 0;
+tbody>tr>:nth-child(1){
+    background-color: white;
 }
 
-td {
-width: 100px;
-overflow: hidden;
+
+tbody>tr>:nth-child(2){
+    color:white;
+    width: 400px;
+    text-align: center;
+    background-color: #00274c;
+}
+
+tbody>tr>:nth-child(3){
+    color:#00274c;
+    width: 700px;
+    text-align: center;
+    background-color:white;
+}
+
+tbody>tr>:nth-child(4){
+    color:white;
+    width: 700px;
+    text-align: center;
+    background-color: #00274c;
 }

@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import FacMap from '../components/FacMap';
-import { Carousel, Col, Container, Row } from 'react-bootstrap';
+import { Carousel, Col, Container, Row, Card, Button } from 'react-bootstrap';
+import Accordion from 'react-bootstrap/Accordion';
+
+
 
 import '../facstaff.css';
 
@@ -120,7 +123,7 @@ function Facstaff() {
             <Container>
                 <Row>
                     <Col xs={12} sm={12} md={12} lg={7} xl={7} id="soaringHigh"></Col>
-                    <Col sm id="soaringHighText">
+                    <Col xs={12} sm >
                         <h2 className="h2 text-center pt-5"> Soaring High at ITU </h2>
                         <p> 
                             Every single member of our faculty has a personal hand and intiative in ensuring the success 
@@ -147,14 +150,109 @@ function Facstaff() {
                     </Col>
                     <Col id="departments">
                         <h5>ITU Departments</h5>
-                        <ul>
-                            <li>Art</li>
-                            <li>Business</li>
-                            <li>Computer Science</li>
-                            <li>Education</li>
-                            <li>Medicine</li>
-                            <li>Science</li>
-                        </ul>
+                        <Accordion>
+                            <Card>
+                                <Card.Header>
+                                    <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                                        Art
+                                    </Accordion.Toggle>
+                                </Card.Header>
+                                <Accordion.Collapse eventKey="0">
+                                    <Card.Body>
+                                        <p className="font-weight-bold">Faculty</p>
+                                        <p> Dean Becky Adjunct </p>
+                                        <p> Professor Bill Baggins </p>
+                                    </Card.Body>
+                                </Accordion.Collapse>
+                            </Card>
+                            <Card>
+                                <Card.Header>
+                                    <Accordion.Toggle as={Button} variant="link" eventKey="1">
+                                        Business
+                                    </Accordion.Toggle>
+                                </Card.Header>
+                                <Accordion.Collapse eventKey="1">
+                                    <Card.Body>
+                                        <p className="font-weight-bold">Faculty</p>
+                                        <p> Dean John Snow </p>
+                                        <p> Professor Greg Gandalf </p>
+                                    </Card.Body>
+                                </Accordion.Collapse>
+                            </Card>
+                            <Card>
+                                <Card.Header>
+                                    <Accordion.Toggle as={Button} variant="link" eventKey="2">
+                                        Computer Science
+                                    </Accordion.Toggle>
+                                </Card.Header>
+                                <Accordion.Collapse eventKey="2">
+                                    <Card.Body>
+                                        <p className="font-weight-bold">Faculty</p>
+                                        <p> Dean Dana Scully </p>
+                                        <p> Professor Natasha Romanoff </p>
+                                    </Card.Body>
+                                </Accordion.Collapse>
+                            </Card>
+                            <Card>
+                                <Card.Header>
+                                    <Accordion.Toggle as={Button} variant="link" eventKey="3">
+                                        Education
+                                    </Accordion.Toggle>
+                                </Card.Header>
+                                <Accordion.Collapse eventKey="3">
+                                    <Card.Body>
+                                        <p className="font-weight-bold">Faculty</p>
+                                        <p> Dean Fox Mulder </p>
+                                        <p> Professor Sarah Connor </p>
+                                    </Card.Body>
+                                </Accordion.Collapse>
+                            </Card>
+                            <Card>
+                                <Card.Header>
+                                    <Accordion.Toggle as={Button} variant="link" eventKey="4">
+                                        Medicine
+                                    </Accordion.Toggle>
+                                </Card.Header>
+                                <Accordion.Collapse eventKey="4">
+                                    <Card.Body>
+                                        <p className="font-weight-bold">Faculty</p>
+                                        <p> Dean Angela Ramonda </p>
+                                        <p> Professor Babbage Nelson </p>
+                                    </Card.Body>
+                                </Accordion.Collapse>
+                            </Card>
+                            <Card>
+                                <Card.Header>
+                                    <Accordion.Toggle as={Button} variant="link" eventKey="5">
+                                        Science
+                                    </Accordion.Toggle>
+                                </Card.Header>
+                                <Accordion.Collapse eventKey="5">
+                                    <Card.Body>
+                                        <p className="font-weight-bold">Faculty</p>
+                                        <p> Dean Mara Jann </p>
+                                        <p> Professor Jackie Brown </p>
+                                    </Card.Body>
+                                </Accordion.Collapse>
+                            </Card>
+                            <Card>
+                                <Card.Header>
+                                    <Accordion.Toggle as={Button} variant="link" eventKey="6">
+                                        Social Science
+                                    </Accordion.Toggle>
+                                </Card.Header>
+                                <Accordion.Collapse eventKey="6">
+                                    <Card.Body>
+                                        <p className="font-weight-bold">Faculty</p>
+                                        <p> Dean Jane Foster </p>
+                                        <p> Professor Natalie Emmanuel </p>
+                                        <p> Professor Darcy Lewis </p>
+                                        <p> Professor Carl Drogo </p>
+                                        <p> Professor Clint Barton </p>
+                                    </Card.Body>
+                                </Accordion.Collapse>
+                            </Card>
+                        </Accordion>
                     </Col>
                 </Row>
                 <br></br>
@@ -178,7 +276,7 @@ function Facstaff() {
             {colleges.map(coll => {
                 return (
                 <div>
-                    <h3>{coll.name}</h3>
+                    <h3 className="pl-3">{coll.name}</h3>
                     <FacMap coll={coll} />
                 </div>
                 )
