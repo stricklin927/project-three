@@ -28,8 +28,8 @@ function Admin(props) {
         <h1>Admin Pages</h1>
         <p>Hello {user.name}! You role is {user.role}. Your email is {user.email}. Welcome!</p>
         <button type="button" className="btn btn-primary btn-block" onClick={() => history.push('/admin/donors')}>Admin Donors</button>
-        {/* <button type="button" className="btn btn-primary btn-block"><Link to="/admin/faculty">Faculty Admin</Link></button> */}
-        {/* <button type="button" className="btn btn-primary btn-block"><Link to="/admin/majors">Majors Admin</Link></button>        */}
+        <button type="button" className="btn btn-primary btn-block" onClick={() => history.push('/admin/donors')}>Faculty Admin</button>
+        {/* <button type="button" className="btn btn-primary btn-block mb-5"><Link to="/admin/majors">Majors Admin</Link></button>        */}
       </div>
   )
 }
