@@ -17,6 +17,12 @@ function SingleFaculty() {
         axios.get(`/api/people/faculty/${id}`).then(res => {
             console.log(res.data);
             setProf(res.data);
+            setName(prof.fullName);
+            setDepartment(prof.Department);
+            setOffice(prof.OfficeNumber);
+            setPhone(prof.PhoneNumber);
+            setEmail(prof.Email);
+            setTitle(prof.Title);
         }).catch(err => console.log(err))
     }, [])
 
