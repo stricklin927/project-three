@@ -89,21 +89,21 @@ function Students() {
             <h2 className="h2Stu">Beyond the Classroom</h2>                
             <CardDeck>
                 <Card border="light" style={{ width: '25rem' }}>
-                    <Card.Img variant="top" src={lab} />
-                    <Card.Body>
-                        <Card.Title className="CTStu">Research</Card.Title>
-                        <Card.Text className="CTXStu">
-                            InfoTech University advocates for collaboration and interdisciplinary research initiatives that involve faculty and students.
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-
-                <Card border="light" style={{ width: '25rem' }}>
                 <Card.Img variant="top" src={abroad} />
                     <Card.Body>
                         <Card.Title className="CTStu">Study Abroad</Card.Title>
                         <Card.Text className="CTXStu">
                             Many students further their knowledge through one of our internship programs offered in partnership with well-known companies.
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+
+                <Card border="light" style={{ width: '25rem' }}>
+                    <Card.Img variant="top" src={lab} />
+                    <Card.Body>
+                        <Card.Title className="CTStu">Research</Card.Title>
+                        <Card.Text className="CTXStu">
+                            InfoTech University advocates for collaboration and interdisciplinary research initiatives that involve faculty and students.
                         </Card.Text>
                     </Card.Body>
                 </Card>
