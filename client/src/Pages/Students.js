@@ -93,7 +93,7 @@ function Students() {
                     <Card.Body>
                         <Card.Title className="CTStu">Study Abroad</Card.Title>
                         <Card.Text className="CTXStu">
-                            Many students further their knowledge through one of our internship programs offered in partnership with well-known companies.
+                            Our world is becoming increasingly interconnected, we offer various study abroad programs to help students gain international experience.
                         </Card.Text>
                     </Card.Body>
                 </Card>
@@ -113,7 +113,7 @@ function Students() {
                 <Card.Body>
                         <Card.Title className="CTStu">Intern</Card.Title>
                         <Card.Text className="CTXStu">
-                        Our world id becoming increasingly interconnected, we offer various study abroad programs to help students gain international experience.
+                            Many students further their knowledge through one of our internship programs offered in partnership with well-known companies.
                         </Card.Text>
                     </Card.Body>
                 </Card>
