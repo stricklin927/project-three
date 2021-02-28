@@ -139,7 +139,7 @@ function Students() {
                 <Button variant="outline-secondary" onClick={onClick} value="L">L</Button>
                 <Button variant="outline-secondary" onClick={onClick} value="M">M</Button>
                 <Button variant="outline-secondary" onClick={onClick} value="N">N</Button>
-                <Button variant="outline-secondary" onClick={onClick} value="P">O</Button>
+                <Button variant="outline-secondary" onClick={onClick} value="O">O</Button>
                 <Button variant="outline-secondary" onClick={onClick} value="P">P</Button>
                 <Button variant="outline-secondary" onClick={onClick} value="Q">Q</Button>
                 <Button variant="outline-secondary" onClick={onClick} value="R">R</Button>
