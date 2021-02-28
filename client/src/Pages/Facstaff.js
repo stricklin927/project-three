@@ -276,7 +276,7 @@ function Facstaff() {
             {colleges.map(coll => {
                 return (
                 <div>
-                    <h3>{coll.name}</h3>
+                    <h3 className="pl-3">{coll.name}</h3>
                     <FacMap coll={coll} />
                 </div>
                 )
