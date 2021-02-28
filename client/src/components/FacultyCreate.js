@@ -53,10 +53,10 @@ function FacultyCreate() {
     }
 
     return (
-        <div>
+        <div className="m-4">
             <h3>Add New Faculty Form</h3>
             <hr />
-        <form noValidate onSubmit={onSubmit}>
+        <form noValidate className="m-4" onSubmit={onSubmit}>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="basic-addon1">Full name:</span>
