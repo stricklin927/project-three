@@ -1,25 +1,25 @@
 tbody>tr>:nth-child(1){
-    background-color: #00274c;
+    background-color: white;
 }
 
 
 tbody>tr>:nth-child(2){
-    color:#00274c;
-    width: 400px;
-    text-align: center;
-    background-color: white;
-}
-
-tbody>tr>:nth-child(3){
     color:white;
-    width: 700px;
+    width: 400px;
     text-align: center;
     background-color: #00274c;
 }
 
-tbody>tr>:nth-child(4){
+tbody>tr>:nth-child(3){
     color:#00274c;
     width: 700px;
     text-align: center;
     background-color:white;
+}
+
+tbody>tr>:nth-child(4){
+    color:white;
+    width: 700px;
+    text-align: center;
+    background-color: #00274c;
 }
