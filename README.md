@@ -18,16 +18,25 @@
 
   ### Front-end
   * React
+  * React-Bootstrap
+  * Bootstrap
 
   ### Back-end
-  * Node
+  * Node.js
   * Express
+  * Cors
   * Sequelize
   * ESLint
 
   ### Database
   * MongoDB
-  * Sequelize or Mongoose
+  * Mongoose
+  
+  ### Authentication
+  * Passport
+  * Jsonwebtoken
+  * Validator
+  * Bcryptjs
 
   ### Deployment
   * Heroku
