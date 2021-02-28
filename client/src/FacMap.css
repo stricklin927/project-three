@@ -1,10 +1,5 @@
-th{
-    width: 50px;
-    white-space: normal;
-    padding-right: 0;
-}
-
-td {
-width: 100px;
-overflow: hidden;
-}
+tbody>tr>:nth-child(2){
+    color:red;
+    width: 200px;
+    text-align: center;
+   }
