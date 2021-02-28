@@ -123,7 +123,7 @@ function Facstaff() {
             <Container>
                 <Row>
                     <Col xs={12} sm={12} md={12} lg={7} xl={7} id="soaringHigh"></Col>
-                    <Col sm id="soaringHighText">
+                    <Col xs={12} sm >
                         <h2 className="h2 text-center pt-5"> Soaring High at ITU </h2>
                         <p> 
                             Every single member of our faculty has a personal hand and intiative in ensuring the success 
