@@ -3,7 +3,6 @@ import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 
 function FacultyCreate() {
-    const [ prof, setProf ] = useState({});
     const [ name, setName ] = useState("");
     const [ department, setDepartment ] = useState("");
     const [ office, setOffice ] = useState("");
@@ -54,10 +53,13 @@ function FacultyCreate() {
     }
 
     return (
+        <div>
+            <h3>Add New Faculty Form</h3>
+            <hr />
         <form noValidate onSubmit={onSubmit}>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Current name: {prof.fullName}</span>
+                    <span class="input-group-text" id="basic-addon1">Full name:</span>
                 </div>
                 <input onChange={changeName}
                     value={name}  
@@ -68,7 +70,7 @@ function FacultyCreate() {
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Current title: {prof.Title}</span>
+                    <span class="input-group-text" id="basic-addon1">Current title:</span>
                 </div>
                 <input onChange={changeTitle}
                     value={title}  
@@ -79,7 +81,7 @@ function FacultyCreate() {
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Current department: {prof.Department}</span>
+                    <span class="input-group-text" id="basic-addon1">Current department:</span>
                 </div>
                 <input onChange={changeDept}
                     value={department}  
@@ -90,7 +92,7 @@ function FacultyCreate() {
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Current office: {prof.OfficeNumber}</span>
+                    <span class="input-group-text" id="basic-addon1">Current office:</span>
                 </div>
                 <input onChange={changeOffice}
                     value={office}  
@@ -101,7 +103,7 @@ function FacultyCreate() {
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Current phone: {prof.PhoneNumber}</span>
+                    <span class="input-group-text" id="basic-addon1">Current phone:</span>
                 </div>
                 <input onChange={changePhone}
                     value={phone}  
@@ -112,7 +114,7 @@ function FacultyCreate() {
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Current email: {prof.Email}</span>
+                    <span class="input-group-text" id="basic-addon1">Current email:</span>
                 </div>
                 <input onChange={changeEmail}
                     value={email}  
@@ -121,9 +123,10 @@ function FacultyCreate() {
                     type="text"
                     placeholder="prof@itu.edu" />
             </div>
-            <button className="mt-3 btn btn-danger" type="submit">Update</button>
+            <button className="mt-3 btn btn-danger" type="submit">Add New Faculty</button>
         </form>
+        </div>
     )
 }
 
-
+export default FacultyCreate;
