@@ -146,7 +146,7 @@ function Alumni() {
           </Col>
 
           <Col lg={3}>
-            <Card className="cardAlum text-center" style={{ width: '18rem' }}>
+            <Card className="cardAlum text-center" style={{ width: '20rem' }}>
               <Card.Img variant="top" src={logo} />
               <Card.Body>
                 <a href="#donateNow"><Button variant="primary">GIVE NOW</Button></a>
