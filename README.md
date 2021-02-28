@@ -24,8 +24,6 @@
   ### Back-end
   * Node.js
   * Express
-  * Cors
-  * Sequelize
   * ESLint
 
   ### Database
@@ -34,8 +32,9 @@
   
   ### Authentication
   * Passport
-  * Jsonwebtoken
+  * Passportjwt
   * Validator
+  * Is-empty
   * Bcryptjs
 
   ### Deployment
@@ -58,6 +57,7 @@
 
     ![Alumni Screenshot](/public/assets/images/alumni.png)
 
+  * Admin: User is able to access administrator pages only available to users assigned an "admin" role in the database. From there, admins can create, update, or delete entries from faculty, donors, and college.majors databases. Login in as "admin@admin.com" with "123456789" as your password to take a look. 
 
   ## Contribution
   - [Alexandra Stricklin](https://github.com/stricklin927)
