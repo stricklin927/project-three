@@ -63,7 +63,7 @@ function AdminFaculty(props) {
                   <p>Phone: {prof.PhoneNumber}</p>
                   <p>Email: {prof.Email}</p>
                   <div className="btn-group" role="group" aria-label="Update and Delete Buttons">
-                    <button type="button" onClick={() => history.push("/admin/faculty/create")} className="btn btn-secondary">Create</button>
+                    <button type="button" onClick={() => history.push("/admin/new-faculty/create")} className="btn btn-secondary">Create</button>
                     <button type="button" onClick={onDelete} value={prof._id} className="btn btn-secondary">Delete</button>
                     <button type="button" value={prof._id} onClick={onUpdate} className="btn btn-secondary">Update</button>
                   </div>
