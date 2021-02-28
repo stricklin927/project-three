@@ -5,7 +5,8 @@ import '../alumni.css';
 import logo from '../images/ITU4.png';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-
+import 'react-perfect-scrollbar/dist/css/styles.css';
+import PerfectScrollbar from 'react-perfect-scrollbar'
 
 function Alumni() {
     const [ donors, setDonors ] = useState([]);
@@ -146,7 +147,7 @@ function Alumni() {
           </Col>
 
           <Col lg={3}>
-            <Card className="cardAlum text-center" style={{ width: '18rem' }}>
+            <Card className="cardAlum text-center" style={{ width: '20rem' }}>
               <Card.Img variant="top" src={logo} />
               <Card.Body>
                 <a href="#donateNow"><Button variant="primary">GIVE NOW</Button></a>
@@ -157,22 +158,24 @@ function Alumni() {
 
             <h2 className="dAlum text-center">DONORS</h2>
             <ListGroup>
+              <PerfectScrollbar>
                 {donors.map(giver => {
-                    return (
-                    <ListGroup.Item>
-                      <Row>
-                        <Col xs={2}>
-                          <span className="iAlum"><i class="fas fa-user"></i></span>
-                        </Col>
-                        <Col>
-                          {giver.name}
-                          <br></br>
-                          ${giver.amount}
-                        </Col>
-                      </Row>
-                    </ListGroup.Item>
-                  )
-              })}
+                      return (
+                      <ListGroup.Item>
+                        <Row>
+                          <Col xs={2}>
+                            <span className="iAlum"><i class="fas fa-user"></i></span>
+                          </Col>
+                          <Col>
+                            {giver.name}
+                            <br></br>
+                            ${giver.amount}
+                          </Col>
+                        </Row>
+                      </ListGroup.Item>
+                    )
+                })}
+              </PerfectScrollbar>
             </ListGroup>
           </Col>
         </Row>

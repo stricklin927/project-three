@@ -74,7 +74,27 @@ function Home() {
 
         <br/><br/>
 
-        <div className="spotlightDiv" id="spotlight">
+        <div className="covidDiv">
+            <Container>
+                <Row>
+                    <Col lg={6}>
+                        <h2 className="h2HomeCovid">Keeping ITU Students Safe</h2>
+                        <p className="pHomeCovid">
+                            Protect yourself and others in our community.
+                            We must all take personal responsibilty in order to protect the 
+                            health and safety of ourselves and each other.
+                            That includes wearing a mask, filling out the daily health screening form, 
+                            taking part in the Early Detection Program and receiving the flu vaccine.
+                        </p>
+                    </Col>
+                    <Col>
+                        <div className="imgCovid"></div>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+
+        <div className="spotlightDiv" id="spotlightHome">
             <Container>
                 <Row>
                     <Col lg={6}>
