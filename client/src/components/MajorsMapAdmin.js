@@ -10,7 +10,13 @@ function MajorsMapAdmin(props) {
         <div>
             {props.coll.majors.map(major => {
                 return (
-                    <li class="list-group-item">{major}</li>
+                    <div>
+                    <li class="list-group-item">
+                        {major}
+                        <span value={props.coll._id} className="badge badge-danger">Delete</span>
+                        <span value={props.coll._id} className="badge badge-warning">Update</span>
+                    </li>
+                    </div>
                 )
             })}
         </div>
