@@ -32,6 +32,7 @@ function AdminMajors() {
                 <ul className="list-group list-group-flush">
                 <MajorsMapAdmin coll={coll} />
                 </ul>
+                <button type="button" className="btn btn-secondary">Add Major</button>
                 </div>
                 )
             })}
