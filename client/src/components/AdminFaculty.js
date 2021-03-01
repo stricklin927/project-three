@@ -12,17 +12,14 @@ function AdminFaculty(props) {
 
     useEffect(() => {
         axios.get('/api/people/faculty').then(res => {
-            //console.log(res);
             setProfs(res.data);
         })
     }, []);
 
     useEffect(() => {
         if (localStorage.getItem("user")) {
-          //console.log("User is here!");
           const userObj = JSON.parse(localStorage.getItem("user"));
             axios.get(`/api/users/get/${userObj.email}`).then(res => {
-              //console.log(res);
               if (res.data.role === "Customer") {
                   history.push('/home');
               } else if (res.data.role === "Admin") {
@@ -36,11 +33,8 @@ function AdminFaculty(props) {
 
       const onDelete = e => {
           e.preventDefault();
-          //console.log(e.target);
           const id = e.target.value;
-          //console.log(id);
           const url = `/api/people/faculty/${id}`;
-          //console.log(url);
           axios.delete(url).then(res => console.log(res)).then(() => history.push('/admin/faculty')).catch(err => console.log(err))
       }
 

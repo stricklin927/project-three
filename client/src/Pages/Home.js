@@ -1,8 +1,6 @@
 import React from 'react';
 import { Jumbotron, Container, Carousel, Row, Col } from 'react-bootstrap';
 import '../home.css';
-
-
 // import { useHistory } from 'react-router-dom';
 
 function Home() {

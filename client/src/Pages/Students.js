@@ -51,12 +51,7 @@ function Students() {
     })
 
     const onClick = (e) => {
-        //console.log(e.target.value);
         console.log(majors);
-        // const alphaMap = majors.map(maj => {
-        //     return maj[0];
-        // });
-        // console.log(alphaMap);
         const newMajors = majors.filter(maj => {
             if (e.target.value === maj[0]) {
                 return maj;

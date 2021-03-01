@@ -47,7 +47,6 @@ function FacultyCreate() {
       };
         console.log(newProf);
         axios.post(`/api/people/faculty/`, newProf).then(res => {
-            //console.log(res);
         }).catch(err => console.log(err));
         history.push('/admin/faculty');
     }

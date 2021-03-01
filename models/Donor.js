@@ -22,6 +22,3 @@ DonorSchema.methods.lastUpdatedDate = function() {
 
 module.exports = Donor = mongoose.model('donors', DonorSchema);
 
-// const Donor = mongoose.model("Donor", DonorSchema);
-
-// module.exports = Donor;

@@ -12,17 +12,14 @@ function AdminDonors(props) {
 
     useEffect(() => {
         axios.get('/api/people/donors').then(res => {
-            //console.log(res);
             setDonors(res.data);
         })
     }, []);
 
     useEffect(() => {
         if (localStorage.getItem("user")) {
-          //console.log("User is here!");
           const userObj = JSON.parse(localStorage.getItem("user"));
             axios.get(`/api/users/get/${userObj.email}`).then(res => {
-              //console.log(res);
               if (res.data.role === "Customer") {
                   history.push('/home');
               } else if (res.data.role === "Admin") {
@@ -36,11 +33,8 @@ function AdminDonors(props) {
 
       const onDelete = e => {
           e.preventDefault();
-          //console.log(e.target);
           const id = e.target.value;
-          //console.log(id);
           const url = `/api/people/donors/${id}`;
-          //console.log(url);
           axios.delete(url).then(res => console.log(res)).catch(err => console.log(err));
       }
 

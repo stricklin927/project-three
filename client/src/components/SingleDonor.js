@@ -25,14 +25,10 @@ function SingleDonor() {
 
     const onSubmit = (e) => {
       e.preventDefault();
-      //console.log(e);
-      //console.log("Name: " + name);
-      //console.log("Amount: " + amount);
       const newDonor = {
         name: name,
         amount: parseInt(amount)
       };
-        //console.log(newDonor);
         axios.put(`/api/people/donors/${id}`, newDonor).then(res => {
             //console.log(res);
         }).catch(err => console.log(err));
@@ -67,23 +63,6 @@ function SingleDonor() {
                     type="number"
                     placeholder={donor.amount} />
             </div>
-
-
-            {/* <label for="name">Name: {donor.name}</label>
-            <input onChange={changeName}
-                value={name}                     
-                id="name"
-                type="text"
-                placeholder={donor.name} />
-                <br />
-            <label className="mt-3" for="amount">Amount: {donor.amount}</label>
-            <input onChange={changeAmount}
-                value={amount}
-                id="amount"
-                type="number"
-                placeholder={donor.amount}
-                />
-                <br /> */}
             <button className="mt-3 btn btn-danger" type="submit">Update</button>
             </form>
         </div>

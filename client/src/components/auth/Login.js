@@ -47,7 +47,6 @@ function Login(props) {
                   <input className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
                     onChange={changeEmail}
                     value={email}
-                  //   error={errors.email}
                     id="email"
                     type="email"
                     placeholder="Email"
@@ -60,7 +59,6 @@ function Login(props) {
                   <input className="form-control "
                     onChange={changePassword}
                     value={password}
-                  //   error={errors.password}
                     id="password"
                     type="password"
                     placeholder="Password"

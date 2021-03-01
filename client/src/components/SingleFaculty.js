@@ -62,7 +62,6 @@ function SingleFaculty() {
       };
         console.log(newProf);
         axios.put(`/api/people/faculty/${id}`, newProf).then(res => {
-            //console.log(res);
         }).catch(err => console.log(err));
         history.push('/admin/faculty');
     }
@@ -139,22 +138,6 @@ function SingleFaculty() {
                     type="text"
                     placeholder={prof.Email} />
             </div>
-
-            {/* <label for="name">Name: {donor.name}</label>
-            <input onChange={changeName}
-                value={name}                     
-                id="name"
-                type="text"
-                placeholder={donor.name} />
-                <br />
-            <label className="mt-3" for="amount">Amount: {donor.amount}</label>
-            <input onChange={changeAmount}
-                value={amount}
-                id="amount"
-                type="number"
-                placeholder={donor.amount}
-                />
-                <br /> */}
             <button className="mt-3 btn btn-danger" type="submit">Update</button>
             </form>
         </div>

@@ -3,88 +3,16 @@ import axios from 'axios';
 import FacMap from '../components/FacMap';
 import { Carousel, Col, Container, Row, Card, Button } from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
-
-
-
 import '../facstaff.css';
-
 
 function Facstaff() {
     const [colleges, setColleges] = useState([]);
 
     useEffect(() => {
     axios.get('/api/people/colleges').then(res => {
-        //console.log(res);
         setColleges(res.data);
     })
     }, [])
-
-    // useEffect(() => {
-    //     axios.get("/api/people/faculty").then(res => {
-    //         console.log(res);
-    //         setProfessors(res.data);
-    //     })
-    // }, []);
-
-    // const alpha = () => {
-    //     console.log("Alpha clicked")
-    //     const sortedProfs = [...professors].sort(function (a, b) {
-    //           if (a.lastName > b.lastName) {
-    //               return 1;
-    //           }
-    //           if (b.lastName > a.lastName) {
-    //               return -1;
-    //           }
-    //           return 0;
-    //       })
-    //     console.log(sortedProfs);
-    //     setProfessors(sortedProfs);
-    //   }
-
-    //   const reversed = () => {
-    //     console.log("Reverse clicked")
-    //     const sortedProfs = [...professors].sort(function (a, b) {
-    //           if (a.lastName > b.lastName) {
-    //               return -1;
-    //           }
-    //           if (b.lastName > a.lastName) {
-    //               return 1;
-    //           }
-    //           return 0;
-    //       })
-    //     console.log(sortedProfs);
-    //     setProfessors(sortedProfs);
-    //   }
-
-    //   const byTitle = () => {
-    //     console.log("byTitle clicked")
-    //     const sortedProfs = [...professors].sort(function (a, b) {
-    //           if (a.Title > b.Title) {
-    //               return 1;
-    //           }
-    //           if (b.Title > a.Title) {
-    //               return -1;
-    //           }
-    //           return 0;
-    //       })
-    //     console.log(sortedProfs);
-    //     setProfessors(sortedProfs);
-    //   }
-
-    //   const byDepartment = () => {
-    //     console.log("byDepartment clicked")
-    //     const sortedProfs = [...professors].sort(function (a, b) {
-    //           if (a.Department > b.Department) {
-    //               return 1;
-    //           }
-    //           if (b.Department > a.Department) {
-    //               return -1;
-    //           }
-    //           return 0;
-    //       })
-    //     console.log(sortedProfs);
-    //     setProfessors(sortedProfs);
-    //   }
 
       return(
         <div>
@@ -269,10 +197,6 @@ function Facstaff() {
             <br></br>
         
             <h1 className="text-center">Faculty Listing</h1>
-            {/* <button onClick={alpha}>Alphabetical Order</button>
-            <button onClick={reversed}>Reverse alpha</button>
-            <button onClick={byTitle}>Sort by title</button>
-            <button onClick={byDepartment}>Sort by department</button> */}
             {colleges.map(coll => {
                 return (
                 <div>

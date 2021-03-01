@@ -15,10 +15,6 @@ function Alumni() {
     const [ donors, setDonors ] = useState([]);
     const [ name, setName ] = useState("");
     const [ amount, setAmount ] = useState(0);
-    // const [ newDonor, setNewDonor ] = useState({
-    //   name: "",
-    //   amount: 0
-    // });
 
     useEffect(() => {
         axios.get('/api/people/donors').then(res => {
@@ -42,10 +38,6 @@ function Alumni() {
       console.log(e);
       console.log("Name: " + name);
       console.log("Amount: " + amount);
-      // setNewDonor({
-      //       name: name,
-      //       amount: amount
-      //   });
       const newDonor = {
         name: name,
         amount: parseInt(amount)
@@ -98,8 +90,7 @@ function Alumni() {
                     <Col sm={10}>
                       <Form.Control 
                         onChange={changeName}
-                        value={name}
-                        //   error={errors.email}                      
+                        value={name}                
                         id="name"
                         type="text"
                         placeholder="First and Last Name"
@@ -113,7 +104,6 @@ function Alumni() {
                       <Form.Control 
                         onChange={changeAmount}
                         value={amount}
-                        //   error={errors.email}
                         id="amount"
                         type="number"
                         placeholder="$150"
