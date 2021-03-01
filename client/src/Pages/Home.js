@@ -31,13 +31,15 @@ function Home() {
         <Container>
             <h2 className="h2Home" id="aboutITU">About ITU</h2>
             <p className="pHome">
-                Paragraph about why ITU is the best university and why prospective students should come here.
-                <br></br>
-                Pug taxidermy listicle mustache twee health goth neutra pabst. Austin tousled truffaut
-                butcher jianbing food truck.Taiyaki thundercats cornhole single-origin coffee chia kale chips 
-                affogato pour-over cloud bread irony man bun. Etsy adaptogen typewriter, locavore polaroid raw 
-                denim synth narwhal bicycle rights bespoke lyft. Farm-to-table stumptown paleo vexillologist
-                PBRB kale chips seitan.
+                
+                ITU is committed to cultivating a safe and inclusive campus community characterized by caring
+                and respect for others. This promise extends to you whether you are a student, faculty/staff member,
+                or visitor. We pride ourselves not only in our inclusiveness, but also in our vibrancy and vitality
+                as a campus. School pride is strong on our campus, so strong, some of our students never leave!
+                Indeed, we are quite fond of hiring our students and making them life time members of our staff.
+                Many of our students become lifetime givers to our institution as well. Beyond the comradery and inclusion,
+                however, what really makes ITU one of the most competitive schools in the nation is our state of the art
+                facility and academic programming, with some of the brightest minds in the world as students, graduates and faculty.
             </p>
         </Container>
 
