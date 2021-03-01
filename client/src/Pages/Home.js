@@ -175,24 +175,23 @@ function Home() {
         </div>
 
 
-        <div className="somethingDiv">
+        <div className="inst">
             <Container>
                 <Row>
-                    <Col lg={6}>
-                        <div className="somethingText">
-                            <h2 className="h2Something">Title of Section</h2>
-                            <p className="pHomeSomething">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper odio nec lacus facilisis, 
-                                non vulputate lacus convallis. Aliquam sagittis mi ligula, et viverra justo lobortis nec. 
-                                Duis elementum tincidunt magna, mattis ornare odio placerat ac. Sed vitae lectus nec ex fermentum 
-                                ornare ut sit amet nibh. 
+                    <Col lg={6} className="pt-4">
+                        <div className="instText">
+                            <h2 className="h2inst">Small Classroom Instruction</h2>
+                            <p className="pHomeInst">
+                            Nam non nulla eu ligula pharetra maximus. Sed nisl massa, viverra id volutpat 
+                            ut, pellentesque et tellus. Nunc a justo ex. Etiam sollicitudin placerat consectetur. 
+                            Donec vehicula id augue ac aliquam. Curabitur malesuada felis eu gravida gravida. Morbi viverra metus et 
+                            enim sollicitudin, ut posuere magna posuere. Praesent eu convallis enim. Ut auctor nibh arcu, eu vehicula 
+                            tortor venenatis ut.
                             </p>
                         </div>
                     </Col>
-                    <Col>
-                        <div>
-                            <h1>IMAGE HERE</h1>
-                        </div>
+                    <Col className="pt-4">
+                        <div className="facInstImg"></div>
                     </Col>
                 </Row>
             </Container>
