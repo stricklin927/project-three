@@ -179,7 +179,7 @@ function Home() {
 
         <div className="inst">
             <Container>
-                <Row>
+                <Row className="pb-5">
                     <Col lg={6} className="pt-4">
                         <div className="instText">
                             <h2 className="h2inst">Small Classroom Instruction</h2>
