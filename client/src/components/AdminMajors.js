@@ -27,7 +27,7 @@ function AdminMajors() {
         <div>
             {colleges.map(coll => {
                 return (
-                <div className="card">
+                <div className="card m-3 p-3">
                 <h5 className="card-title">{coll.name}</h5>
                 <ul className="list-group list-group-flush">
                 <MajorsMapAdmin coll={coll} />
