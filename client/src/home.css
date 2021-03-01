@@ -85,6 +85,10 @@
   text-align: justify;
 }
 
+.pHomeHolisitic {
+  text-align: justify;
+}
+
 .holisticImg {
   background-image: url("../src/images/holistic.jpg");
   height: 200px;
