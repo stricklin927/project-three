@@ -12,9 +12,9 @@ function MajorsMapAdmin(props) {
                 return (
                     <div>
                     <li class="list-group-item">
-                        {major}
-                        <span value={props.coll._id} className="badge badge-danger">Delete</span>
-                        <span value={props.coll._id} className="badge badge-warning">Update</span>
+                        {major} 
+                        <span value={props.coll._id} className="badge badge-danger">Delete</span> 
+                        <span value={props.coll._id} className="badge badge-warning">Update</span> 
                     </li>
                     </div>
                 )
