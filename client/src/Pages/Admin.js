@@ -3,7 +3,11 @@ import { Link, withRouter, useHistory } from 'react-router-dom';
 import axios from "axios";
 
 function Admin(props) {
-    const [user, setUser] = useState({});
+    const [user, setUser] = useState({
+      name: "Visitor",
+      email: "null",
+      role: "visitor"
+    });
     const history = useHistory();
   
 
@@ -23,10 +27,6 @@ function Admin(props) {
     }
   }, [])
 
-  if (user.role === "Customer") {
-    history.push('/home');
-  }
-
   return (
       <div>
         <h1>Admin Pages</h1>
@@ -39,10 +39,15 @@ function Admin(props) {
           The admin majors page only gets the info from the DB, but cannot yet update, delete, or create at this time. 
           That being said, the donors admin page has full CRUD functionality.</p> */}
         <hr />
+        {user.role === "Admin" ? (
+          <div>
         <button type="button" className="btn btn-primary btn-block" onClick={() => history.push('/admin/donors')}>Admin Donors</button>
         <button type="button" className="btn btn-primary btn-block" onClick={() => history.push('/admin/faculty')}>Admin Faculty</button>
         <button type="button" className="btn btn-primary btn-block mb-5" onClick={() => history.push('/admin/majors')}>Admin Majors</button>       
-      </div>
+        </div>
+        ) : <p>You are not authorized to conduct administration actions.</p>  
+      }
+        </div>
   )
 }
 
