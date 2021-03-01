@@ -84,3 +84,10 @@
   color: white;
   text-align: justify;
 }
+
+.holisticImg {
+  background-image: url("../src/images/holistic.jpg");
+  height: 200px;
+  width: 400px;
+  background-size: 100% auto;
+}
