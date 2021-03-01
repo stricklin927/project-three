@@ -6,12 +6,13 @@ function Admin(props) {
     const [user, setUser] = useState({});
     const history = useHistory();
   
+
     useEffect(() => {
     if (localStorage.getItem("user")) {
       const userObj = JSON.parse(localStorage.getItem("user"));
         axios.get(`/api/users/get/${userObj.email}`).then(res => {
           if (res.data.role === "Customer") {
-              history.push('/home');
+              props.history.push('/home');
           } else if (res.data.role === "Admin") {
           setUser(res.data);
           }
