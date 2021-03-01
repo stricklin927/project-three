@@ -96,6 +96,10 @@
   background-size: 100% auto;
 }
 
+.pHomeCollab {
+  text-align: justify;
+}
+
 .collabImg {
     background-image: url("../src/images/collab.jpg");
   height: 200px;
