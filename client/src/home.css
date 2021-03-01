@@ -102,6 +102,9 @@
 }
 
 /* Collab Div Styling */
+.h2collab {
+  color: #3b84dc;
+}
 .pHomeCollab {
   text-align: justify;
 }
