@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import MajorsMap from "../components/MajorsMap";
 import FacultyCard from "../components/FacultyCard";
+import MajorsMapAdmin from "../components/MajorsMapAdmin";
 
 function AdminMajors() {
     const [colleges, setColleges] = useState([]);
@@ -13,13 +14,24 @@ function AdminMajors() {
         }).catch(err => console.log(err))
     })
 
+
+    // <div class="card" style="width: 18rem;">
+    // <ul class="list-group list-group-flush">
+    //     <li class="list-group-item">Cras justo odio</li>
+    //     <li class="list-group-item">Dapibus ac facilisis in</li>
+    //     <li class="list-group-item">Vestibulum at eros</li>
+    // </ul>
+    // </div>
+
     return (
         <div>
             {colleges.map(coll => {
                 return (
-                <div>
-                <h2>{coll.name}</h2>
-                <MajorsMap coll={coll} />
+                <div className="card">
+                <h5 className="card-title">{coll.name}</h5>
+                <ul className="list-group list-group-flush">
+                <MajorsMapAdmin coll={coll} />
+                </ul>
                 </div>
                 )
             })}
