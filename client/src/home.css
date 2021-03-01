@@ -107,6 +107,10 @@
   background-size: 100% auto;
 }
 
+.pHomeInst {
+  text-align: justify;
+}
+
 .facInstImg {
   background-image: url("../src/images/fac_inst.jpg");
   height: 200px;
