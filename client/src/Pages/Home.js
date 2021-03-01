@@ -152,23 +152,22 @@ function Home() {
 
 
 
-        <div className="somethingDiv">
+        <div className="collab">
             <Container>
                 <Row>
-                    <Col lg={6}>
-                        <div className="somethingText">
-                            <h2 className="h2Something">Title of Section</h2>
-                            <p className="pHomeSomething">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper odio nec lacus facilisis, 
-                                non vulputate lacus convallis. Aliquam sagittis mi ligula, et viverra justo lobortis nec. 
-                                Duis elementum tincidunt magna, mattis ornare odio placerat ac. Sed vitae lectus nec ex fermentum 
-                                ornare ut sit amet nibh. 
-                            </p>
-                        </div>
+                    <Col className="pt-4">
+                        <div className="collabImg"></div>
                     </Col>
-                    <Col>
-                        <div>
-                            <h1>IMAGE HERE</h1>
+                    <Col lg={6} className="pt-4">
+                        <div className="collabText">
+                            <h2 className="h2collab">Collaborative Learning</h2>
+                            <p className="pHomeCollab">
+                            Collaborative learning is a situation in which two or more people learn or attempt to learn
+                            something together. This approach actively engages learners to process and create information
+                            and concepts, rather than using rote memorization of facts and figures. Learners work with
+                            each other on projects, where they must collaborate as a group to understand the concepts being
+                            presented to them.
+                            </p>
                         </div>
                     </Col>
                 </Row>
