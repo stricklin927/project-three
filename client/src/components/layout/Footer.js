@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
-import logo from '../../images/ITU4.png';
+import logo from '../../images/ITUnavy.png';
 import '../../Footer.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
