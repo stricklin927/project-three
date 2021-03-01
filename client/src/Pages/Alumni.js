@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Jumbotron, Container, Form, Row, Column, Col, Button, Card, List, ListGroup, ListGroupItem } from 'react-bootstrap';
 import '../alumni.css';
-import logo from '../images/ITU4.png';
+import logo from '../images/ITUwhite.png';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import 'react-perfect-scrollbar/dist/css/styles.css';
