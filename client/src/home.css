@@ -93,8 +93,16 @@
 }
 
 .collabImg {
-  background-image: url("../src/images/collab.jpg");
+    background-image: url("../src/images/collab.jpg");
   height: 200px;
   width: 400px;
   background-size: 100% auto;
+}
+
+.facInstImg {
+  background-image: url("../src/images/fac_inst.jpg");
+  height: 200px;
+  width: 400px;
+  background-size: 100% auto;
+  background-position: 50% 33%;
 }
