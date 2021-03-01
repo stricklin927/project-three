@@ -12,7 +12,8 @@ function Admin(props) {
       const userObj = JSON.parse(localStorage.getItem("user"));
         axios.get(`/api/users/get/${userObj.email}`).then(res => {
           if (res.data.role === "Customer") {
-              props.history.push('/home');
+              setUser(res.data);
+              //props.history.push('/home');
           } else if (res.data.role === "Admin") {
           setUser(res.data);
           }
@@ -21,6 +22,10 @@ function Admin(props) {
       history.push('/home');
     }
   }, [])
+
+  if (user.role === "Customer") {
+    history.push('/home');
+  }
 
   return (
       <div>
