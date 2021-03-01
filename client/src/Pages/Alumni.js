@@ -1,8 +1,8 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Link } from 'react';
 import { Jumbotron, Container, Form, Row, Column, Col, Button, Card, List, ListGroup, ListGroupItem } from 'react-bootstrap';
 import '../alumni.css';
-import logo from '../images/ITU4.png';
+import logo from '../images/ITUwhite.png';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import 'react-perfect-scrollbar/dist/css/styles.css';
@@ -105,7 +105,7 @@ function Alumni() {
                         value={amount}
                         id="amount"
                         type="number"
-                        placeholder="$150"
+                        placeholder="$1500"
                       />
                     </Col>
                   </Form.Group>
@@ -136,6 +136,7 @@ function Alumni() {
                   </Form.Group>
                 </Form>
             </div>
+            <br></br>
           </Col>
 
           <Col lg={3}>
@@ -174,6 +175,7 @@ function Alumni() {
           </Col>
         </Row>
       </Container>
+      <br></br>
     </div>
     )
 }

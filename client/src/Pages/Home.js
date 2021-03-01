@@ -1,6 +1,12 @@
 import React from 'react';
-import { Jumbotron, Container, Carousel, Row, Col } from 'react-bootstrap';
+import { withRouter, Link } from 'react-router-dom';
+import { Jumbotron, Container, Carousel, Row, Col, Card, CardDeck, Button } from 'react-bootstrap';
 import '../home.css';
+import student from '../images/campus2.jpg';
+import faculty from '../images/faculty.jpg';
+import alumni from '../images/campus1.jpg';
+
+
 // import { useHistory } from 'react-router-dom';
 
 function Home() {
@@ -18,7 +24,6 @@ function Home() {
         <Container>
             <h1 className="h1Home"><b>WHY ITU?</b></h1>
             <h4 className="h4Home"><i>The</i> <b>possibilities</b> <i>and</i> <b>opportunities</b> <i>for a bright future are endless.</i></h4>
-            <a class="btn btn-primary" href="#learnmore" role="button" style={{background: "#00B2A9"}}>Learn More</a>
         </Container>
 
         <br></br>
@@ -38,37 +43,39 @@ function Home() {
 
         <br></br>
 
-        {/* Card Columns */}
-        {/* Fix the card spacing. figure out why there's so much extrra space */}
-        {/* NEED TO CONVERT TAGS TO REACT/BOOTSTRAP TAGS & ADD IN IMPORT PATH*/}
         <Container>
-            <div class="card-columns">
-                <div class="card" style={{width: "301px"}} >
-                <img class="card-img-top" src="./images/holistic.jpg" alt="Card image" style={{height:"275px"}}></img>
-                <div class="card-body text-center" />
-                <h4 class="card-title">Holistic Campus Environment</h4>
-                <p class="card-text "></p>
-                <a href="#card1" class="btn btn-primary">Read More</a>
-                </div>
+        <CardDeck>
+                <Card border="light" style={{ width: '25rem' }}>
+                <Card.Img variant="top" src={student} />
+                <Card.ImgOverlay>
+                    <Card.Body className="text-center">
+                        <Card.Title className="CTH">100+ Majors</Card.Title>
+                        <Link to="/Students"><Button variant="outline-primary">Learn More</Button></Link>
+                    </Card.Body>
+                </Card.ImgOverlay>
+                </Card>
 
-                <div class="card" style={{width: "301px"}} >
-                <img class="card-img-top" src="./images/collab.jpg" alt="Card image" style={{height:"275px"}}></img>
-                <div class="card-body text-center" />
-                <h4 class="card-title" style={{}}>Collaborative Learning</h4>
-                <p class="card-text "></p>
-                <a href="#card2" class="btn btn-primary">Read More</a>
-                </div>
+                <Card border="light" style={{ width: '25rem' }}>
+                <Card.Img variant="top" src={faculty} />
+                <Card.ImgOverlay>
+                    <Card.Body className="text-center">
+                        <Card.Title className="CTH">Faculty</Card.Title>
+                        <Link to="/Facstaff"><Button variant="outline-primary">Meet Them</Button></Link>
+                    </Card.Body>
+                 </Card.ImgOverlay>
+                </Card>
 
-                <div class="card" style={{width: "301px"}} >
-                <img class="card-img-top" src="./fac_inst.jpg" alt="Card image" style={{height:"275px"}}></img>
-                <div class="card-body text-center" />
-                <h4 class="card-title">Small Classroom Instruction</h4>
-                <p class="card-text "></p>
-                <a href="#card3" class="btn btn-primary">Read More</a>
-                </div>
-            </div>
+                <Card border="light" style={{ width: '25rem' }}>
+                <Card.Img variant="top" src={alumni} />
+                <Card.ImgOverlay>
+                    <Card.Body className="text-center">
+                        <Card.Title className="CTH">Show Your Support</Card.Title>
+                        <Link to="/Alumni"><Button variant="outline-primary">Give Now</Button></Link>
+                    </Card.Body>
+                </Card.ImgOverlay>
+                </Card>
+            </CardDeck>
         </Container>
-        {/* End of Card Columns */}
 
         <br/><br/>
 
@@ -76,14 +83,16 @@ function Home() {
             <Container>
                 <Row>
                     <Col lg={6}>
-                        <h2 className="h2HomeCovid">Keeping ITU Students Safe</h2>
-                        <p className="pHomeCovid">
-                            Protect yourself and others in our community.
-                            We must all take personal responsibilty in order to protect the 
-                            health and safety of ourselves and each other.
-                            That includes wearing a mask, filling out the daily health screening form, 
-                            taking part in the Early Detection Program and receiving the flu vaccine.
-                        </p>
+                        <div className="covidText">
+                            <h2 className="h2HomeCovid">Keeping ITU Students Safe</h2>
+                            <p className="pHomeCovid">
+                                Protect yourself and others in our community.
+                                We must all take personal responsibilty in order to protect the 
+                                health and safety of ourselves and each other.
+                                That includes wearing a mask, filling out the daily health screening form, 
+                                taking part in the Early Detection Program and receiving the flu vaccine.
+                            </p>
+                        </div>
                     </Col>
                     <Col>
                         <div className="imgCovid"></div>
@@ -116,37 +125,76 @@ function Home() {
             </Container>
         </div>
 
-        {/* NEED TO CONVERT TAGS TO REACT/BOOTSTRAP TAGS & ADD IN IMPORT PATH*/}
-        <hr class="rounded" style={{background:"#00B2A9"}}></hr>
-        {/* Card 1 */}
-        <h2 id="card1">Holistic Campus Environment</h2>
-        <p className="pHome">Green juice jean shorts trust fund pop-up, flexitarian waistcoat YOLO ugh drinking vinegar
-        normcore tumblr. Next level shabby chic freegan readymade hoodie enamel pin. Squid pour-over
-        letterpress, put a bird on it truffaut yuccie meditation chartreuse.</p>
 
-        {/* SPACING */}
-        <br/><br/>
 
-        <hr class="rounded" style={{background:"#00B2A9"}}></hr>
-        <br />
-        {/* Card 2 */}
-        <h2 id="card2">Collaborative Learning</h2>
-        <p className="pHome">Truffaut lyft vice heirloom +1 gentrify. Bushwick hammock tilde readymade, organic knausgaard
-        aesthetic sustainable woke portland deep v. Skateboard yr chartreuse, subway tile hot chicken pinterest
-        whatever put a bird on it. You probably haven't heard of them synth tousled ramps, pinterest tumeric
-        mlkshk salvia. Lyft pok pok artisan put a bird on it vice. Health goth PBR&B humblebrag chillwave.</p>
 
-        {/* SPACING */}
-        <br/><br/>
+        <div className="holistic">
+            <Container>
+                <Row>
+                    <Col lg={6} className="pt-4">
+                        <div className="holisticText">
+                            <h2 className="h2holistic">Holistic Campus Environment</h2>
+                            <p className="pHomeHolistic">
+                            InfoTech University recognizes that supporting students requires more than offering
+                            basic student programs and services. As the years have advanced, we see that supporting
+                            the whole student outside of the classroom is a better model for success. It's important
+                            to have an intentional focus that meets the students where they are. Our student-centered
+                            approach creates an evolving plan that tackles any barriers that interfere with success.
+                            </p>
+                        </div>
+                    </Col>
+                    <Col className="pt-4">
+                        <div className="holisticImg"></div>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
 
-        <hr class="rounded" style={{background:"#00B2A9"}}></hr>
-        <br />
-        {/* Card 3 */}
-        <h2 id="card3">Small Classroom Instruction</h2>
-        <p className="pHome">Quinoa snackwave small batch, before they sold out microdosing intelligentsia shaman readymade
-        sustainable. Tofu 3 wolf moon fam gastropub, raw denim gentrify edison bulb lo-fi butcher YOLO normcore
-        next level. Irony 90's tilde man bun tumeric, humblebrag thundercats 8-bit typewriter plaid polaroid four loko.</p>
-        <br/><br/>
+
+
+        <div className="collab">
+            <Container>
+                <Row>
+                    <Col className="pt-4">
+                        <div className="collabImg"></div>
+                    </Col>
+                    <Col lg={6} className="pt-4">
+                        <div className="collabText">
+                            <h2 className="h2collab">Collaborative Learning</h2>
+                            <p className="pHomeCollab">
+                            Collaborative learning is a situation in which two or more people learn or attempt to learn
+                            something together. This approach actively engages learners to process and create information
+                            and concepts, rather than using rote memorization of facts and figures. Learners work with
+                            each other on projects, where they must collaborate as a group to understand the concepts being
+                            presented to them.
+                            </p>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+
+
+        <div className="inst">
+            <Container>
+                <Row>
+                    <Col lg={6} className="pt-4">
+                        <div className="instText">
+                            <h2 className="h2inst">Small Classroom Instruction</h2>
+                            <p className="pHomeInst">
+                            Nam non nulla eu ligula pharetra maximus. Sed nisl massa, viverra id volutpat 
+                            ut, pellentesque et tellus. Nunc a justo ex. Etiam sollicitudin placerat consectetur. 
+                            Donec vehicula id augue ac aliquam. Curabitur malesuada felis eu gravida gravida. Morbi viverra metus et 
+                            enim sollicitudin, ut posuere magna posuere. Praesent eu convallis enim. Ut auctor nibh arcu, eu vehicula 
+                            tortor venenatis ut.
+                            </p>
+                        </div>
+                    </Col>
+                    <Col className="pt-4">
+                        <div className="facInstImg"></div>
+                    </Col>
+                </Row>
+            </Container>
         </div>
 
 
@@ -156,10 +204,7 @@ function Home() {
 
 
 
-
-
-
-
+    </div>
     )
 }
 

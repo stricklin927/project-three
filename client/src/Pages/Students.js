@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import MajorsMap from "../components/MajorsMap";
 import FacultyCard from "../components/FacultyCard";
-import { Jumbotron, Container, Button, ButtonGroup, Row, Col, Card, CardDeck  } from 'react-bootstrap';
+import { Jumbotron, Container, Button, ButtonGroup, Row, Col, Card, CardDeck, Table  } from 'react-bootstrap';
 import '../students.css';
 import lab from '../images/lab.jpg';
 import abroad from '../images/abroad.jpg';
@@ -65,7 +65,7 @@ function Students() {
     <div>
         <Jumbotron fluid className="jStudents"></Jumbotron>
         <Container>
-            <h1 className="h1Stu">Majors, Colleges, & Beyond</h1>
+            <h1 className="h1Stu"><b>Majors, Colleges, & Beyond</b></h1>
             <h4 className="h4Stu">
                 ITU offers more than 100 undergraduate programs meaning more options and more possibilities when you graduate.
             </h4>
@@ -148,11 +148,31 @@ function Students() {
                 <Button variant="outline-secondary" onClick={onClick} value="Z">Z</Button>
             </ButtonGroup>
 
+            <Container>
             {displayMajors.map(maj => {
                 return (
-                        <p>{maj}</p>
+                    <Table bordered hover>
+                    <thead>
+                        <tr>
+                        <th>Major</th>
+                        <th>College</th>
+                        <th>Dean</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>{maj}</td>
+                        <td>College of _____</td>
+                        <td>Jane Doe</td>
+                        </tr>                
+                    </tbody>
+                    </Table>
                 )
             })}
+            </Container>
+
+
+
 
             {colleges.map(coll => {
                 return (

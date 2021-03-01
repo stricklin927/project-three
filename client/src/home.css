@@ -29,6 +29,14 @@
   color: black;
 }
 
+/* CARD SECTION */
+.CTH {
+  color:#00274c;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+
 /* COVID SECTION */
 .covidDiv {
   background-color: #ececec;
@@ -40,6 +48,10 @@
   background-position: center;
   height: 380px;
   margin: 10px;
+}
+
+.covidText {
+  padding-top: 40px;
 }
 
 /* SPOTLIGHT SECTION: Black History Month */
@@ -71,4 +83,26 @@
 .pHomeSpotlight {
   color: white;
   text-align: justify;
+}
+
+.holisticImg {
+  background-image: url("../src/images/holistic.jpg");
+  height: 200px;
+  width: 400px;
+  background-size: 100% auto;
+}
+
+.collabImg {
+    background-image: url("../src/images/collab.jpg");
+  height: 200px;
+  width: 400px;
+  background-size: 100% auto;
+}
+
+.facInstImg {
+  background-image: url("../src/images/fac_inst.jpg");
+  height: 200px;
+  width: 400px;
+  background-size: 100% auto;
+  background-position: 50% 33%;
 }
