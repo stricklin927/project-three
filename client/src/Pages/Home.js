@@ -18,7 +18,6 @@ function Home() {
         <Container>
             <h1 className="h1Home"><b>WHY ITU?</b></h1>
             <h4 className="h4Home"><i>The</i> <b>possibilities</b> <i>and</i> <b>opportunities</b> <i>for a bright future are endless.</i></h4>
-            <a class="btn btn-primary" href="#learnmore" role="button" style={{background: "#00B2A9"}}>Learn More</a>
         </Container>
 
         <br></br>
