@@ -1,6 +1,11 @@
 import React from 'react';
-import { Jumbotron, Container, Carousel, Row, Col } from 'react-bootstrap';
+import { Jumbotron, Container, Carousel, Row, Col, Card, CardDeck, Button } from 'react-bootstrap';
 import '../home.css';
+import student from '../images/campus2.jpg';
+import faculty from '../images/faculty.jpg';
+import alumni from '../images/campus1.jpg';
+
+
 // import { useHistory } from 'react-router-dom';
 
 function Home() {
@@ -37,37 +42,39 @@ function Home() {
 
         <br></br>
 
-        {/* Card Columns */}
-        {/* Fix the card spacing. figure out why there's so much extrra space */}
-        {/* NEED TO CONVERT TAGS TO REACT/BOOTSTRAP TAGS & ADD IN IMPORT PATH*/}
         <Container>
-            <div class="card-columns">
-                <div class="card" style={{width: "301px"}} >
-                <img class="card-img-top" src="./images/holistic.jpg" alt="Card image" style={{height:"275px"}}></img>
-                <div class="card-body text-center" />
-                <h4 class="card-title">Holistic Campus Environment</h4>
-                <p class="card-text "></p>
-                <a href="#card1" class="btn btn-primary">Read More</a>
-                </div>
+        <CardDeck>
+                <Card border="light" style={{ width: '25rem' }}>
+                <Card.Img variant="top" src={student} />
+                <Card.ImgOverlay>
+                    <Card.Body className="text-center">
+                        <Card.Title className="CTH">100+ Majors</Card.Title>
+                        <Button variant="outline-primary">Learn More</Button>
+                    </Card.Body>
+                </Card.ImgOverlay>
+                </Card>
 
-                <div class="card" style={{width: "301px"}} >
-                <img class="card-img-top" src="./images/collab.jpg" alt="Card image" style={{height:"275px"}}></img>
-                <div class="card-body text-center" />
-                <h4 class="card-title" style={{}}>Collaborative Learning</h4>
-                <p class="card-text "></p>
-                <a href="#card2" class="btn btn-primary">Read More</a>
-                </div>
+                <Card border="light" style={{ width: '25rem' }}>
+                <Card.Img variant="top" src={faculty} />
+                <Card.ImgOverlay>
+                    <Card.Body className="text-center">
+                        <Card.Title className="CTH">Faculty</Card.Title>
+                        <Button variant="outline-primary">Meet Them</Button>
+                    </Card.Body>
+                 </Card.ImgOverlay>
+                </Card>
 
-                <div class="card" style={{width: "301px"}} >
-                <img class="card-img-top" src="./fac_inst.jpg" alt="Card image" style={{height:"275px"}}></img>
-                <div class="card-body text-center" />
-                <h4 class="card-title">Small Classroom Instruction</h4>
-                <p class="card-text "></p>
-                <a href="#card3" class="btn btn-primary">Read More</a>
-                </div>
-            </div>
+                <Card border="light" style={{ width: '25rem' }}>
+                <Card.Img variant="top" src={alumni} />
+                <Card.ImgOverlay>
+                    <Card.Body className="text-center">
+                        <Card.Title className="CTH">Show Your Support</Card.Title>
+                        <Button variant="outline-primary">Give Now</Button>
+                    </Card.Body>
+                </Card.ImgOverlay>
+                </Card>
+            </CardDeck>
         </Container>
-        {/* End of Card Columns */}
 
         <br/><br/>
 
@@ -75,14 +82,16 @@ function Home() {
             <Container>
                 <Row>
                     <Col lg={6}>
-                        <h2 className="h2HomeCovid">Keeping ITU Students Safe</h2>
-                        <p className="pHomeCovid">
-                            Protect yourself and others in our community.
-                            We must all take personal responsibilty in order to protect the 
-                            health and safety of ourselves and each other.
-                            That includes wearing a mask, filling out the daily health screening form, 
-                            taking part in the Early Detection Program and receiving the flu vaccine.
-                        </p>
+                        <div className="covidText">
+                            <h2 className="h2HomeCovid">Keeping ITU Students Safe</h2>
+                            <p className="pHomeCovid">
+                                Protect yourself and others in our community.
+                                We must all take personal responsibilty in order to protect the 
+                                health and safety of ourselves and each other.
+                                That includes wearing a mask, filling out the daily health screening form, 
+                                taking part in the Early Detection Program and receiving the flu vaccine.
+                            </p>
+                        </div>
                     </Col>
                     <Col>
                         <div className="imgCovid"></div>
@@ -115,37 +124,30 @@ function Home() {
             </Container>
         </div>
 
-        {/* NEED TO CONVERT TAGS TO REACT/BOOTSTRAP TAGS & ADD IN IMPORT PATH*/}
-        <hr class="rounded" style={{background:"#00B2A9"}}></hr>
-        {/* Card 1 */}
-        <h2 id="card1">Holistic Campus Environment</h2>
-        <p className="pHome">Green juice jean shorts trust fund pop-up, flexitarian waistcoat YOLO ugh drinking vinegar
-        normcore tumblr. Next level shabby chic freegan readymade hoodie enamel pin. Squid pour-over
-        letterpress, put a bird on it truffaut yuccie meditation chartreuse.</p>
 
-        {/* SPACING */}
-        <br/><br/>
 
-        <hr class="rounded" style={{background:"#00B2A9"}}></hr>
-        <br />
-        {/* Card 2 */}
-        <h2 id="card2">Collaborative Learning</h2>
-        <p className="pHome">Truffaut lyft vice heirloom +1 gentrify. Bushwick hammock tilde readymade, organic knausgaard
-        aesthetic sustainable woke portland deep v. Skateboard yr chartreuse, subway tile hot chicken pinterest
-        whatever put a bird on it. You probably haven't heard of them synth tousled ramps, pinterest tumeric
-        mlkshk salvia. Lyft pok pok artisan put a bird on it vice. Health goth PBR&B humblebrag chillwave.</p>
 
-        {/* SPACING */}
-        <br/><br/>
-
-        <hr class="rounded" style={{background:"#00B2A9"}}></hr>
-        <br />
-        {/* Card 3 */}
-        <h2 id="card3">Small Classroom Instruction</h2>
-        <p className="pHome">Quinoa snackwave small batch, before they sold out microdosing intelligentsia shaman readymade
-        sustainable. Tofu 3 wolf moon fam gastropub, raw denim gentrify edison bulb lo-fi butcher YOLO normcore
-        next level. Irony 90's tilde man bun tumeric, humblebrag thundercats 8-bit typewriter plaid polaroid four loko.</p>
-        <br/><br/>
+        <div className="somethingDiv">
+            <Container>
+                <Row>
+                    <Col lg={6}>
+                        <div className="somethingText">
+                            <h2 className="h2Something">Title of Section</h2>
+                            <p className="pHomeSomething">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper odio nec lacus facilisis, 
+                                non vulputate lacus convallis. Aliquam sagittis mi ligula, et viverra justo lobortis nec. 
+                                Duis elementum tincidunt magna, mattis ornare odio placerat ac. Sed vitae lectus nec ex fermentum 
+                                ornare ut sit amet nibh. 
+                            </p>
+                        </div>
+                    </Col>
+                    <Col>
+                        <div>
+                            <h1>IMAGE HERE</h1>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
         </div>
 
 
@@ -159,6 +161,10 @@ function Home() {
 
 
 
+
+
+
+    </div>
     )
 }
 
