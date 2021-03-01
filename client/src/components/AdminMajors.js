@@ -27,3 +27,5 @@ function AdminMajors() {
     )
 
 }
+
+export default AdminMajors;
