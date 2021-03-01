@@ -107,6 +107,10 @@
   background-size: 100% auto;
 }
 
+#pCollab {
+  margin-right: 140px;
+}
+
 .pHomeInst {
   text-align: justify;
 }
