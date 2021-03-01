@@ -105,6 +105,7 @@
 .h2collab {
   color: #3b84dc;
 }
+
 .pHomeCollab {
   text-align: justify;
 }
@@ -121,6 +122,9 @@
 }
 
 /* Instruction Div Styling */
+.h2inst {
+  color: #00274c;
+}
 .pHomeInst {
   text-align: justify;
 }
