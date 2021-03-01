@@ -85,6 +85,7 @@
   text-align: justify;
 }
 
+/* Holistic Div Styling */
 .pHomeHolisitic {
   text-align: justify;
 }
@@ -96,6 +97,7 @@
   background-size: 100% auto;
 }
 
+/* Collab Div Styling */
 .pHomeCollab {
   text-align: justify;
 }
@@ -111,6 +113,7 @@
   margin-right: 140px;
 }
 
+/* Instruction Div Styling */
 .pHomeInst {
   text-align: justify;
 }
