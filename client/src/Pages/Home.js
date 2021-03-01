@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter, Link } from 'react-router-dom';
 import { Jumbotron, Container, Carousel, Row, Col, Card, CardDeck, Button } from 'react-bootstrap';
 import '../home.css';
 import student from '../images/campus2.jpg';
@@ -49,7 +50,7 @@ function Home() {
                 <Card.ImgOverlay>
                     <Card.Body className="text-center">
                         <Card.Title className="CTH">100+ Majors</Card.Title>
-                        <Button variant="outline-primary">Learn More</Button>
+                        <Link to="/Students"><Button variant="outline-primary">Learn More</Button></Link>
                     </Card.Body>
                 </Card.ImgOverlay>
                 </Card>
@@ -59,7 +60,7 @@ function Home() {
                 <Card.ImgOverlay>
                     <Card.Body className="text-center">
                         <Card.Title className="CTH">Faculty</Card.Title>
-                        <Button variant="outline-primary">Meet Them</Button>
+                        <Link to="/Facstaff"><Button variant="outline-primary">Meet Them</Button></Link>
                     </Card.Body>
                  </Card.ImgOverlay>
                 </Card>
@@ -69,7 +70,7 @@ function Home() {
                 <Card.ImgOverlay>
                     <Card.Body className="text-center">
                         <Card.Title className="CTH">Show Your Support</Card.Title>
-                        <Button variant="outline-primary">Give Now</Button>
+                        <Link to="/Alumni"><Button variant="outline-primary">Give Now</Button></Link>
                     </Card.Body>
                 </Card.ImgOverlay>
                 </Card>
