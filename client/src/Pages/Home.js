@@ -128,6 +128,30 @@ function Home() {
 
 
 
+        <div className="holistic">
+            <Container>
+                <Row>
+                    <Col lg={6} className="pt-4">
+                        <div className="holisticText">
+                            <h2 className="h2holistic">Holistic Campus Environment</h2>
+                            <p className="pHomeHolistic">
+                            InfoTech University recognizes that supporting students requires more than offering
+                            basic student programs and services. As the years have advanced, we see that supporting
+                            the whole student outside of the classroom is a better model for success. It's important
+                            to have an intentional focus that meets the students where they are. Our student-centered
+                            approach creates an evolving plan that tackles any barriers that interfere with success.
+                            </p>
+                        </div>
+                    </Col>
+                    <Col className="pt-4">
+                        <div className="holisticImg"></div>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
+
+
+
         <div className="somethingDiv">
             <Container>
                 <Row>
@@ -152,11 +176,28 @@ function Home() {
         </div>
 
 
-
-
-
-
-
+        <div className="somethingDiv">
+            <Container>
+                <Row>
+                    <Col lg={6}>
+                        <div className="somethingText">
+                            <h2 className="h2Something">Title of Section</h2>
+                            <p className="pHomeSomething">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper odio nec lacus facilisis, 
+                                non vulputate lacus convallis. Aliquam sagittis mi ligula, et viverra justo lobortis nec. 
+                                Duis elementum tincidunt magna, mattis ornare odio placerat ac. Sed vitae lectus nec ex fermentum 
+                                ornare ut sit amet nibh. 
+                            </p>
+                        </div>
+                    </Col>
+                    <Col>
+                        <div>
+                            <h1>IMAGE HERE</h1>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
 
 
 
