@@ -105,7 +105,7 @@ function Alumni() {
                         value={amount}
                         id="amount"
                         type="number"
-                        placeholder="$150"
+                        placeholder="$1500"
                       />
                     </Col>
                   </Form.Group>
@@ -136,6 +136,7 @@ function Alumni() {
                   </Form.Group>
                 </Form>
             </div>
+            <br></br>
           </Col>
 
           <Col lg={3}>
@@ -174,6 +175,7 @@ function Alumni() {
           </Col>
         </Row>
       </Container>
+      <br></br>
     </div>
     )
 }
