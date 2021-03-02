@@ -177,11 +177,7 @@ function Home() {
                         <div className="instText">
                             <h2 className="h2inst">Small Classroom Instruction</h2>
                             <p className="pHomeInst">
-                            Nam non nulla eu ligula pharetra maximus. Sed nisl massa, viverra id volutpat 
-                            ut, pellentesque et tellus. Nunc a justo ex. Etiam sollicitudin placerat consectetur. 
-                            Donec vehicula id augue ac aliquam. Curabitur malesuada felis eu gravida gravida. Morbi viverra metus et 
-                            enim sollicitudin, ut posuere magna posuere. Praesent eu convallis enim. Ut auctor nibh arcu, eu vehicula 
-                            tortor venenatis ut.
+                            Research has shown that students learn faster and perform better in smaller classroom environments. A class size less than 20 students often results in increased individual attention, improved student participation, and better communication between the professor and students. Students receive more feedback from peers and expanded opportunities for hands-on learning than those in large classes. The reduced classroom size permits for better assessment of student work and growth.
                             </p>
                         </div>
                     </Col>
