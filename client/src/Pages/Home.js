@@ -113,14 +113,7 @@ function Home() {
                         <h2 className="h2HomeSpotlight">Spotlight</h2>
                         <h3 className="h3HomeSpotlight">Honoring Black History at ITU</h3>
                         <p className="pHomeSpotlight">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper odio nec lacus facilisis, 
-                            non vulputate lacus convallis. Aliquam sagittis mi ligula, et viverra justo lobortis nec. 
-                            Duis elementum tincidunt magna, mattis ornare odio placerat ac. Sed vitae lectus nec ex fermentum 
-                            ornare ut sit amet nibh. Nam non nulla eu ligula pharetra maximus. Sed nisl massa, viverra id volutpat 
-                            ut, pellentesque et tellus. Nunc a justo ex. Etiam sollicitudin placerat consectetur. 
-                            Donec vehicula id augue ac aliquam. Curabitur malesuada felis eu gravida gravida. Morbi viverra metus et 
-                            enim sollicitudin, ut posuere magna posuere. Praesent eu convallis enim. Ut auctor nibh arcu, eu vehicula 
-                            tortor venenatis ut.
+                        InfoTech University is proud to celebrate Black History Month. We have events scheduled that are dedicated to honoring the accomplishments of Black Americans. The university has performances, films, speaker panels and more coming for February 2021.
                         </p>
                     </Col>
                 </Row>
@@ -160,7 +153,7 @@ function Home() {
                     <Col className="pt-4">
                         <div className="collabImg"></div>
                     </Col>
-                    <Col lg={6} className="pt-4">
+                    <Col lg={6} className="pt-4" id="pCollab">
                         <div className="collabText">
                             <h2 className="h2collab">Collaborative Learning</h2>
                             <p className="pHomeCollab">
