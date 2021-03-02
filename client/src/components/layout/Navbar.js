@@ -20,6 +20,11 @@ function NavbarOne() {
   }
 }, [])
 
+  const logout = () => {
+    localStorage.setItem("user", "");
+    localStorage.setItem("token", "");
+  }
+
   return (
     <Navbar bg="dark" variant="dark" expand="md">
       <Navbar.Brand><Link to="/Home"><img src={logo} style={{width:"230px", height:"90px"}}></img></Link></Navbar.Brand>
@@ -31,6 +36,7 @@ function NavbarOne() {
           <Nav.Link href="/facstaff">Faculty</Nav.Link>
           <Nav.Link href="/alumni">Alumni</Nav.Link>
         </Nav>
+        <button className="btn btn-info mr-3" onClick={logout}>Logout</button>
         <Navbar.Text>
             Signed in as: <a href="/login">{user}</a>
         </Navbar.Text>
