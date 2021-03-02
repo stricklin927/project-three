@@ -113,7 +113,9 @@ function Home() {
                         <h2 className="h2HomeSpotlight">Spotlight</h2>
                         <h3 className="h3HomeSpotlight">Honoring Black History at ITU</h3>
                         <p className="pHomeSpotlight">
-                        InfoTech University is proud to celebrate Black History Month. We have events scheduled that are dedicated to honoring the accomplishments of Black Americans. The university has performances, films, speaker panels and more coming for February 2021.
+                        InfoTech University is proud to celebrate Black History Month. We have events scheduled
+                        that are dedicated to honoring the accomplishments of Black Americans. The university has
+                        sperformances, films, speaker panels and more coming for February 2021.
                         </p>
                     </Col>
                 </Row>
@@ -177,7 +179,11 @@ function Home() {
                         <div className="instText">
                             <h2 className="h2inst">Small Classroom Instruction</h2>
                             <p className="pHomeInst">
-                            Research has shown that students learn faster and perform better in smaller classroom environments. A class size less than 20 students often results in increased individual attention, improved student participation, and better communication between the professor and students. Students receive more feedback from peers and expanded opportunities for hands-on learning than those in large classes. The reduced classroom size permits for better assessment of student work and growth.
+                            Research has shown that students learn faster and perform better in smaller classroom environments.
+                            A class size less than 20 students often results in increased individual attention, improved student
+                            participation, and better communication between the professor and students. Students receive more
+                            feedback from peers and expanded opportunities for hands-on learning than those in large classes. The
+                            sreduced classroom size permits for better assessment of student work and growth.
                             </p>
                         </div>
                     </Col>
