@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, useHistory } from "react-router-dom";
+import { BrowserRouter as Router, Redirect, Route, useHistory } from "react-router-dom";
 import './App.css';
 import axios from 'axios';
 
@@ -47,7 +47,10 @@ function App() {
       <Router>
         <div className="App">
           <NavbarOne />
-          <Route exact path="/" component={Landing} />
+          {/* <Route exact path="/" component={Landing} /> */}
+          <Route exact path="/">
+            <Redirect to="/register" />
+          </Route>
           <Route exact path="/register" component={() => <Register propsSubmit={propsSubmit} />} />
           <Route path="/login" component={() => <Login propsLogin={propsLogin} history={history} />} />
           <Route path="/home" component={Home} />
