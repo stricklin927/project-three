@@ -47,7 +47,7 @@ function Home() {
 
         <Container>
         <CardDeck>
-                <Card border="light">
+                <Card border="light" style={{ width: '25rem'}} >
                     <Card.Img variant="top" src={student} />
                     <Card.ImgOverlay>
                         <Card.Body className="text-center">
@@ -57,7 +57,7 @@ function Home() {
                     </Card.ImgOverlay>
                 </Card>
 
-                <Card border="light">
+                <Card border="light" style={{ width: '25rem'}} >
                     <Card.Img variant="top" src={faculty} />
                     <Card.ImgOverlay>
                         <Card.Body className="text-center">
@@ -67,7 +67,7 @@ function Home() {
                     </Card.ImgOverlay>
                 </Card>
 
-                <Card border="light">
+                <Card border="light" style={{ width: '25rem'}} >
                     <Card.Img variant="top" src={alumni} />
                     <Card.ImgOverlay>
                         <Card.Body className="text-center">
