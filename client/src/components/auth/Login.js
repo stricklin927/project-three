@@ -29,10 +29,6 @@ function Login(props) {
         <div>
         <div>
           <div>
-            <Link to="/">
-              Back to
-              home
-            </Link>
             <div>
               <h4 className="text-center p-4">
                 Enter your <b>Login</b> Email and Password 
