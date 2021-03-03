@@ -21,12 +21,25 @@
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.pStu, .CTXStu {
+.pStu {
   color: black;
 }
 
 .CTStu {
-  color: black;
+  color: #00274c;
   font-size: 25px;
-  
+}
+
+.CTXStu {
+  color: #989C97;
+}
+
+.exploreMajors {
+  font-size: 27px;
+  color: #989C97;
+
+}
+
+.tdSTU {
+
 }

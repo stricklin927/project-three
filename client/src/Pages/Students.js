@@ -116,8 +116,8 @@ function Students() {
             
         <br></br>
 
-            <h2 className="h2Stu">Explore Majors:</h2>
-            <div className="text-center">
+            <h2 className="h2Stu">Explore Majors</h2>
+            <div>
             <ButtonGroup>
                 <Button variant="outline-secondary" onClick={onClick} value="A">A</Button>
                 <Button variant="outline-secondary" onClick={onClick} value="B">B</Button>
@@ -149,7 +149,7 @@ function Students() {
 
             {displayMajors.map(maj => {
                 return (
-                    <h4 className="h4Stu">{maj}</h4>
+                    <h4 className="exploreMajors">{maj}</h4>
                 )
             })}
         </div>
@@ -157,11 +157,8 @@ function Students() {
             <br></br>
 
         <div>
-
             <h2 className="h2Stu">Explore Majors by Department</h2>
-            {colleges.map(coll => {
-                return (
-                <Table>
+            <Table>
                     <thead>
                         <tr>
                         <th>College</th>
@@ -169,16 +166,19 @@ function Students() {
                         <th>Faculty</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>{coll.name}</td>
-                            <td><MajorsMap coll={coll} /></td>
-                            <td><FacultyCard coll={coll} /></td>
-                        </tr>
-                    </tbody>
-                </Table>
+                {colleges.map(coll => {
+                    return (
+                        <tbody>
+                            <tr>
+                                <td className="tdStuCollege">{coll.name}</td>
+                                <td className="tdStuMajor"><MajorsMap coll={coll} /></td>
+                                <td className="tdStuCollege"><FacultyCard coll={coll} /></td>
+                            </tr>
+                        </tbody>
                 )
             })}
+            </Table>
+
 
         </div>
         </Container>
