@@ -64,7 +64,7 @@ function Home() {
                     <Card border="light">
                     <Card.Img variant="top" src={faculty}  style= {{height: "25rem"}} />
                     <Card.ImgOverlay>
-                        <Card.Body className="text-center">cl
+                        <Card.Body className="text-center">
                             <Card.Title className="CTH">Faculty</Card.Title>
                             <Link to="/Facstaff"><Button variant="outline-primary">Meet Them</Button></Link>
                         </Card.Body>
