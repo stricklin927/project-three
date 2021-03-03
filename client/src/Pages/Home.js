@@ -71,7 +71,7 @@ function Home() {
                     <Card.Img variant="top" src={alumni} />
                     <Card.ImgOverlay>
                         <Card.Body className="text-center">
-                            <Card.Title className="CTH">Show Your Support</Card.Title>
+                            <Card.Title className="CTH">Support</Card.Title>
                             <Link to="/Alumni"><Button variant="primary">Give Now</Button></Link>
                         </Card.Body>
                     </Card.ImgOverlay>
