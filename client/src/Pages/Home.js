@@ -197,7 +197,7 @@ function Home() {
                             A class size less than 20 students often results in increased individual attention, improved student
                             participation, and better communication between the professor and students. Students receive more
                             feedback from peers and expanded opportunities for hands-on learning than those in large classes. The
-                            sreduced classroom size permits for better assessment of student work and growth.
+                            reduced classroom size permits for better assessment of student work and growth.
                             </p>
                         </div>
                     </Col>
