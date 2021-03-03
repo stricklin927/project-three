@@ -3,7 +3,6 @@ import { Link, useHistory } from "react-router-dom";
 import axios from "axios";
 import { Navbar, Nav } from 'react-bootstrap';
 import logo from '../../images/ITU4.png';
-import '../../navbar.css';
 
 function NavbarOne() {
   const [user, setUser] = useState("Visitor");
