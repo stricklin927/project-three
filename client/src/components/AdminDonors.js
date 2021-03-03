@@ -36,6 +36,7 @@ function AdminDonors(props) {
           const id = e.target.value;
           const url = `/api/people/donors/${id}`;
           axios.delete(url).then(res => console.log(res)).catch(err => console.log(err));
+          history.push('/admin/donors')
       }
 
       const onUpdate = e => {

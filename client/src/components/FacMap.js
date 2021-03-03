@@ -10,10 +10,10 @@ function FacMap(props) {
                         <Table striped bordered hover responsive="sm">
                             <tbody>
                                 <tr>
-                                <th scope="row"><img src={prof.Image} /></th>
-                                <td>{prof.Title} {prof.fullName}</td>
-                                <td>{prof.OfficeNumber}, <br></br> {prof.PhoneNumber}</td>
-                                <td>{prof.Email} </td>
+                                <th scope="row" id="pics"><img src={prof.Image} /></th>
+                                <td id="nameTitle">{prof.Title} {prof.fullName}</td>
+                                <td id="office">{prof.OfficeNumber}, <br></br> {prof.PhoneNumber}</td>
+                                <td id="email">{prof.Email} </td>
                                 </tr>
                             </tbody>
                         </Table>

@@ -1,23 +1,23 @@
-tbody>tr>:nth-child(1){
+#pics {
     background-color: white;
 }
 
 
-tbody>tr>:nth-child(2){
+#nameTitle {
     color:white;
     width: 400px;
     text-align: center;
     background-color: #00274c;
 }
 
-tbody>tr>:nth-child(3){
+#office {
     color:#00274c;
     width: 700px;
     text-align: center;
     background-color:white;
 }
 
-tbody>tr>:nth-child(4){
+#email {
     color:white;
     width: 700px;
     text-align: center;
