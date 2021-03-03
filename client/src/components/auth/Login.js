@@ -73,9 +73,11 @@ function Login(props) {
             </div>
             <br></br>
             <p className="text-center">
-                Don't have an account? <Link to="/register">Register</Link>
+                Don't have an account? <Link to="/register">Register.</Link>
               </p>
           </div>
+          <br></br>
+          <br></br>
         </div>
       </div>
     )
