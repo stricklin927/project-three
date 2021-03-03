@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
+import '../students.css';
+
 
 function FacultyCard(props) {
     // const [professors, setProfessors] = useState([]);
@@ -16,7 +18,7 @@ function FacultyCard(props) {
                 {props.coll.faculty.map(prof => {
                     return (
                         <div>
-                        <p><b>{prof.Title}</b> {prof.fullName}</p>
+                        <p className="tdStu"><b>{prof.Title}</b> {prof.fullName}</p>
                         </div>
                     )
                 })}

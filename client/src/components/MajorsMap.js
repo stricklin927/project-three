@@ -11,7 +11,7 @@ function MajorsMap(props) {
             {props.coll.majors.map(major => {
                 return (
                 <div>
-                <p>{major}</p>
+                <p className="tdStu">{major}</p>
                 </div>
                 )
             })}
