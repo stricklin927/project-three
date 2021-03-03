@@ -13,7 +13,7 @@ function FacMap(props) {
                                 <th scope="row" id="pics"><img src={prof.Image} /></th>
                                 <td id="nameTitle">{prof.Title} {prof.fullName}</td>
                                 <td id="office">{prof.OfficeNumber}, <br></br> {prof.PhoneNumber}</td>
-                                <td id="email">{prof.Email} </td>
+                                <td id="emailCol">{prof.Email} </td>
                                 </tr>
                             </tbody>
                         </Table>
