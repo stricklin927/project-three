@@ -52,7 +52,7 @@ function Home() {
                     <Card.ImgOverlay>
                         <Card.Body className="text-center">
                             <Card.Title className="CTH">100+ Majors</Card.Title>
-                            <Link to="/Students"><Button variant="outline-primary">Learn More</Button></Link>
+                            <Link to="/Students"><Button variant="primary">Learn More</Button></Link>
                         </Card.Body>
                     </Card.ImgOverlay>
                 </Card>
@@ -62,7 +62,7 @@ function Home() {
                     <Card.ImgOverlay>
                         <Card.Body className="text-center">
                             <Card.Title className="CTH">Faculty</Card.Title>
-                            <Link to="/Facstaff"><Button variant="outline-primary">Meet Them</Button></Link>
+                            <Link to="/Facstaff"><Button variant="primary">Meet Them</Button></Link>
                         </Card.Body>
                     </Card.ImgOverlay>
                 </Card>
@@ -72,7 +72,7 @@ function Home() {
                     <Card.ImgOverlay>
                         <Card.Body className="text-center">
                             <Card.Title className="CTH">Show Your Support</Card.Title>
-                            <Link to="/Alumni"><Button variant="outline-primary">Give Now</Button></Link>
+                            <Link to="/Alumni"><Button variant="primary">Give Now</Button></Link>
                         </Card.Body>
                     </Card.ImgOverlay>
                 </Card>
