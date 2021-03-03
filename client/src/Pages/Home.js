@@ -125,9 +125,11 @@ function Home() {
                         <h2 className="h2HomeSpotlight">Spotlight</h2>
                         <h3 className="h3HomeSpotlight">Women's History Month at ITU</h3>
                         <p className="pHomeSpotlight">
-                        InfoTech University is proud to celebrate Black History Month. We have events scheduled
-                        that are dedicated to honoring the accomplishments of Black Americans. The university has
-                        sperformances, films, speaker panels and more coming for February 2021.
+                        InfoTech University is proud to celebrate Women’s History Month. Women were
+                        vital to the founding of our country and are essential as we move forward. 
+                        The month of March allows us to acknowledge and reflect on these leaders, pioneers,
+                        homemakers and trailblazers of US history. The university has performances, films,
+                        speaker panels and more coming for March 2021.
                         </p>
                     </Col>
                 </Row>
