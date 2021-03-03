@@ -95,11 +95,11 @@ function Home() {
                                 That includes wearing a mask, filling out the daily health screening form, 
                                 taking part in the Early Detection Program and receiving the flu vaccine.
                             </p>
-                            <br></br>
                         </div>
                     </Col>
                     <Col className="pt-4">
                         <div className="imgCovid"></div>
+                        <br></br>
                     </Col>
                 </Row>
             </Container>
@@ -145,6 +145,7 @@ function Home() {
                     </Col>
                     <Col className="pt-4">
                         <div className="holisticImg"></div>
+                        <br></br>
                     </Col>
                 </Row>
             </Container>
@@ -197,13 +198,6 @@ function Home() {
                 </Row>
             </Container>
         </div>
-
-
-
-
-
-
-
 
     </div>
     )
