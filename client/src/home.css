@@ -47,12 +47,17 @@
   background-image: url("../src/images/covid.jpg");
   background-size: cover;
   background-position: center;
-  height: 380px;
-  margin: 10px;
+  height: 175px;
 }
 
-.covidText {
-  padding-top: 40px;
+.h2HomeCovid {
+  color: #797d78;
+  text-align: center;
+}
+
+.pHomeCovid {
+  color: #00274c;
+  text-align: justify;
 }
 
 /* SPOTLIGHT SECTION: Black History Month */
@@ -87,6 +92,10 @@
 }
 
 /* Holistic Div Styling */
+.holistic {
+  background-color: #ececec;
+}
+
 .h2holistic{
   color: #00274c;
 }
@@ -103,24 +112,27 @@
 }
 
 /* Collab Div Styling */
+.collab {
+  background-color: #3b84dc;
+}
+
 .h2collab {
-  color: #3b84dc;
+  color: #ececec;
+  text-align: center;
 }
 
 .pHomeCollab {
   text-align: justify;
+  color: white;
 }
 
 .collabImg {
     background-image: url("../src/images/collab.jpg");
-  height: 200px;
-  width: 400px;
-  background-size: 100% auto;
-}
-
-#pCollab {
-  margin-right: 140px;
-}
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 400px;
+  }
 
 /* Instruction Div Styling */
 .h2inst {

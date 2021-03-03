@@ -85,6 +85,7 @@ function Home() {
             <Container>
                 <Row>
                     <Col lg={6}>
+                        <br></br>
                         <div className="covidText">
                             <h2 className="h2HomeCovid">Keeping ITU Students Safe</h2>
                             <p className="pHomeCovid">
@@ -94,9 +95,10 @@ function Home() {
                                 That includes wearing a mask, filling out the daily health screening form, 
                                 taking part in the Early Detection Program and receiving the flu vaccine.
                             </p>
+                            <br></br>
                         </div>
                     </Col>
-                    <Col>
+                    <Col className="pt-4">
                         <div className="imgCovid"></div>
                     </Col>
                 </Row>
@@ -110,7 +112,9 @@ function Home() {
                         <div className="imgSpotlight"></div>
                     </Col>
                     <Col>
+                        <br></br>
                         <h2 className="h2HomeSpotlight">Spotlight</h2>
+                        <br></br>
                         <h3 className="h3HomeSpotlight">Women's History Month at ITU</h3>
                         <p className="pHomeSpotlight">
                         InfoTech University is proud to celebrate Women’s History Month. Women were
@@ -123,9 +127,6 @@ function Home() {
                 </Row>
             </Container>
         </div>
-
-
-
 
         <div className="holistic">
             <Container>
@@ -157,7 +158,8 @@ function Home() {
                     <Col lg={6} className="pt-4">
                         <div className="collabImg"></div>
                     </Col>
-                    <Col className="pt-4" id="pCollab">
+                    <Col>
+                        <br></br>
                         <div className="collabText">
                             <h2 className="h2collab">Collaborative Learning</h2>
                             <p className="pHomeCollab">
