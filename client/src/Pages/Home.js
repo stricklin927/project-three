@@ -123,7 +123,7 @@ function Home() {
                     </Col>
                     <Col>
                         <h2 className="h2HomeSpotlight">Spotlight</h2>
-                        <h3 className="h3HomeSpotlight">Honoring Black History at ITU</h3>
+                        <h3 className="h3HomeSpotlight">Women's History Month at ITU</h3>
                         <p className="pHomeSpotlight">
                         InfoTech University is proud to celebrate Black History Month. We have events scheduled
                         that are dedicated to honoring the accomplishments of Black Americans. The university has
