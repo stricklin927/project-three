@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Redirect, Route, useHistory } from "react-router-dom";
-import './App.css';
 import axios from 'axios';
 
 import NavbarOne from "./components/layout/Navbar";
