@@ -2,9 +2,9 @@ import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
 import { Jumbotron, Container, Carousel, Row, Col, Card, CardDeck, Button } from 'react-bootstrap';
 import '../home.css';
-import student from '../images/campus2.jpg';
-import faculty from '../images/fac3.jpg';
-import alumni from '../images/campus1.jpg';
+import student from '../images/BlueCampus2.png';
+import faculty from '../images/BlueCampus3.png';
+import alumni from '../images/BlueCampus1.png';
 
 
 // import { useHistory } from 'react-router-dom';
