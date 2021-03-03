@@ -151,22 +151,7 @@ function Students() {
             <Container>
             {displayMajors.map(maj => {
                 return (
-                    <Table bordered hover>
-                    <thead>
-                        <tr>
-                            <th>Major</th>
-                            <th>College</th>
-                            <th>Dean</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>{maj}</td>
-                            <td>College of _____</td>
-                            <td>Jane Doe</td>
-                        </tr>                
-                    </tbody>
-                    </Table>
+                    <h4 className="h4Stu">{maj}</h4>
                 )
             })}
             </Container>
