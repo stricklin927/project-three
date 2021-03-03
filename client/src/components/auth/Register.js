@@ -124,6 +124,8 @@ function Register(props) {
                       </div>
                     </form>
                   </div>
+                  <br></br>
+                  <br></br>
                 </div>
             </div>
         </div>
