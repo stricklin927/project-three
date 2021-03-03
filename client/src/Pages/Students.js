@@ -152,11 +152,13 @@ function Students() {
                     <h4 className="exploreMajors">{maj}</h4>
                 )
             })}
+            <br></br>
         </div>
 
-            <br></br>
+        <br></br>
 
         <div>
+           <br></br>
             <h2 className="h2Stu">Explore Majors by Department</h2>
             <Table>
                     <thead>
@@ -170,9 +172,9 @@ function Students() {
                     return (
                         <tbody>
                             <tr>
-                                <td className="tdStuCollege">{coll.name}</td>
-                                <td className="tdStuMajor"><MajorsMap coll={coll} /></td>
-                                <td className="tdStuCollege"><FacultyCard coll={coll} /></td>
+                                <td className="tdStu">{coll.name}</td>
+                                <td className="tdStu"><MajorsMap coll={coll} /></td>
+                                <td className="tdStu"><FacultyCard coll={coll} /></td>
                             </tr>
                         </tbody>
                 )
