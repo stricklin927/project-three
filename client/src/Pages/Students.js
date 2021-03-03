@@ -114,11 +114,10 @@ function Students() {
                 </Card>
             </CardDeck>
             
-        </Container>
-            
         <br></br>
-        <div className="text-center">
+
             <h2 className="h2Stu">Explore Majors:</h2>
+            <div className="text-center">
             <ButtonGroup>
                 <Button variant="outline-secondary" onClick={onClick} value="A">A</Button>
                 <Button variant="outline-secondary" onClick={onClick} value="B">B</Button>
@@ -148,19 +147,18 @@ function Students() {
                 <Button variant="outline-secondary" onClick={onClick} value="Z">Z</Button>
             </ButtonGroup>
 
-            <Container>
             {displayMajors.map(maj => {
                 return (
                     <h4 className="h4Stu">{maj}</h4>
                 )
             })}
-            </Container>
+        </div>
 
+            <br></br>
 
+        <div>
 
-
-            <Container>
-            <h2>All Majors</h2>
+            <h2 className="h2Stu">Explore Majors by Department</h2>
             {colleges.map(coll => {
                 return (
                 <Table>
@@ -177,20 +175,13 @@ function Students() {
                             <td>{coll.name}</td>
                             <td><FacultyCard coll={coll} /></td>
                         </tr>
-
-                        
-                        
-
-
-
                     </tbody>
                 </Table>
                 )
             })}
-            </Container>
-
 
         </div>
+        </Container>
     </div>
     )
 }
