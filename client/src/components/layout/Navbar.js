@@ -38,11 +38,11 @@ function NavbarOne() {
           <Nav.Link href="/facstaff">Faculty</Nav.Link>
           <Nav.Link href="/alumni">Alumni</Nav.Link>
         </Nav>
-        { !user === "Visitor" ? (
-        <button className="btn btn-info mr-3" onClick={logout}>Logout</button>
-        ) : (
+        { user === "Visitor" ? (
           <button type="button" className="btn btn-info mr-3" onClick={() => history.push('/login')}>Login</button>
-        )
+        ) : (
+          <button className="btn btn-info mr-3" onClick={logout}>Logout</button>
+          ) 
         }
         <Navbar.Text>
             Signed in as: <a href="/login">{user}</a>
