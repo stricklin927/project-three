@@ -8,7 +8,7 @@ import alumni from '../images/campus1.jpg';
 
 
 // import { useHistory } from 'react-router-dom';
-git
+
 function Home() {
     // const history = useHistory();
     // if (!localStorage.getItem("token")) {
