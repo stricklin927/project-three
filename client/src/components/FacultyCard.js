@@ -15,10 +15,10 @@ function FacultyCard(props) {
             <div>
                 {props.coll.faculty.map(prof => {
                     return (
-                    <div>    
-                        <p>{prof.fullName}</p>
-                        <p>{prof.Title}</p>
-                        <p>{prof.Department}</p>
+                    <div>   
+                        <td>{prof.fullName}</td>
+                        <td>{prof.Title}</td>
+                        <td>{prof.Department}</td>
                     </div>
                     )
                 })}
