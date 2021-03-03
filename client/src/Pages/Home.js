@@ -164,10 +164,10 @@ function Home() {
         <div className="collab">
             <Container>
                 <Row>
-                    <Col className="pt-4">
+                    <Col lg={6} className="pt-4">
                         <div className="collabImg"></div>
                     </Col>
-                    <Col lg={6} className="pt-4" id="pCollab">
+                    <Col className="pt-4" id="pCollab">
                         <div className="collabText">
                             <h2 className="h2collab">Collaborative Learning</h2>
                             <p className="pHomeCollab">
