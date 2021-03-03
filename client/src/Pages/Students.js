@@ -154,16 +154,16 @@ function Students() {
                     <Table bordered hover>
                     <thead>
                         <tr>
-                        <th>Major</th>
-                        <th>College</th>
-                        <th>Dean</th>
+                            <th>Major</th>
+                            <th>College</th>
+                            <th>Dean</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                        <td>{maj}</td>
-                        <td>College of _____</td>
-                        <td>Jane Doe</td>
+                            <td>{maj}</td>
+                            <td>College of _____</td>
+                            <td>Jane Doe</td>
                         </tr>                
                     </tbody>
                     </Table>
@@ -172,17 +172,31 @@ function Students() {
             </Container>
 
 
-
-
+            <Container>
+            <h2>All Majors</h2>
             {colleges.map(coll => {
                 return (
-                <div>
-                <h2>{coll.name}</h2>
-                <FacultyCard coll={coll} />
-                <MajorsMap coll={coll} />
-                </div>
+                <Table>
+                    <thead>
+                        <tr>
+                        <th>Major</th>
+                        <th>College</th>
+                        <th>Staff</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><MajorsMap coll={coll} /></td>
+                            <td>{coll.name}</td>
+                            <td><FacultyCard coll={coll} /></td>
+                        </tr>
+                    </tbody>
+                </Table>
                 )
             })}
+            </Container>
+
+
         </div>
     </div>
     )
