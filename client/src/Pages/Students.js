@@ -172,6 +172,8 @@ function Students() {
             </Container>
 
 
+
+
             <Container>
             <h2>All Majors</h2>
             {colleges.map(coll => {
@@ -190,6 +192,12 @@ function Students() {
                             <td>{coll.name}</td>
                             <td><FacultyCard coll={coll} /></td>
                         </tr>
+
+                        
+                        
+
+
+
                     </tbody>
                 </Table>
                 )
