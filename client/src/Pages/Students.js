@@ -4,9 +4,9 @@ import MajorsMap from "../components/MajorsMap";
 import FacultyCard from "../components/FacultyCard";
 import { Jumbotron, Container, Button, ButtonGroup, Row, Col, Card, CardDeck, Table  } from 'react-bootstrap';
 import '../students.css';
-import lab from '../images/lab.jpg';
-import abroad from '../images/abroad.jpg';
-import intern from '../images/internship.jpg';
+import lab from '../images/ResearchCard.png';
+import abroad from '../images/AbroadCard.png';
+import intern from '../images/InternCard.png';
 
 
 
@@ -86,7 +86,6 @@ function Students() {
                 <Card border="light" style={{ width: '25rem' }}>
                 <Card.Img variant="top" src={abroad} />
                     <Card.Body>
-                        <Card.Title className="CTStu">Study Abroad</Card.Title>
                         <Card.Text className="CTXStu">
                             Our world is becoming increasingly interconnected, we offer various study abroad programs to help students gain international experience.
                         </Card.Text>
@@ -96,7 +95,6 @@ function Students() {
                 <Card border="light" style={{ width: '25rem' }}>
                     <Card.Img variant="top" src={lab} />
                     <Card.Body>
-                        <Card.Title className="CTStu">Research</Card.Title>
                         <Card.Text className="CTXStu">
                             InfoTech University advocates for collaboration and interdisciplinary research initiatives that involve faculty and students.
                         </Card.Text>
@@ -106,7 +104,6 @@ function Students() {
                 <Card border="light" style={{ width: '25rem' }}>
                 <Card.Img variant="top" src={intern} />
                 <Card.Body>
-                        <Card.Title className="CTStu">Intern</Card.Title>
                         <Card.Text className="CTXStu">
                             Many students further their knowledge through one of our internship programs offered in partnership with well-known companies.
                         </Card.Text>
