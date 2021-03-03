@@ -114,8 +114,8 @@ function Students() {
         <br></br>
 
             <h2 className="h2Stu">Explore Majors</h2>
-            <div>
-            <ButtonGroup>
+            <div>            
+            <ButtonGroup className="btn-group flex-wrap" data-toggle="buttons">
                 <Button variant="outline-secondary" onClick={onClick} value="A">A</Button>
                 <Button variant="outline-secondary" onClick={onClick} value="B">B</Button>
                 <Button variant="outline-secondary" onClick={onClick} value="C">C</Button>
@@ -177,8 +177,6 @@ function Students() {
                 )
             })}
             </Table>
-
-
         </div>
         </Container>
     </div>
