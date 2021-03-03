@@ -51,10 +51,6 @@ function Register(props) {
         <div>
             <div>
                 <div>
-                  <Link to="/">
-                      Back to Home
-                  </Link>
-                  
                   <div className="text-center">
                       <h4 >
                           <b>Register</b> below!
