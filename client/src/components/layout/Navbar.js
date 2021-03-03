@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import axios from "axios";
 import { Navbar, Nav } from 'react-bootstrap';
 import logo from '../../images/ITU4.png';
@@ -7,6 +7,7 @@ import '../../navbar.css';
 
 function NavbarOne() {
   const [user, setUser] = useState("Visitor");
+  const history = useHistory();
 
   useEffect(() => {
   if (localStorage.getItem("user")) {
@@ -37,7 +38,12 @@ function NavbarOne() {
           <Nav.Link href="/facstaff">Faculty</Nav.Link>
           <Nav.Link href="/alumni">Alumni</Nav.Link>
         </Nav>
+        { !user === "Visitor" ? (
         <button className="btn btn-info mr-3" onClick={logout}>Logout</button>
+        ) : (
+          <button type="button" className="btn btn-info mr-3" onClick={() => history.push('/login')}>Login</button>
+        )
+        }
         <Navbar.Text>
             Signed in as: <a href="/login">{user}</a>
         </Navbar.Text>
