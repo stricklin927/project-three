@@ -46,10 +46,8 @@ function Home() {
         <br></br>
 
         <Container>
-        <Row>
         <CardDeck style={{display: 'flex', flexDirection: 'row'}}>
-                <Col>
-                    <Card border="light">
+                <Card border="light">
                     <Card.Img variant="top" src={student}  style= {{height: "25rem"}} />
                     <Card.ImgOverlay>
                         <Card.Body className="text-center">
@@ -57,11 +55,9 @@ function Home() {
                             <Link to="/Students"><Button variant="outline-primary">Learn More</Button></Link>
                         </Card.Body>
                     </Card.ImgOverlay>
-                    </Card>
-                </Col>
+                </Card>
 
-                <Col>
-                    <Card border="light">
+                <Card border="light">
                     <Card.Img variant="top" src={faculty}  style= {{height: "25rem"}} />
                     <Card.ImgOverlay>
                         <Card.Body className="text-center">
@@ -69,11 +65,9 @@ function Home() {
                             <Link to="/Facstaff"><Button variant="outline-primary">Meet Them</Button></Link>
                         </Card.Body>
                     </Card.ImgOverlay>
-                    </Card>
-                </Col>
+                </Card>
 
-                <Col>
-                    <Card border="light">
+                <Card border="light">
                     <Card.Img variant="top" src={alumni}  style= {{height: "25rem"}} />
                     <Card.ImgOverlay>
                         <Card.Body className="text-center">
@@ -81,14 +75,8 @@ function Home() {
                             <Link to="/Alumni"><Button variant="outline-primary">Give Now</Button></Link>
                         </Card.Body>
                     </Card.ImgOverlay>
-                    </Card>
-                </Col>
-                    
-
-            
-            </CardDeck>
-        </Row>
-        
+                </Card>
+            </CardDeck>        
         </Container>
 
         <br/><br/>
