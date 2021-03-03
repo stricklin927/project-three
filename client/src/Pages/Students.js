@@ -164,15 +164,15 @@ function Students() {
                 <Table>
                     <thead>
                         <tr>
-                        <th>Major</th>
                         <th>College</th>
-                        <th>Staff</th>
+                        <th>Majors</th>
+                        <th>Faculty</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><MajorsMap coll={coll} /></td>
                             <td>{coll.name}</td>
+                            <td><MajorsMap coll={coll} /></td>
                             <td><FacultyCard coll={coll} /></td>
                         </tr>
                     </tbody>
