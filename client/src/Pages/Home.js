@@ -46,9 +46,9 @@ function Home() {
         <br></br>
 
         <Container>
-        <CardDeck style={{display: 'flex', flexDirection: 'row'}}>
+        <CardDeck>
                 <Card border="light">
-                    <Card.Img variant="top" src={student}  style= {{height: "25rem"}} />
+                    <Card.Img variant="top" src={student} />
                     <Card.ImgOverlay>
                         <Card.Body className="text-center">
                             <Card.Title className="CTH">100+ Majors</Card.Title>
@@ -58,7 +58,7 @@ function Home() {
                 </Card>
 
                 <Card border="light">
-                    <Card.Img variant="top" src={faculty}  style= {{height: "25rem"}} />
+                    <Card.Img variant="top" src={faculty} />
                     <Card.ImgOverlay>
                         <Card.Body className="text-center">
                             <Card.Title className="CTH">Faculty</Card.Title>
@@ -68,7 +68,7 @@ function Home() {
                 </Card>
 
                 <Card border="light">
-                    <Card.Img variant="top" src={alumni}  style= {{height: "25rem"}} />
+                    <Card.Img variant="top" src={alumni} />
                     <Card.ImgOverlay>
                         <Card.Body className="text-center">
                             <Card.Title className="CTH">Show Your Support</Card.Title>
