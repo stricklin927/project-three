@@ -51,6 +51,7 @@ function Register(props) {
         <div>
             <div>
                 <div>
+                  <br></br>
                   <div className="text-center">
                       <h4 >
                           <b>Register</b> below!
