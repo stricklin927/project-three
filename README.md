@@ -1,8 +1,10 @@
 [LIVE DEMO](https://landingpageuniversity.herokuapp.com/Home)
 
 # Infotech University
-![Homepage](/client/src/images/homeDemo1.png)
+
 ![Login](/client/src/images/loginDemo.png)
+
+![Homepage](/client/src/images/homeDemo1.png)
 
 ## Description
   A University webpage designed for three users that upon registering and logging in gain access to different features. The users are prospective students, faculty staff and alumni.
@@ -57,7 +59,7 @@
 
 
   * Alumni: User is able to make a donation. The donation amount is grouped in different tiers which have different badges. There is an "Alumni Wall of Givers" which is the donation list which is compiled in a descending order based on the tier - with users with highest donations placed above. A thank you message is rendered to each user who donates.
-  
+
     ![Alumni 1](/client/src/images/alumniDemo.png)
 
   * Admin: User is able to access administrator pages only available to users assigned an "admin" role in the database. From there, admins can create, update, or delete entries from faculty, donors, and college.majors databases. Login in as "admin@admin.com" with "123456789" as your password to take a look. 
