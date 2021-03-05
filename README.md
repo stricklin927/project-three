@@ -1,4 +1,4 @@
-[LIVE DEMO](https://landingpageuniversity.herokuapp.com/Home)
+[LIVE DEMO](https://stricklin-infotechu.herokuapp.com/register)
 
 # Infotech University
 
@@ -9,7 +9,7 @@
 ## Description
   A University webpage designed for three users that upon registering and logging in gain access to different features. The users are prospective students, faculty staff and alumni.
 
-[Click here](https://landingpageuniversity.herokuapp.com/Home) to see a live demo of this project.
+[Click here](https://stricklin-infotechu.herokuapp.com/register) to see a live demo of this project.
   
 ## Table of Contents
   1. [Technologies](#technologies)
@@ -75,12 +75,10 @@
   *  ![License badge](https://img.shields.io/badge/License-MIT-green)
 
   ## Questions
-  * If you have questions, email me at: 
+  * If you have questions, email me at: stricklin927@gmail.com
 
 ## Links
 
-* Video link for demonstration :
+* Heroku link : https://stricklin-infotechu.herokuapp.com/register
 
-* Heroku link : https://landingpageuniversity.herokuapp.com/Home
-
-* Info Tech University GitHub repository URL: (https://github.com/brianrshort/project-three)
+* Info Tech University GitHub repository URL: (https://github.com/stricklin927/project-three)
